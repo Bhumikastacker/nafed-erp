@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-29 17:41:03.996693",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "member_id_from",
+  "current_membership_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Column Break",
+   "label": "Member ID Start"
+  },
+  {
+   "fieldname": "member_id_from",
+   "fieldtype": "Int",
+   "label": "Member ID From",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "current_membership_no",
+   "fieldtype": "Int",
+   "label": "Current Membership No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-29 18:54:56.897749",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

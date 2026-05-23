@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-03 14:45:24.285428",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "survey_id",
+  "survey_date",
+  "surveyor_name",
+  "survey_type"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "survey_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Survey ID",
+   "options": "Property Survey",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "survey_id.survey_date",
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Survey Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "survey_id.surveyor_name",
+   "fieldname": "surveyor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surveyor Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "survey_id.survey_type",
+   "fieldname": "survey_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Survey Type",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-04 07:29:41.760785",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property Survey Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

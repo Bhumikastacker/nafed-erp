@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-08 10:38:44.015307",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "manual_title",
+  "asset_category",
+  "versionrevision",
+  "effective_date",
+  "upload_file",
+  "asset",
+  "column_break_dqnz",
+  "asset_model",
+  "manufacturer",
+  "link_mvco",
+  "tags",
+  "visibility",
+  "applicability_scope"
+ ],
+ "fields": [
+  {
+   "fieldname": "manual_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manual Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "versionrevision",
+   "fieldtype": "Data",
+   "label": "Version/Revision"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "upload_file",
+   "fieldtype": "Attach",
+   "label": "Upload File"
+  },
+  {
+   "fieldname": "column_break_dqnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asset_model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "link_mvco",
+   "fieldtype": "Link",
+   "options": "Language"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Select",
+   "label": "Tags",
+   "options": "Laptop\nNetwork\nPrinter"
+  },
+  {
+   "fieldname": "visibility",
+   "fieldtype": "Select",
+   "label": "visibility",
+   "options": "IT Only\nEnd Users\nTechnicians"
+  },
+  {
+   "fieldname": "applicability_scope",
+   "fieldtype": "Select",
+   "label": "Applicability Scope",
+   "options": "All Assets of This Model Specific Asset"
+  },
+  {
+   "depends_on": "eval:doc.applicability_scope == 'Specific Asset'",
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "mandatory_depends_on": "eval:doc.applicability_scope == 'Specific Asset'",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Manual ID",
+   "options": "IT-Manual-.YY.-\n"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-08 12:16:33.093560",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Manage User Manuals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

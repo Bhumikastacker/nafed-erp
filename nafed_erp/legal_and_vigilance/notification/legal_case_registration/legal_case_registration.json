@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-24 15:17:10.449024",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Registration",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>\nA legal case has been registered on {{ doc.creation }}.<br><br>\n\n<b>Case Details:</b><br>\nCase ID: {{ doc.name }}<br>\nCase Number: {{ doc.case_number }}<br>\nStatus: {{ doc.status }}<br>\nWorkflow State: {{ doc.workflow_state }}<br>\nCase Status: {{ doc.case_status }}<br>\nCase Category: {{ doc.case_category }}<br>\nMatter Value: {{ doc.matter_value }}<br><br>\n\n<b>Party Details:</b><br>\nParty Name: {{ doc.party_name }}<br>\nOpposing Party: {{ doc.opposing_party[0].opposing_party_name if doc.opposing_party else \"\" }}<br><br>\n\n<b>Advocate Details:</b><br>\nAssigned Advocate: {{ doc.assigned_advocate }}<br><br>\n\n<b>Location Details:</b><br>\nJurisdiction: {{ doc.jurisdiction }}<br>\nBranch: {{ doc.branch_name }}<br>\nCourt: {{ doc.court[0].court if doc.court else \"\" }}<br><br>\n\n<b>Additional Info:</b><br>\nAgreement Type: {{ doc.agreement_type }}<br>\nReference: {{ doc.related_po__contract_ref }}<br>\nView Mode: {{ doc.view_mode }}<br><br>\n\n\n<p><b>Remarks:</b></p>\n\n{% if doc.remarks %}\n    {% for row in doc.remarks %}\n        <p>\n            {{ row.remarks | safe }} <br>\n            <small>\n                By: {{ row.action_taken_by }} on {{ row.action_taken_on }}\n            </small>\n        </p>\n    {% endfor %}\n{% else %}\n    <p>No remarks available.</p>\n{% endif %}\n\n</p>",
+ "message_type": "HTML",
+ "modified": "2026-04-09 22:34:33.778469",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal case registration",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "New Legal Case Registered: {{ doc.name}}",
+ "value_changed": "priority"
+}

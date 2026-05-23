@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-03-10 11:28:59.167682",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vdht",
+  "naming_series",
+  "branch",
+  "auditor",
+  "audit_type",
+  "audiotor_rate_card",
+  "rate",
+  "column_break_zjgi",
+  "financial_year",
+  "status",
+  "end_date",
+  "start_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vdht",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financial_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Financial Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auditor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Auditor",
+   "options": "Auditor Empanelment",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "auditor.auditor_type",
+   "fieldname": "audit_type",
+   "fieldtype": "Data",
+   "label": "Audit Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "auditor.empanelment_date",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "auditor.expiry_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "default": "Assigned",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nAssigned\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "column_break_zjgi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "auditor.auditor_rate_card",
+   "fieldname": "audiotor_rate_card",
+   "fieldtype": "Link",
+   "label": "Audiotor Rate Card",
+   "options": "Auditor Rate Card",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Assignment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "auditor.rate",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AUD-ASSI-",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-17 16:21:33.048000",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Audit Assignment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

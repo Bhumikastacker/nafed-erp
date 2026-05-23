@@ -1,0 +1,39 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"hEe7LcW5VU\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Production</span>\",\"col\":12}},{\"id\":\"Ke7LJwDyYU\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"BioFertilizers Division\",\"col\":2}}]",
+ "creation": "2025-11-10 16:35:16.034762",
+ "custom_blocks": [
+  {
+   "custom_block_name": "BioFertilizers Division",
+   "label": "BioFertilizers Division"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "production",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Production",
+ "links": [],
+ "logs": [],
+ "modified": "2026-05-01 17:53:01.879276",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Production",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Biofertilizer User"
+  }
+ ],
+ "sequence_id": 62.0,
+ "shortcuts": [],
+ "title": "Production"
+}

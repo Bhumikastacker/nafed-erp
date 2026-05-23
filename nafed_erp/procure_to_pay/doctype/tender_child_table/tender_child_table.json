@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-07 16:34:52.404260",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "for_rate_in_rs_with_loading_per_100_bags_without_tax",
+  "for_rate_in_rs_with_loading_per_100_bags_inclusive_of_all_taxes",
+  "final_negotiate_for__per_100_bags_"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "District"
+  },
+  {
+   "fieldname": "for_rate_in_rs_with_loading_per_100_bags_without_tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "F.O.R Rate (in Rs.) with loading (per 100 bags) without tax"
+  },
+  {
+   "fieldname": "for_rate_in_rs_with_loading_per_100_bags_inclusive_of_all_taxes",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "F.O.R Rate (in Rs.) with loading (per 100 bags) inclusive of all taxes"
+  },
+  {
+   "fieldname": "final_negotiate_for__per_100_bags_",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Matching F.O.R ( per 100 bags )"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-14 16:43:03.623550",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Tender Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

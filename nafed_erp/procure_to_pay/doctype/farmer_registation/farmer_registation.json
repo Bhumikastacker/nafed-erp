@@ -1,0 +1,309 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-19 15:08:32.462150",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ayyf",
+  "naming_series",
+  "farmer_id",
+  "farmer_name",
+  "father_spouse_name",
+  "gender",
+  "source",
+  "class_category",
+  "farmer_category",
+  "column_break_ezfg",
+  "email_id",
+  "mobile_no",
+  "society",
+  "age",
+  "date_of_birth",
+  "registered_by_society",
+  "registration_date",
+  "address_section",
+  "address",
+  "district",
+  "state",
+  "column_break_dwop",
+  "taluka",
+  "village",
+  "pin_code",
+  "section_break_section",
+  "account",
+  "bank_account_no",
+  "ifsc",
+  "bank_name",
+  "column_break_lrjm",
+  "branch",
+  "account_holder_name",
+  "section_break_d3in",
+  "procurement_eligibility_flag",
+  "amended_from",
+  "column_break_vj7n",
+  "aadhaar_no",
+  "aadhaar_number",
+  "kycdocsrefs"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ayyf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Farmer Registation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ezfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "section_break_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Account"
+  },
+  {
+   "fetch_from": "account.bank_account_no",
+   "fieldname": "bank_account_no",
+   "fieldtype": "Float",
+   "label": "Bank Account No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account.iban",
+   "fieldname": "ifsc",
+   "fieldtype": "Float",
+   "label": "IFSC ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account.bank",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lrjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "account.branch_code",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account.account_name",
+   "fieldname": "account_holder_name",
+   "fieldtype": "Data",
+   "label": "Account Holder Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_d3in",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "procurement_eligibility_flag",
+   "fieldtype": "Check",
+   "label": "Procurement Eligibility Flag"
+  },
+  {
+   "fieldname": "column_break_vj7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kycdocsrefs",
+   "fieldtype": "Attach",
+   "label": "KYC Docs Reference"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "link_filters": "[[\"Source\",\"is_farmer\",\"=\",1]]",
+   "options": "\nE-samridhi\nE-pravha\nE-auction\nNafed(Manual)\nOther"
+  },
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registered_by_society",
+   "fieldtype": "Link",
+   "label": "Registered By Society",
+   "link_filters": "[[\"Supplier\",\"custom_is_sla\",\"=\",1]]",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "class_category",
+   "fieldtype": "Data",
+   "label": "Class Category"
+  },
+  {
+   "fieldname": "farmer_category",
+   "fieldtype": "Data",
+   "label": "Farmer Category"
+  },
+  {
+   "fieldname": "aadhaar_no",
+   "fieldtype": "Data",
+   "label": "Aadhaar No."
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Aadhaar Number"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "society",
+   "fieldtype": "Link",
+   "label": "Society",
+   "link_filters": "[[\"Supplier\",\"custom_is_sla\",\"=\",1]]",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FARMER-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "father_spouse_name",
+   "fieldtype": "Data",
+   "label": "Father / Spouse Name "
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "column_break_dwop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "label": "Taluka"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-02 13:33:16.927268",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Farmer Registation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-04 14:19:36.466410",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "invoice_id",
+  "outstanding_balance",
+  "payment_date",
+  "payment_amount",
+  "column_break_xvmx",
+  "payment_mode",
+  "payment_document",
+  "payment_reference_no",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment Reference No",
+   "options": "EST/L-PAY/.YY./",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_id",
+   "fieldtype": "Link",
+   "label": "Invoice ID",
+   "options": "Lease Invoice"
+  },
+  {
+   "fieldname": "outstanding_balance",
+   "fieldtype": "Currency",
+   "label": "Outstanding Balance"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount"
+  },
+  {
+   "fieldname": "column_break_xvmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Select\nNEFT\nRTGS\nUPI\nCheque"
+  },
+  {
+   "fieldname": "payment_document",
+   "fieldtype": "Attach",
+   "label": "Payment Document"
+  },
+  {
+   "fieldname": "payment_reference_no",
+   "fieldtype": "Data",
+   "label": "Payment Reference No"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:08:21.548730",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Lease Invoice Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

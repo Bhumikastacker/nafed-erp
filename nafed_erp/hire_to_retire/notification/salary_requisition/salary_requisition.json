@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2026-02-05 14:25:53.843308",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Branch Payment Request",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{doc.transcation_type}} has created against {{doc.branch}}",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:30:37.932972",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Salary Requisition",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "HR Manager"
+  },
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Accounts Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.transcation_type }} Has Requested"
+}

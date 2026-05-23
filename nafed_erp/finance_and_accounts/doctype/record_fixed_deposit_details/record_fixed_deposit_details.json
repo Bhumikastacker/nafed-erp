@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:[naming_series]",
+ "creation": "2025-12-05 11:38:31.214925",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fxue",
+  "naming_series",
+  "bank_name",
+  "deposit_type",
+  "annual_interest_rate",
+  "amended_from",
+  "column_break_vvkd",
+  "fd_number",
+  "deposit_amount",
+  "maturity_date",
+  "status",
+  "created_on",
+  "section_break_eiia",
+  "track_deposit_dates_and_tenure"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fxue",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "NAF-FD-BRNC-.YYYY.-.#####.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name ",
+   "length": 50,
+   "reqd": 1
+  },
+  {
+   "default": "Fixed Deposit",
+   "fieldname": "deposit_type",
+   "fieldtype": "Select",
+   "label": "Deposit Type",
+   "options": "\nTerm Deposit\nRecurring Deposit\nFixed Deposit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "annual_interest_rate",
+   "fieldtype": "Percent",
+   "label": "Annual Interest Rate",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Record Fixed Deposit Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_vvkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fd_number",
+   "fieldtype": "Data",
+   "label": "FD Number"
+  },
+  {
+   "fieldname": "deposit_amount",
+   "fieldtype": "Currency",
+   "label": "Deposit Amount ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maturity_date",
+   "fieldtype": "Date",
+   "label": "Maturity Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nApproved"
+  },
+  {
+   "default": "Now",
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On"
+  },
+  {
+   "fieldname": "section_break_eiia",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "track_deposit_dates_and_tenure",
+   "fieldtype": "Table",
+   "label": "Track Deposit Dates and Tenure",
+   "options": "Track Deposit Dates and Tenure"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-11 13:00:33.847568",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Record Fixed Deposit Details",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

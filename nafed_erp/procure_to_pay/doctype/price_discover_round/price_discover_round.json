@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-07 18:22:22.221429",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bidder_id",
+  "bid_price",
+  "bid_quantity",
+  "bid_time",
+  "round",
+  "column_break_lbzd",
+  "service_provider",
+  "winning_quantity",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_lbzd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bid_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bid Price"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Provider"
+  },
+  {
+   "fieldname": "winning_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Winning Quantity"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bid_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bid Quantity "
+  },
+  {
+   "fieldname": "bid_time",
+   "fieldtype": "Time",
+   "label": "Bid Time"
+  },
+  {
+   "fieldname": "round",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Round "
+  },
+  {
+   "fieldname": "bidder_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bidder Id"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-18 11:45:41.674245",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Price Discover Round",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

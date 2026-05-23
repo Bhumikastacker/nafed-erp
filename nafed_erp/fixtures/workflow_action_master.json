@@ -1,0 +1,890 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-05-06 23:54:24.002878",
+  "name": "Start Treatment",
+  "workflow_action_name": "Start Treatment"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-05-06 23:55:08.387154",
+  "name": "Complete",
+  "workflow_action_name": "Complete"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-05-06 23:56:07.845652",
+  "name": "Defer",
+  "workflow_action_name": "Defer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-07 16:00:11.455165",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-07 16:00:11.451996",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-07 16:00:11.453944",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:46:39.538801",
+  "name": "Submit Plan",
+  "workflow_action_name": "Submit Plan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:47:23.227433",
+  "name": "Send to Finance",
+  "workflow_action_name": "Send to Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:47:37.000893",
+  "name": "Approve Finance",
+  "workflow_action_name": "Approve Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:48:07.217029",
+  "name": "Reject Finance",
+  "workflow_action_name": "Reject Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:48:38.440014",
+  "name": "Approve Plan",
+  "workflow_action_name": "Approve Plan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 17:49:02.706856",
+  "name": "Finalize Plan",
+  "workflow_action_name": "Finalize Plan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 18:29:30.475968",
+  "name": "Approve Technical",
+  "workflow_action_name": "Approve Technical"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 18:31:12.310175",
+  "name": "Mark Pending Funds",
+  "workflow_action_name": "Mark Pending Funds"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-04-10 18:31:44.009625",
+  "name": "Approve Funds",
+  "workflow_action_name": "Approve Funds"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:08:05.965281",
+  "name": "Submit Grievance",
+  "workflow_action_name": "Submit Grievance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:05.879499",
+  "name": "Acknowledge & Review",
+  "workflow_action_name": "Acknowledge & Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:14.872550",
+  "name": "Mark Resolved",
+  "workflow_action_name": "Mark Resolved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:24.552563",
+  "name": "Reject / Mark Invalid",
+  "workflow_action_name": "Reject / Mark Invalid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:37.363253",
+  "name": "Vendor Satisfied",
+  "workflow_action_name": "Vendor Satisfied"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:47.357267",
+  "name": "Vendor Not Satisfied",
+  "workflow_action_name": "Vendor Not Satisfied"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:10:56.138544",
+  "name": "HO Review & Reply",
+  "workflow_action_name": "HO Review & Reply"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 12:11:06.159470",
+  "name": "HO Close Grievance",
+  "workflow_action_name": "HO Close Grievance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-05 18:02:52.544254",
+  "name": "Send Mail",
+  "workflow_action_name": "Send Mail"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-07 10:19:05.799889",
+  "name": "Mark as paid",
+  "workflow_action_name": "Mark as paid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-18 22:41:53.287915",
+  "name": "Schedule",
+  "workflow_action_name": "Schedule"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-23 16:29:27.994234",
+  "name": "Send Back for Clarification",
+  "workflow_action_name": "Send Back for Clarification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 13:27:46.407339",
+  "name": "Submit Application",
+  "workflow_action_name": "Submit Application"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 13:28:07.078266",
+  "name": "Review & Classify",
+  "workflow_action_name": "Review & Classify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 13:28:38.623630",
+  "name": "Activate",
+  "workflow_action_name": "Activate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:09:40.723401",
+  "name": "Submit Request",
+  "workflow_action_name": "Submit Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:09:52.616218",
+  "name": "Branch Approve",
+  "workflow_action_name": "Branch Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:10:05.527373",
+  "name": "Mark Expired",
+  "workflow_action_name": "Mark Expired"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:13:25.329371",
+  "name": "Submit for Review",
+  "workflow_action_name": "Submit for Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:13:42.480693",
+  "name": "Return for Correction",
+  "workflow_action_name": "Return for Correction"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 13:28:21.681772",
+  "name": "HO Approve",
+  "workflow_action_name": "HO Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 13:28:50.341399",
+  "name": "Suspend",
+  "workflow_action_name": "Suspend"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:13:33.579875",
+  "name": "Defer Evaluation",
+  "workflow_action_name": "Defer Evaluation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-16 16:14:10.030255",
+  "name": "Resume",
+  "workflow_action_name": "Resume"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 07:11:36.406398",
+  "name": "verify",
+  "workflow_action_name": "verify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 07:14:22.074304",
+  "name": "Resubmit",
+  "workflow_action_name": "Resubmit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-13 12:12:15.419428",
+  "name": "Verified",
+  "workflow_action_name": "Verified"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-13 12:27:15.669395",
+  "name": "Awating for Approval",
+  "workflow_action_name": "Awating for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-13 12:03:39.629985",
+  "name": "Under Inquiry",
+  "workflow_action_name": "Under Inquiry"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-13 12:04:01.872636",
+  "name": "Under Investigation",
+  "workflow_action_name": "Under Investigation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-16 16:07:01.953072",
+  "name": "Pending for Review",
+  "workflow_action_name": "Pending for Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-18 13:36:48.250238",
+  "name": "Close",
+  "workflow_action_name": "Close"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-18 13:37:11.263112",
+  "name": "Reopen",
+  "workflow_action_name": "Reopen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-12 11:22:59.684686",
+  "name": "Completed",
+  "workflow_action_name": "Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-12 11:50:29.288078",
+  "name": "Responded",
+  "workflow_action_name": "Responded"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-12 11:49:55.786162",
+  "name": "Delivered",
+  "workflow_action_name": "Delivered"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-06 11:08:36.775419",
+  "name": "Mark Complete",
+  "workflow_action_name": "Mark Complete"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-05 10:54:02.354044",
+  "name": "Send For Final Approval",
+  "workflow_action_name": "Send For Final Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-15 17:14:18.644973",
+  "name": "Appove",
+  "workflow_action_name": "Appove"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-09 12:44:31.409874",
+  "name": "Recommend",
+  "workflow_action_name": "Recommend"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-09 12:45:19.636576",
+  "name": "return",
+  "workflow_action_name": "return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-08 15:56:31.318228",
+  "name": "Validate",
+  "workflow_action_name": "Validate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-10 12:15:35.712288",
+  "name": "In Progress",
+  "workflow_action_name": "In Progress"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-10 12:15:58.420038",
+  "name": "Cancel",
+  "workflow_action_name": "Cancel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-25 15:54:27.036921",
+  "name": "Fund Released",
+  "workflow_action_name": "Fund Released"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:21:38.482253",
+  "name": "PO Invoice",
+  "workflow_action_name": "PO Invoice"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:21:46.836670",
+  "name": "Approval Sent To Department Head",
+  "workflow_action_name": "Approval Sent To Department Head"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:21:54.572969",
+  "name": "Approval Sent To Finance Manager",
+  "workflow_action_name": "Approval Sent To Finance Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:01.989821",
+  "name": "Approval sent To Ho",
+  "workflow_action_name": "Approval sent To Ho"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:11.914604",
+  "name": "Request For Clarification",
+  "workflow_action_name": "Request For Clarification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:20.321302",
+  "name": "Exemption Pending",
+  "workflow_action_name": "Exemption Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:30.184378",
+  "name": "Financial Record Updated",
+  "workflow_action_name": "Financial Record Updated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:37.297360",
+  "name": "Hold Invoice",
+  "workflow_action_name": "Hold Invoice"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:46.528002",
+  "name": "Non Po Invoice Without Approval",
+  "workflow_action_name": "Non Po Invoice Without Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:22:54.316765",
+  "name": "Approved Invoice",
+  "workflow_action_name": "Approved Invoice"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-02 18:23:01.758855",
+  "name": "Audit Log Maintain",
+  "workflow_action_name": "Audit Log Maintain"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-22 15:02:39.132815",
+  "name": "Pending",
+  "workflow_action_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-23 17:35:54.788629",
+  "name": "Pending Higher Authority Approval",
+  "workflow_action_name": "Pending Higher Authority Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-17 12:54:09.998301",
+  "name": "Pending for Approval",
+  "workflow_action_name": "Pending for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-17 16:09:42.544787",
+  "name": "submit",
+  "workflow_action_name": "submit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-23 21:08:18.643804",
+  "name": "Requested",
+  "workflow_action_name": "Requested"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-23 21:10:51.306691",
+  "name": "Paid",
+  "workflow_action_name": "Paid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-10-16 16:32:48.414524",
+  "name": "Save",
+  "workflow_action_name": "Save"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-29 16:28:07.983776",
+  "name": "GM Approve (Below 25K)",
+  "workflow_action_name": "GM Approve (Below 25K)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-29 16:28:18.971998",
+  "name": "GM Approve (Above 25K)",
+  "workflow_action_name": "GM Approve (Above 25K)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-29 16:28:33.148365",
+  "name": "DH Final Approve",
+  "workflow_action_name": "DH Final Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-11-29 16:33:04.006907",
+  "name": "GM Approve",
+  "workflow_action_name": "GM Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-10 12:18:25.572839",
+  "name": "Probation Confirmed",
+  "workflow_action_name": "Probation Confirmed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:35:47.339349",
+  "name": "Approved",
+  "workflow_action_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:41:07.761500",
+  "name": "Attendance Recorded",
+  "workflow_action_name": "Attendance Recorded"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:41:24.475440",
+  "name": "closed",
+  "workflow_action_name": "closed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:43:14.156370",
+  "name": "Agenda Submitted",
+  "workflow_action_name": "Agenda Submitted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:43:20.498846",
+  "name": "Agenda Approved",
+  "workflow_action_name": "Agenda Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:44:41.132539",
+  "name": "Submitted to BH",
+  "workflow_action_name": "Submitted to BH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:44:56.179927",
+  "name": "Submitted to SH",
+  "workflow_action_name": "Submitted to SH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-27 14:45:07.373863",
+  "name": "Submitted to HO",
+  "workflow_action_name": "Submitted to HO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-01-18 22:14:49.683152",
+  "name": "Send Back",
+  "workflow_action_name": "Send Back"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-12-08 15:57:44.395405",
+  "name": "Appoved",
+  "workflow_action_name": "Appoved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-04 18:13:43.366953",
+  "name": "Rejected",
+  "workflow_action_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-10-16 16:33:43.351150",
+  "name": "Send for Approval",
+  "workflow_action_name": "Send for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-06-27 16:13:36.773584",
+  "name": "Initiate",
+  "workflow_action_name": "Initiate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2025-06-27 16:28:02.106474",
+  "name": "Complete KYC",
+  "workflow_action_name": "Complete KYC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 11:52:25.149732",
+  "name": "Submit for Verification",
+  "workflow_action_name": "Submit for Verification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 11:55:43.980137",
+  "name": "Request Clarification",
+  "workflow_action_name": "Request Clarification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 14:19:39.755903",
+  "name": "Submit for Approval",
+  "workflow_action_name": "Submit for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 14:22:04.371212",
+  "name": "Request Changes",
+  "workflow_action_name": "Request Changes"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 14:23:05.569794",
+  "name": "Publish",
+  "workflow_action_name": "Publish"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 14:25:19.898646",
+  "name": "Close Auction",
+  "workflow_action_name": "Close Auction"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 15:25:01.392116",
+  "name": "Start Evaluation",
+  "workflow_action_name": "Start Evaluation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 15:25:34.662199",
+  "name": "Submit Recommendation",
+  "workflow_action_name": "Submit Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 15:27:20.833719",
+  "name": "Request Re-evaluation",
+  "workflow_action_name": "Request Re-evaluation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 15:28:43.315346",
+  "name": "Resubmit Recommendation",
+  "workflow_action_name": "Resubmit Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 17:41:37.109221",
+  "name": "Send for Verification",
+  "workflow_action_name": "Send for Verification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-02-21 18:11:28.222100",
+  "name": "Approve with Conditions",
+  "workflow_action_name": "Approve with Conditions"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-24 12:51:39.737565",
+  "name": "Deactivate",
+  "workflow_action_name": "Deactivate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "logs": [],
+  "modified": "2026-03-26 12:33:21.813135",
+  "name": "Reactivate",
+  "workflow_action_name": "Reactivate"
+ }
+]

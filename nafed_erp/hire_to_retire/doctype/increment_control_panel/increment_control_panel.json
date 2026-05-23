@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2026-03-18 16:16:10.015555",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "increment_month",
+  "column_break_eipr",
+  "effective_date",
+  "section_break_dwhk",
+  "employees_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "increment_month",
+   "fieldtype": "Select",
+   "label": "Increment Month",
+   "options": "January\nJuly",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_eipr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dwhk",
+   "fieldtype": "Section Break",
+   "label": "Select Employees"
+  },
+  {
+   "fieldname": "employees_table",
+   "fieldtype": "HTML",
+   "label": "Employees Table"
+  },
+  {
+   "default": "Today",
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-19 17:22:20.672479",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Increment Control Panel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

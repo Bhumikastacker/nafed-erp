@@ -1,0 +1,424 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{employee}-{###}",
+ "creation": "2025-12-03 12:02:00.469627",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rwwd",
+  "employee",
+  "column_break_wjfo",
+  "status",
+  "contact_details_section",
+  "old_mobile",
+  "old_email",
+  "column_break_qivd",
+  "new_mobile",
+  "new_email",
+  "emergency_contact_section",
+  "old_emergency_contact_name",
+  "old_emergency_phone",
+  "old_relation",
+  "column_break_wkkx",
+  "new_emergency_contact_name",
+  "new_emergency_phone",
+  "new_relation",
+  "present_address_section",
+  "old_present_city",
+  "old_present_pin",
+  "old_present_state",
+  "old_present_street",
+  "old_present_telephone_number",
+  "old_current_address",
+  "old_current_address_is",
+  "column_break_kwss",
+  "new_present_city",
+  "new_present_pin",
+  "new_present_state",
+  "new_present_street",
+  "new_present_telephone_number",
+  "new_current_address",
+  "new_current_address_is",
+  "permanent_address_section",
+  "old_permanent_city",
+  "old_permanent_pin",
+  "old_permanent_state",
+  "old_permanent_street",
+  "old_permanent_telephone_number",
+  "old_permanent_address",
+  "old_permanent_address_is",
+  "column_break_cckq",
+  "new_permanent_city",
+  "new_permanent_pin",
+  "new_permanent_state",
+  "new_permanent_street",
+  "new_permanent_telephone_number",
+  "new_permanent_address",
+  "new_permanent_address_is",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rwwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_wjfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role(\"HR Manager\") || frappe.user.has_role(\"HR User\") ",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact details"
+  },
+  {
+   "fetch_from": "employee.cell_number",
+   "fieldname": "old_mobile",
+   "fieldtype": "Data",
+   "label": "Old Mobile",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "employee.personal_email",
+   "fieldname": "old_email",
+   "fieldtype": "Data",
+   "label": "Old Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_qivd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_mobile",
+   "fieldtype": "Data",
+   "label": "New Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "new_email",
+   "fieldtype": "Data",
+   "label": "New Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact"
+  },
+  {
+   "fetch_from": "employee.person_to_be_contacted",
+   "fieldname": "old_emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Old Emergency Contact Name"
+  },
+  {
+   "fetch_from": "employee.emergency_phone_number",
+   "fieldname": "old_emergency_phone",
+   "fieldtype": "Data",
+   "label": "Old Emergency Phone",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "employee.relation",
+   "fieldname": "old_relation",
+   "fieldtype": "Data",
+   "label": "Old Relation"
+  },
+  {
+   "fieldname": "column_break_wkkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "New Emergency Contact Name"
+  },
+  {
+   "fieldname": "new_emergency_phone",
+   "fieldtype": "Data",
+   "label": "New Emergency Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "new_relation",
+   "fieldtype": "Data",
+   "label": "New Relation"
+  },
+  {
+   "fieldname": "present_address_section",
+   "fieldtype": "Section Break",
+   "label": "Present Address"
+  },
+  {
+   "fetch_from": "employee.custom_pmtcity",
+   "fieldname": "old_present_city",
+   "fieldtype": "Data",
+   "label": "Old Present City"
+  },
+  {
+   "fetch_from": "employee.custom_ppin",
+   "fieldname": "old_present_pin",
+   "fieldtype": "Data",
+   "label": "Old Present Pin"
+  },
+  {
+   "fetch_from": "employee.custom_present_state",
+   "fieldname": "old_present_state",
+   "fieldtype": "Link",
+   "label": "Old Present State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "employee.custom_present_street",
+   "fieldname": "old_present_street",
+   "fieldtype": "Data",
+   "label": "Old Present Street"
+  },
+  {
+   "fetch_from": "employee.custom_telph",
+   "fieldname": "old_present_telephone_number",
+   "fieldtype": "Phone",
+   "label": "Old Present Telephone Number"
+  },
+  {
+   "fetch_from": "employee.current_address",
+   "fieldname": "old_current_address",
+   "fieldtype": "Small Text",
+   "label": "Old Current Address"
+  },
+  {
+   "fetch_from": "employee.current_accommodation_type",
+   "fieldname": "old_current_address_is",
+   "fieldtype": "Select",
+   "label": "Old Current Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "column_break_kwss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_present_city",
+   "fieldtype": "Data",
+   "label": "New Present City"
+  },
+  {
+   "fieldname": "new_present_pin",
+   "fieldtype": "Data",
+   "label": "New Present Pin"
+  },
+  {
+   "fieldname": "new_present_state",
+   "fieldtype": "Link",
+   "label": "New Present State",
+   "options": "State"
+  },
+  {
+   "fieldname": "new_present_street",
+   "fieldtype": "Data",
+   "label": "New Present Street"
+  },
+  {
+   "fieldname": "new_present_telephone_number",
+   "fieldtype": "Phone",
+   "label": "New Present Telephone Number"
+  },
+  {
+   "fieldname": "new_current_address",
+   "fieldtype": "Small Text",
+   "label": "New Current Address"
+  },
+  {
+   "fieldname": "new_current_address_is",
+   "fieldtype": "Select",
+   "label": "New Current Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "permanent_address_section",
+   "fieldtype": "Section Break",
+   "label": "Permanent Address"
+  },
+  {
+   "fetch_from": "employee.custom_pmtcity",
+   "fieldname": "old_permanent_city",
+   "fieldtype": "Data",
+   "label": "Old Permanent City"
+  },
+  {
+   "fetch_from": "employee.custom_pmtpin",
+   "fieldname": "old_permanent_pin",
+   "fieldtype": "Data",
+   "label": "Old Permanent Pin"
+  },
+  {
+   "fetch_from": "employee.custom_permanent_state",
+   "fieldname": "old_permanent_state",
+   "fieldtype": "Link",
+   "label": "Old Permanent State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "employee.custom_permanent_street",
+   "fieldname": "old_permanent_street",
+   "fieldtype": "Data",
+   "label": "Old Permanent Street"
+  },
+  {
+   "fetch_from": "employee.permanent_address",
+   "fieldname": "old_permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Old Permanent Address"
+  },
+  {
+   "fetch_from": "employee.permanent_accommodation_type",
+   "fieldname": "old_permanent_address_is",
+   "fieldtype": "Select",
+   "label": "Old Permanent Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "column_break_cckq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_permanent_city",
+   "fieldtype": "Data",
+   "label": "New Permanent City"
+  },
+  {
+   "fieldname": "new_permanent_pin",
+   "fieldtype": "Data",
+   "label": "New Permanent Pin"
+  },
+  {
+   "fieldname": "new_permanent_state",
+   "fieldtype": "Link",
+   "label": "New Permanent State",
+   "options": "State"
+  },
+  {
+   "fieldname": "new_permanent_street",
+   "fieldtype": "Data",
+   "label": "New Permanent Street"
+  },
+  {
+   "fieldname": "new_permanent_address",
+   "fieldtype": "Small Text",
+   "label": "New Permanent Address"
+  },
+  {
+   "fieldname": "new_permanent_address_is",
+   "fieldtype": "Select",
+   "label": "New Permanent Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Update Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee.custom_permanent_telephone_number",
+   "fieldname": "old_permanent_telephone_number",
+   "fieldtype": "Phone",
+   "label": "Old Permanent Telephone Number"
+  },
+  {
+   "fieldname": "new_permanent_telephone_number",
+   "fieldtype": "Phone",
+   "label": "New Permanent Telephone Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-09 12:18:42.521711",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Employee Update Request",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

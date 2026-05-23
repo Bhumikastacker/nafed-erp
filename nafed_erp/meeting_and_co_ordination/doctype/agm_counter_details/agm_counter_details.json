@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "counter_name",
+ "creation": "2026-01-12 16:20:09.538837",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hpq8",
+  "amended_from",
+  "counter",
+  "from_filter",
+  "to_filter",
+  "active",
+  "counter_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hpq8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AGM Counter Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "counter",
+   "fieldtype": "Link",
+   "label": "Counter",
+   "options": "AGM Counter"
+  },
+  {
+   "fieldname": "from_filter",
+   "fieldtype": "Data",
+   "label": "From Filter"
+  },
+  {
+   "fieldname": "to_filter",
+   "fieldtype": "Data",
+   "label": "To Filter"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "counter_name",
+   "fieldtype": "Data",
+   "label": "Counter Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-12 16:56:49.831522",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "AGM Counter Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

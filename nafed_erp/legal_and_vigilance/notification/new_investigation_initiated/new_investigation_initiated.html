@@ -1,0 +1,22 @@
+<p>An investigation remarks has been changed as per directive.<br><br></p>
+
+<p>
+<b>Committee ID:</b> {{ doc.name }}<br>
+
+<p><b>Remarks:</b></p>
+<p>
+    {{ doc.remarks | safe }}
+</p>
+
+<p><b>Committee Members:</b></p>
+{% if doc.members %}
+    <ul>
+    {% for row in doc.members %}
+        <li>{{ row.member }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No members assigned.</p>
+{% endif %}
+
+<p>The committee members are required to commence the investigation and submit findings within the stipulated timeline.</p>

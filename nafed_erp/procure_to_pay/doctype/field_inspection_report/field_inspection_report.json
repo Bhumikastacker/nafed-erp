@@ -1,0 +1,287 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-19 16:37:29.701087",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xamv",
+  "amended_from",
+  "basic_info_section",
+  "naming_series",
+  "crop",
+  "variety",
+  "season",
+  "division",
+  "farmer_details_tab",
+  "farmer",
+  "farmer_name",
+  "father_name",
+  "address",
+  "aadhaar_no",
+  "mobile_no",
+  "bank_details_tab",
+  "bank",
+  "farm_details_tab",
+  "registered_area_acre",
+  "place_of_production",
+  "date_of_sowing",
+  "stage_of_crop",
+  "inspection_and_certification_tab",
+  "inspection_team",
+  "crop_stage_details",
+  "general_observations",
+  "date_of_inspection",
+  "stage_of_certification",
+  "official_comment",
+  "other_observation",
+  "attachments_tab",
+  "committee_recommendations",
+  "inspection_signatures",
+  "farmer_photo",
+  "farmer_godown_photo",
+  "farmer_field_photo",
+  "supporting_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xamv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Field Inspection Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Tab Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Link",
+   "label": "Inspection ID",
+   "options": "Assign Field Inspection"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Link",
+   "label": "Variety",
+   "options": "Variety"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "farmer_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Farmer Details"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer Registation"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "aadhaar_no",
+   "fieldtype": "Data",
+   "label": "Aadhaar No"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "bank_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "farm_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "registered_area_acre",
+   "fieldtype": "Float",
+   "label": "Registered Area (Acre)"
+  },
+  {
+   "fieldname": "place_of_production",
+   "fieldtype": "Link",
+   "label": "Place of Production",
+   "options": "Place of Production"
+  },
+  {
+   "fieldname": "date_of_sowing",
+   "fieldtype": "Date",
+   "label": "Date of Sowing"
+  },
+  {
+   "fieldname": "stage_of_crop",
+   "fieldtype": "Select",
+   "label": "Stage of Crop",
+   "options": "Sowing\nVegetative\nFlowering\nPod Formation\nMilky Stage"
+  },
+  {
+   "fieldname": "inspection_and_certification_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inspection And Certification"
+  },
+  {
+   "fieldname": "date_of_inspection",
+   "fieldtype": "Date",
+   "label": "Date of Inspection"
+  },
+  {
+   "fieldname": "stage_of_certification",
+   "fieldtype": "Select",
+   "label": "Stage of Certification",
+   "options": "Foundation\nCertified"
+  },
+  {
+   "fieldname": "official_comment",
+   "fieldtype": "Select",
+   "label": "Official Comment",
+   "options": "Satisfactory\nNot Satisfactory"
+  },
+  {
+   "fieldname": "other_observation",
+   "fieldtype": "Select",
+   "label": "Other Observation",
+   "options": "Satisfactory\nNot Satisfactory"
+  },
+  {
+   "fieldname": "attachments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "supporting_document",
+   "fieldtype": "Attach",
+   "label": "Supporting Document"
+  },
+  {
+   "fieldname": "farmer_photo",
+   "fieldtype": "Attach Image",
+   "label": "Farmer Photo"
+  },
+  {
+   "fieldname": "farmer_godown_photo",
+   "fieldtype": "Attach Image",
+   "label": "Farmer Godown Photo"
+  },
+  {
+   "fieldname": "farmer_field_photo",
+   "fieldtype": "Attach Image",
+   "label": "Farmer Field Photo"
+  },
+  {
+   "bold": 1,
+   "fieldname": "inspection_team",
+   "fieldtype": "Table",
+   "label": "Inspection Team",
+   "options": "Inspection Team"
+  },
+  {
+   "fieldname": "crop_stage_details",
+   "fieldtype": "Table",
+   "label": "Crop Stage Details",
+   "options": "Crop Stage Details"
+  },
+  {
+   "fieldname": "general_observations",
+   "fieldtype": "Table",
+   "label": "General Observations",
+   "options": "General Observations"
+  },
+  {
+   "fieldname": "committee_recommendations",
+   "fieldtype": "Table",
+   "label": "Committee Recommendations",
+   "options": "Committee Recommendations"
+  },
+  {
+   "fieldname": "inspection_signatures",
+   "fieldtype": "Table",
+   "label": "Inspection Signatures",
+   "options": "Inspection Signatures"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-08 18:14:01.532971",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Field Inspection Report",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

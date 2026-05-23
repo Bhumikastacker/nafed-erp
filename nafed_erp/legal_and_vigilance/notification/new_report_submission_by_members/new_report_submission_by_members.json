@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-19 14:19:48.531594",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Report Submission by  Members",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Comments of report has been changed  for review and further action.<br><br>\n\n<b>Report ID:</b> {{ doc.name }}<br>\n<b>Complaint Receipt:</b> {{ doc.complaint_receipt }}<br>\n\n\n\n<b>Reviewer Comments:</b><br>\n{{ doc.remarks }}<br><br>\n\nPlease review the submitted report and update the approval status as per the prescribed process.\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 16:33:20.130322",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "New Report Submission by members",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Members Report   \u2013 Case {{ doc.case_id }}",
+ "value_changed": "reviewer_comments"
+}

@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-21 10:26:50.450229",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "compliance_status_section",
+  "naming_series",
+  "compliance_type",
+  "title",
+  "clause",
+  "created_by",
+  "update_by",
+  "remarks",
+  "column_break_jkns",
+  "effective_date",
+  "responsible_person",
+  "evidence_required",
+  "priority",
+  "policy_id",
+  "created_on",
+  "updated_on",
+  "status",
+  "supporting__documents_section",
+  "documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "compliance_status_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance Status"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Compliance ID",
+   "options": "IT/CC/.YY./",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "clause",
+   "fieldtype": "Small Text",
+   "label": "Clause"
+  },
+  {
+   "fieldname": "column_break_jkns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "evidence_required",
+   "fieldtype": "Attach",
+   "label": "Evidence Required"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_by",
+   "fieldtype": "Data",
+   "label": "Update By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "policy_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy ID",
+   "options": "Policy Management",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "updated_on",
+   "fieldtype": "Date",
+   "label": "Updated On",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "compliance_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Compliance Type",
+   "options": "Regulation\nStandard\nAudit Finding\nInternal Control",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supporting__documents_section",
+   "fieldtype": "Section Break",
+   "label": "Supporting  Documents"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Policy Compliance Supporting Documents"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nIn Progress\nRemediated\nVerified\nCompliant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Update Remark",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-05 14:10:17.806018",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Compliance Clause",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

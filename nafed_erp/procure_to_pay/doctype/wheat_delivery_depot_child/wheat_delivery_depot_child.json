@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-02 19:52:48.517613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district",
+  "centre",
+  "faq_qty_accepted_by_depot",
+  "urs_qty_accepted_by_depot",
+  "total_accepted_by_depot",
+  "approved_movement_challan_gate_pass",
+  "approved_movement_challan_net_pass_qty_mt",
+  "total_bill_qty_mt",
+  "bill_payment_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "faq_qty_accepted_by_depot",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "FAQ Qty Accepted By Depot"
+  },
+  {
+   "fieldname": "urs_qty_accepted_by_depot",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "URS Qty Accepted By Depot"
+  },
+  {
+   "fieldname": "total_accepted_by_depot",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Accepted By Depot"
+  },
+  {
+   "fieldname": "approved_movement_challan_gate_pass",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Approved Movement Challan Gate Pass"
+  },
+  {
+   "fieldname": "approved_movement_challan_net_pass_qty_mt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Approved Movement Challan Net Pass Qty( MT)"
+  },
+  {
+   "fieldname": "total_bill_qty_mt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Bill Qty (MT)"
+  },
+  {
+   "fieldname": "bill_payment_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bill Payment Amount"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Centre"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-02 19:58:32.846838",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Wheat Delivery Depot Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

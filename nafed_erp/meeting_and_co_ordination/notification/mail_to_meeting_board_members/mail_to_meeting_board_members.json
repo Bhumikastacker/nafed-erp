@@ -1,0 +1,32 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Agenda Approved\"",
+ "creation": "2026-02-02 12:07:46.078395",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Board Meeting",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear All,\n\nWe would like to inform you that the Annual General Meeting (AGM) has been scheduled as per the details below:\n\nMeeting: Annual General Meeting (AGM)\nDate: {{ doc.meeting_date }}\nTime: {{ doc.meeting_time }}\nVenue: {{ doc.venue }}\n\nWe request your presence and participation in the meeting.\nPlease ensure availability as per the schedule.\n\nRegards,\nNafed",
+ "message_type": "Markdown",
+ "modified": "2026-02-03 15:37:18.906427",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Mail to Meeting Board Members",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Meeting Scheduled For {{ doc.meeting_type }} "
+}

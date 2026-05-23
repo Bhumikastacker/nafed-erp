@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:GR-.YYYY.-.#####",
+ "creation": "2026-04-10 17:15:31.929463",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bnjx",
+  "amended_from",
+  "request_info_tab",
+  "naming_series",
+  "gov_request_id",
+  "plan_year",
+  "govt_request_letter_no",
+  "requesting_agency",
+  "column_break_vf0r",
+  "requesting_date",
+  "purpose",
+  "upload_request_letter",
+  "section_break_yait",
+  "item_details",
+  "documents_tab",
+  "request_letter",
+  "sanction_order",
+  "request_source",
+  "status",
+  "created_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bnjx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Government Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "request_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Info"
+  },
+  {
+   "fieldname": "requesting_agency",
+   "fieldtype": "Link",
+   "label": "Requesting Agency",
+   "options": "Requesting Agency"
+  },
+  {
+   "fieldname": "column_break_vf0r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents And System Fields"
+  },
+  {
+   "fieldname": "request_letter",
+   "fieldtype": "Attach",
+   "label": "Request Letter"
+  },
+  {
+   "fieldname": "sanction_order",
+   "fieldtype": "Data",
+   "label": "Sanction Order"
+  },
+  {
+   "fieldname": "request_source",
+   "fieldtype": "Data",
+   "label": "Request Source"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nUnder Review\nApproved for Planning\nPending Funds\nRejected"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_yait",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Table",
+   "label": "Government Request Item",
+   "options": "Government Request Item"
+  },
+  {
+   "fieldname": "requesting_date",
+   "fieldtype": "Date",
+   "label": "Requesting Date"
+  },
+  {
+   "fieldname": "plan_year",
+   "fieldtype": "Data",
+   "label": "Plan Year"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GR-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "gov_request_id",
+   "fieldtype": "Data",
+   "label": "Gov Request ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "govt_request_letter_no",
+   "fieldtype": "Data",
+   "label": "Govt. Request Letter No"
+  },
+  {
+   "fieldname": "upload_request_letter",
+   "fieldtype": "Attach",
+   "label": "Upload Request Letter"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-22 14:47:51.148650",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Government Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "gov_request_id"
+}

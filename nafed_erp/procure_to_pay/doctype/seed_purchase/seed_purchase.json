@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:SP-.YYYY.-.#####",
+ "creation": "2026-04-20 17:43:35.247905",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_056w",
+  "amended_from",
+  "basic_info_section",
+  "naming_series",
+  "supplier",
+  "supplier_allocation",
+  "action_plan",
+  "purchase_date",
+  "status",
+  "financial_section",
+  "total_quantity",
+  "total_amount",
+  "lot_tracking_section",
+  "lot_id",
+  "seed_purchase_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_056w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seed Purchase",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SP-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_allocation",
+   "fieldtype": "Link",
+   "label": "Supplier Allocation",
+   "options": "Supplier Allocation"
+  },
+  {
+   "fieldname": "action_plan",
+   "fieldtype": "Link",
+   "label": "Action Plan",
+   "options": "Government Action Plan"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPurchased\nCompleted"
+  },
+  {
+   "fieldname": "financial_section",
+   "fieldtype": "Section Break",
+   "label": "Financial"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "lot_tracking_section",
+   "fieldtype": "Section Break",
+   "label": "Lot Tracking"
+  },
+  {
+   "fieldname": "lot_id",
+   "fieldtype": "Link",
+   "label": "Lot ID",
+   "options": "Lot"
+  },
+  {
+   "fieldname": "seed_purchase_item",
+   "fieldtype": "Table",
+   "label": "Seed Purchase Item",
+   "options": "Seed Purchase Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-20 17:55:47.962213",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Seed Purchase",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

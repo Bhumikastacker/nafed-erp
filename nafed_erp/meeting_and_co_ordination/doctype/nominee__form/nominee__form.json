@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "N-.####",
+ "creation": "2026-05-20 12:01:37.607163",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_f1ka",
+  "membership_id",
+  "name1",
+  "contact",
+  "email",
+  "application_date",
+  "column_break_nhhs",
+  "agm_year",
+  "state",
+  "district",
+  "society_name",
+  "share_capital",
+  "attachment",
+  "section_break_qctq",
+  "remarks",
+  "noting_sheet",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_f1ka",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership ID",
+   "options": "Board Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "agm_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "AGM Year",
+   "options": "AGM Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Received Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nhhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qctq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "noting_sheet",
+   "fieldtype": "Table",
+   "label": "Noting Sheet",
+   "options": "Complaint Receipts Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Nominee  Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name"
+  },
+  {
+   "fieldname": "share_capital",
+   "fieldtype": "Data",
+   "label": "Share Capital"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-21 16:43:39.396320",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Nominee  Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

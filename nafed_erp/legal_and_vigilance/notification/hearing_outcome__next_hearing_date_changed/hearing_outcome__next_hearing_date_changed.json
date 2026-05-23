@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 16:50:55.745062",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Hearing Outcome",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>The hearing outcome has been recorded for the following legal case:</p>\n\n<p>Case ID: {{ doc.case_id }} <br>\nHearing Date: {{ doc.hearing_date}}<br>\nNext Hearing Date: {{ doc.next_hearing_date}}<br>\nOutcome: {{ doc.hearing_outcome }}</p>\n\n<p>Please review and proceed with next steps.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:09:28.262675",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Hearing Outcome- next hearing date changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "task_owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Next Hearing Date Changed \u2013 Legal Case {{ doc.name}}",
+ "value_changed": "next_hearing_date"
+}

@@ -1,0 +1,39 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"hEe7LcW5VU\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Project Management</span>\",\"col\":12}},{\"id\":\"Ke7LJwDyYU\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"CRI Division\",\"col\":2}},{\"id\":\"-ng8K620Yp\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"OFD Division\",\"col\":2}}]",
+ "creation": "2026-04-04 16:43:14.960533",
+ "custom_blocks": [
+  {
+   "custom_block_name": "CRI Division",
+   "label": "CRI Division"
+  },
+  {
+   "custom_block_name": "OFD Division",
+   "label": "OFD Division"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "project-management",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 1,
+ "label": "Nafed Project Management",
+ "links": [],
+ "logs": [],
+ "modified": "2026-04-13 15:04:28.474919",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Nafed Project Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 65.0,
+ "shortcuts": [],
+ "title": "Nafed Project Management"
+}

@@ -1,0 +1,317 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{branch_code}-{commodity_name}-{DD}{MM}{YY}-{####}",
+ "creation": "2026-03-26 17:47:09.495010",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_edr4",
+  "date_time",
+  "scheme",
+  "season",
+  "scheme_code",
+  "start_time_price_discovery_round",
+  "start_time_h1_discovery",
+  "start_time_price_matching_round",
+  "start_time_price_matching_submission",
+  "auction_status",
+  "auction_schedule_id",
+  "column_break_nmlm",
+  "commodity",
+  "commodity_name",
+  "state",
+  "state_code",
+  "branch",
+  "branch_code",
+  "quantity_for_auction",
+  "reserve_price",
+  "amended_from",
+  "end_time_price_discovery_round",
+  "end_time_h1_discovery",
+  "end_time_price_matching_round",
+  "end_time_price_matching_submission",
+  "section_break_fvls",
+  "e_auction_engines_participated",
+  "price_discover_round_section",
+  "price_discovery_round_log",
+  "price_matching_round_section",
+  "price_matching_round",
+  "auction_result_section",
+  "result",
+  "bidder_details_submission_section",
+  "bidder_details_submission"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_edr4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "link_filters": "[[\"Company\",\"is_group\",\"=\",0]]",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_nmlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Scheme"
+  },
+  {
+   "fieldname": "reserve_price",
+   "fieldtype": "Currency",
+   "label": "Reserve Price"
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commodity",
+   "options": "Item"
+  },
+  {
+   "fieldname": "date_time",
+   "fieldtype": "Date",
+   "label": "Date Time"
+  },
+  {
+   "fieldname": "start_time_price_discovery_round",
+   "fieldtype": "Time",
+   "label": "Start Time (Price Discovery Round)"
+  },
+  {
+   "fieldname": "end_time_price_discovery_round",
+   "fieldtype": "Time",
+   "label": "End Time (Price Discovery Round)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_time_h1_discovery",
+   "fieldtype": "Time",
+   "label": "Start Time (H1 discovery)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_time_h1_discovery",
+   "fieldtype": "Time",
+   "label": "End Time (H1 discovery)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_time_price_matching_round",
+   "fieldtype": "Time",
+   "label": "Start Time (Price matching Round)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_time_price_matching_round",
+   "fieldtype": "Time",
+   "label": "End Time (Price matching Round)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_time_price_matching_submission",
+   "fieldtype": "Time",
+   "label": "Start Time (Price Matching Submission)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_time_price_matching_submission",
+   "fieldtype": "Time",
+   "label": "End Time (Price Matching Submission)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fetch_from": "state.state_code",
+   "fieldname": "state_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "State Code"
+  },
+  {
+   "fetch_from": "season.season_code",
+   "fieldname": "scheme_code",
+   "fieldtype": "Data",
+   "label": "Season Code",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "price_discover_round_section",
+   "fieldtype": "Section Break",
+   "label": "Price Discovery Round"
+  },
+  {
+   "fieldname": "bidder_details_submission_section",
+   "fieldtype": "Section Break",
+   "label": "Bidder Details Submission"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bidder_details_submission",
+   "fieldtype": "Table",
+   "label": "Bidder Details Submission",
+   "options": "Bidder Details Submission"
+  },
+  {
+   "fetch_from": "branch.abbr",
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Code",
+   "link_filters": "[[\"Company\",\"is_group\",\"=\",0]]"
+  },
+  {
+   "fetch_from": "commodity.item_name",
+   "fieldname": "commodity_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Commodity Name"
+  },
+  {
+   "fieldname": "quantity_for_auction",
+   "fieldtype": "Float",
+   "label": "Quantity for Auction",
+   "precision": "3"
+  },
+  {
+   "fieldname": "section_break_fvls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "e_auction_engines_participated",
+   "fieldtype": "Table MultiSelect",
+   "label": "E Auction Engines Participated",
+   "options": "Add Protals"
+  },
+  {
+   "fieldname": "auction_result_section",
+   "fieldtype": "Section Break",
+   "label": "Auction Result"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "result",
+   "fieldtype": "Table",
+   "label": "Result",
+   "options": "Auction Result"
+  },
+  {
+   "fieldname": "price_matching_round_section",
+   "fieldtype": "Section Break",
+   "label": "Price Matching Round"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "price_matching_round",
+   "fieldtype": "Table",
+   "label": "Price Matching Round",
+   "options": "Price Matching Round"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "auction_status",
+   "fieldtype": "Select",
+   "label": "Auction Status",
+   "options": "\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "price_discovery_round_log",
+   "fieldtype": "Table",
+   "label": "Price Discovery Round Log",
+   "options": "Price Discovery Round Log"
+  },
+  {
+   "fieldname": "auction_schedule_id",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Auction Schedule ID",
+   "options": "Auction Schedule"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Price Discovery",
+   "link_fieldname": "auction_id"
+  },
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "custom_auction_id"
+  }
+ ],
+ "modified": "2026-05-16 14:41:39.162134",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Auction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Purple",
+   "title": "Approved"
+  }
+ ]
+}

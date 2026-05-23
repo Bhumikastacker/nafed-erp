@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 15:24:55.510618",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hgk1",
+  "naming_series",
+  "inquiry_case_id",
+  "officer_name",
+  "role_type",
+  "ref",
+  "column_break_uefr",
+  "appointment_letter_id",
+  "appointment_date",
+  "confirmation_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hgk1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "ref.case_id",
+   "fieldname": "inquiry_case_id",
+   "fieldtype": "Link",
+   "label": "Inquiry Case ID",
+   "options": "Complaint Receipt"
+  },
+  {
+   "fieldname": "officer_name",
+   "fieldtype": "Link",
+   "label": "Officer Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "role_type",
+   "fieldtype": "Select",
+   "label": "Role Type ",
+   "options": "\nInquiry\nPresenting"
+  },
+  {
+   "fieldname": "column_break_uefr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointment_letter_id",
+   "fieldtype": "Data",
+   "label": "Appointment Letter ID"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "confirmation_status",
+   "fieldtype": "Select",
+   "label": "Confirmation Status",
+   "options": "\nPending\nAccepted\nDeclined",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Inquiry Officer Appointment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Ref",
+   "options": "Report Submission by Committee"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Appoint ID",
+   "options": "ID-.YYYY.-.#####"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-13 12:42:26.092684",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Inquiry Officer Appointment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

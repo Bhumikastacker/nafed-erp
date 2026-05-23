@@ -1,0 +1,407 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"1ftJ7ma784\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Lot Receipt\",\"col\":4}},{\"id\":\"8zNHRdVs6q\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Lot Receipt Pending for Payment\",\"col\":4}},{\"id\":\"R_giuluHXm\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Lot Receipt   Payment Completed\",\"col\":4}},{\"id\":\"iZ4JX5FEQH\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}},{\"id\":\"JvqJe_yX78\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement\",\"col\":4}},{\"id\":\"ls7jijbPt2\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"MHlOeql9iU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total  PO Created\",\"col\":4}},{\"id\":\"jao5Y-t4v8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total DO Completed\",\"col\":4}},{\"id\":\"At8gRPP0J4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Payment  Completed for PO\",\"col\":4}},{\"id\":\"H1FItJcIsZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales and Disposal \",\"col\":4}},{\"id\":\"JKeYf1h0RE\",\"type\":\"card\",\"data\":{\"card_name\":\"Fund Requisition\",\"col\":4}},{\"id\":\"n13tdLKyRF\",\"type\":\"card\",\"data\":{\"card_name\":\"Vendor Management\",\"col\":4}}]",
+ "creation": "2026-03-19 11:42:19.233408",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "production",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Maize Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales and Disposal ",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery Note",
+   "link_count": 0,
+   "link_to": "Delivery Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fund Requisition",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fund Requisition",
+   "link_count": 0,
+   "link_to": "Fund Requisition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dispatch Receipt",
+   "link_count": 0,
+   "link_to": "Dispatch Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quality Inspection",
+   "link_count": 0,
+   "link_to": "Quality Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Goods Receipt Notes",
+   "link_count": 0,
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Management",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Registration",
+   "link_count": 0,
+   "link_to": "Vendor Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Grievance",
+   "link_count": 0,
+   "link_to": "Vendor Grievance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Amendment Request",
+   "link_count": 0,
+   "link_to": "Vendor Amendment Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Incidental Charges",
+   "link_count": 0,
+   "link_to": "Incidental Charges",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farmer Registration",
+   "link_count": 0,
+   "link_to": "Farmer Registation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Societies Registration",
+   "link_count": 0,
+   "link_to": "Societies Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Season",
+   "link_count": 0,
+   "link_to": "Season",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Distilleries",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Surveyor",
+   "link_count": 0,
+   "link_to": "Surveyor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Claim Type",
+   "link_count": 0,
+   "link_to": "Expense Claim Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inventory",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Warehouse",
+   "link_count": 0,
+   "link_to": "Warehouse",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Reconciliation",
+   "link_count": 0,
+   "link_to": "Stock Reconciliation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Balance",
+   "link_count": 0,
+   "link_to": "Stock Balance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Ledger",
+   "link_count": 0,
+   "link_to": "Stock Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repost Item Valuation",
+   "link_count": 0,
+   "link_to": "Repost Item Valuation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Transfer",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-23 11:06:53.220041",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Maize Division",
+ "number_cards": [
+  {
+   "label": "Total Lot Receipt",
+   "number_card_name": "Total Lot Receipt"
+  },
+  {
+   "label": "Total Lot Receipt   Payment Completed",
+   "number_card_name": "Total Lot Receipt   Payment Completeed"
+  },
+  {
+   "label": "Total Lot Receipt Pending for Payment",
+   "number_card_name": "Total Lot Receipt Pending for Payment"
+  },
+  {
+   "label": "Total  PO Created",
+   "number_card_name": "Total  PO Crested"
+  },
+  {
+   "label": "Total Payment  Completed for PO",
+   "number_card_name": "Total Payment  Completed for PO"
+  },
+  {
+   "label": "Total DO Completed",
+   "number_card_name": "Total DO Completed"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Procure to pay",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Maize Division Manager"
+  },
+  {
+   "role": "Maize Divison User"
+  }
+ ],
+ "sequence_id": 47.0,
+ "shortcuts": [],
+ "title": "Maize Division"
+}

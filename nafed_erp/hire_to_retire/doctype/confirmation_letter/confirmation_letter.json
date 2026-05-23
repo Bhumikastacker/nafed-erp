@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Letter-{####}",
+ "creation": "2025-11-10 17:15:26.535976",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "salutation",
+  "designation",
+  "column_break_ioai",
+  "date_of_confirmation",
+  "place_of_posting",
+  "minimum_pay_scale",
+  "maximum_pay_scale",
+  "section_break_p2un",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_p2un",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Confirmation Letter",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.custom_designation_code",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.custom_place_of_join",
+   "fieldname": "place_of_posting",
+   "fieldtype": "Data",
+   "label": "Place of posting",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minimum_pay_scale",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Minimum Pay Scale "
+  },
+  {
+   "fieldname": "maximum_pay_scale",
+   "fieldtype": "Int",
+   "label": "Maximum Pay Scale"
+  },
+  {
+   "fetch_from": "employee_id.custom_ppedate",
+   "fieldname": "date_of_confirmation",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Confirmation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ioai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.salutation",
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Salutation",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-26 16:12:20.614589",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Confirmation Letter",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

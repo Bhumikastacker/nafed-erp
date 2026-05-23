@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-20 20:26:07.108357",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_iuak",
+  "beneficiary_type",
+  "beneficiary",
+  "amount",
+  "payment_status",
+  "payment_reference",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_iuak",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "beneficiary_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Beneficiary Type",
+   "options": "Farmer\nSupplier\nNAFED"
+  },
+  {
+   "fieldname": "beneficiary",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Beneficiary"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "Pending\nPaid\nPartial"
+  },
+  {
+   "fieldname": "payment_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment Reference"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-29 12:36:32.146768",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Subsidy Distribution Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

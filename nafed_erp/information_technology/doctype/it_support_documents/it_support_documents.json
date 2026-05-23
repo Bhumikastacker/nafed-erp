@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-02 13:13:43.641893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_cxmu",
+  "column_break_ywrm",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_cxmu",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ywrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachment",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-02 13:17:26.739273",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "IT Support Documents",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

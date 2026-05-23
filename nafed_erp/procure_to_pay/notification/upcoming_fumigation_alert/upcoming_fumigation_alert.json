@@ -1,0 +1,37 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.schedule_status != \"Completed\"",
+ "creation": "2026-05-06 23:34:45.482128",
+ "date_changed": "scheduled_date",
+ "days_in_advance": 3,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Fumigation Schedule",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "logs": [],
+ "message": "Dear User,\n\nFumigation Schedule <b>{{ doc.name }}</b> is due on\n<b>{{ doc.scheduled_date }}</b>.\n\nWarehouse: {{ doc.warehouse }}\n\nTreatment Type: {{ doc.treatment_type }}\n\nPlease take necessary action.\n\nThank You.",
+ "message_type": "HTML",
+ "modified": "2026-05-06 23:34:45.482128",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Upcoming Fumigation Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Z Warehouse - Checker"
+  },
+  {
+   "receiver_by_role": "Branch User"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Upcoming Fumigation / Rodent Control Due"
+}

@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 13:14:46.698413",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_zn70",
+  "investigation_id",
+  "complaint_receipt_id",
+  "column_break_ahge",
+  "reviewer",
+  "section_break_gnsm",
+  "approval_date",
+  "version_number",
+  "column_break_ilkx",
+  "dispatch_date",
+  "section_break_reev",
+  "ref",
+  "column_break_bfdv",
+  "acknowledgment_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zn70",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "investigation_id",
+   "fieldtype": "Link",
+   "label": "Investigation ID ",
+   "options": "Investigation and Fact-Finding Initiation"
+  },
+  {
+   "fieldname": "column_break_ahge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reviewer",
+   "fieldtype": "Link",
+   "label": "Reviewer",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_gnsm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "column_break_ilkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "section_break_reev",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bfdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "acknowledgment_status",
+   "fieldtype": "Select",
+   "label": "Acknowledgment Status ",
+   "options": "\nPending\nIn-progress\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Charge sheet Issuance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ref",
+   "options": "Show Cause Notice Generation"
+  },
+  {
+   "default": "CS-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Charge Sheet ID",
+   "options": "CS-.YYYY.-.####"
+  },
+  {
+   "fetch_from": "investigation_id.complaint_receipt_id",
+   "fieldname": "complaint_receipt_id",
+   "fieldtype": "Link",
+   "label": "Complaint Receipt ID",
+   "options": "Complaint Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Data",
+   "label": "Version Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Report Submission by Committee",
+   "link_fieldname": "ref"
+  }
+ ],
+ "modified": "2026-02-13 12:31:35.148399",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Charge sheet Issuance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

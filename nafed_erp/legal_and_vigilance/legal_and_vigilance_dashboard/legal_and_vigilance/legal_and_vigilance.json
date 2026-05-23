@@ -1,0 +1,20 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  }
+ ],
+ "creation": "2026-02-06 14:43:51.736497",
+ "dashboard_name": "Legal and Vigilance",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-02-23 15:42:55.361564",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal and Vigilance",
+ "owner": "Administrator"
+}

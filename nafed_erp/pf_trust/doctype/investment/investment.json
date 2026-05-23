@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:investment_code",
+ "creation": "2026-02-13 11:10:57.832668",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "investment_code",
+  "investment_category",
+  "investment_yield",
+  "column_break_xdis",
+  "company",
+  "investment_name",
+  "investment_account",
+  "allow_edit_investment_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "investment_code",
+   "fieldtype": "Data",
+   "label": "Investment Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "investment_name",
+   "fieldtype": "Data",
+   "label": "Investment Name"
+  },
+  {
+   "fieldname": "column_break_xdis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "investment_category",
+   "fieldtype": "Link",
+   "label": "Investment Category",
+   "options": "Investment Category"
+  },
+  {
+   "fetch_from": "investment_category.investment_account",
+   "fetch_if_empty": 1,
+   "fieldname": "investment_account",
+   "fieldtype": "Link",
+   "label": "Investment Account",
+   "options": "Account",
+   "read_only_depends_on": "eval:!doc.allow_edit_investment_account"
+  },
+  {
+   "fieldname": "investment_yield",
+   "fieldtype": "Percent",
+   "label": "Investment Yield"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "link_filters": "[[\"Company\",\"custom_is_pf_trust\",\"=\",1]]",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_edit_investment_account",
+   "fieldtype": "Check",
+   "label": "Allow Edit Investment Account"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-13 15:58:57.685333",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "Investment",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

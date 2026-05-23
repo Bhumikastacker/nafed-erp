@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-25 14:20:29.269304",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ozxq",
+  "naming_series",
+  "complainant_name",
+  "complaint_type",
+  "amended_from",
+  "column_break_ydim",
+  "date",
+  "status",
+  "section_break_memc",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ozxq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Complaint Receipt",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "complaint_type",
+   "fieldtype": "Link",
+   "label": "Complaint Type",
+   "options": "Complaint Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "complainant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Complainant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ydim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date "
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Complaint ID",
+   "options": "VIG/.YYYY./.###."
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "options": "\nDraft",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_memc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Investigation and Fact-Finding Initiation",
+   "link_fieldname": "complaint_receipt_id"
+  },
+  {
+   "link_doctype": "Report Submission by Committee",
+   "link_fieldname": "case_id"
+  }
+ ],
+ "modified": "2026-02-18 13:32:26.208070",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Complaint Receipt",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

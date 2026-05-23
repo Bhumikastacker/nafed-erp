@@ -1,0 +1,261 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:ASP-.YYYY.-.#####",
+ "creation": "2026-04-14 11:20:54.667840",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_info_tab",
+  "amended_from",
+  "naming_series",
+  "annual_production_plan_id",
+  "plan_year",
+  "get_government_request",
+  "column_break_s51c",
+  "gov_request_id",
+  "requesting_date",
+  "section_break_my1n",
+  "government_request_item",
+  "breeder_seed_purchase_tab",
+  "generate_breeder",
+  "breeder_seed_plan_item",
+  "foundation_seed_production_tab",
+  "generate_foundation",
+  "foundation_seed_plan_item",
+  "certified_seed_production_tab",
+  "generate_certified",
+  "certified_seed_plan_item",
+  "approve_status_tab",
+  "approved_demand_qty",
+  "target_production_qty",
+  "expected_yield",
+  "required_area",
+  "column_break_qija",
+  "costmt",
+  "total_budget",
+  "funding_source",
+  "system_section",
+  "status",
+  "version",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Annual Seed Production Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "approved_demand_qty",
+   "fieldtype": "Float",
+   "label": "Approved Demand Qty"
+  },
+  {
+   "fieldname": "target_production_qty",
+   "fieldtype": "Float",
+   "label": "Target Production Qty"
+  },
+  {
+   "fieldname": "expected_yield",
+   "fieldtype": "Float",
+   "label": "Expected Yield"
+  },
+  {
+   "fieldname": "required_area",
+   "fieldtype": "Float",
+   "label": "Required Area"
+  },
+  {
+   "fieldname": "costmt",
+   "fieldtype": "Currency",
+   "label": "Cost/MT"
+  },
+  {
+   "fieldname": "total_budget",
+   "fieldtype": "Currency",
+   "label": "Total Budget"
+  },
+  {
+   "fieldname": "funding_source",
+   "fieldtype": "Select",
+   "label": "Funding Source"
+  },
+  {
+   "fieldname": "system_section",
+   "fieldtype": "Tab Break",
+   "label": "System"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nUnder Review\nPending Finance Approval\nApproved\nFinalized"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Version"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "request_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Info"
+  },
+  {
+   "fieldname": "approve_status_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approve Status"
+  },
+  {
+   "fieldname": "column_break_qija",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_my1n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Annual Seed Production Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "government_request_item",
+   "fieldtype": "Table",
+   "label": "Government Request Item",
+   "options": "Government Request Item"
+  },
+  {
+   "fieldname": "column_break_s51c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "breeder_seed_purchase_tab",
+   "fieldtype": "Tab Break",
+   "label": "Breeder Seed Purchase"
+  },
+  {
+   "fieldname": "foundation_seed_production_tab",
+   "fieldtype": "Tab Break",
+   "label": "Foundation Seed Production"
+  },
+  {
+   "fieldname": "certified_seed_production_tab",
+   "fieldtype": "Tab Break",
+   "label": "Certified Seed Production"
+  },
+  {
+   "fieldname": "breeder_seed_plan_item",
+   "fieldtype": "Table",
+   "label": "Breeder Seed Plan Item",
+   "options": "Breeder Seed Plan Item"
+  },
+  {
+   "fieldname": "foundation_seed_plan_item",
+   "fieldtype": "Table",
+   "label": "Foundation Seed Production",
+   "options": "Foundation Seed Plan Item"
+  },
+  {
+   "fieldname": "certified_seed_plan_item",
+   "fieldtype": "Table",
+   "label": "Certified Seed Production",
+   "options": "Certified Seed Plan Item"
+  },
+  {
+   "fieldname": "get_government_request",
+   "fieldtype": "Button",
+   "label": "Get Government Request"
+  },
+  {
+   "fieldname": "generate_breeder",
+   "fieldtype": "Button",
+   "label": "Generate Seed Purchase"
+  },
+  {
+   "fieldname": "generate_foundation",
+   "fieldtype": "Button",
+   "label": "Generate Foundation Seed Production"
+  },
+  {
+   "fieldname": "generate_certified",
+   "fieldtype": "Button",
+   "label": "Generate Certified Seed Production"
+  },
+  {
+   "fieldname": "requesting_date",
+   "fieldtype": "Date",
+   "label": "Requesting Date"
+  },
+  {
+   "fieldname": "plan_year",
+   "fieldtype": "Data",
+   "label": "Plan Year"
+  },
+  {
+   "fieldname": "gov_request_id",
+   "fieldtype": "Data",
+   "label": "Gov Request ID"
+  },
+  {
+   "fieldname": "annual_production_plan_id",
+   "fieldtype": "Data",
+   "label": "Annual Production Plan ID"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "ASP-.YYYY.-.#####"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-22 09:57:53.404308",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Annual Seed Production Plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "annual_production_plan_id"
+}

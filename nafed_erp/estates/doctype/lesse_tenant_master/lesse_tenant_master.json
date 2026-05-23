@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{lessee_name}",
+ "creation": "2025-12-04 06:01:26.090429",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "lessee_name",
+  "registration_office",
+  "appointment_date",
+  "stamp_duty",
+  "registration_number",
+  "registration_date",
+  "registration_status",
+  "column_break_xmrq",
+  "contact_details",
+  "address",
+  "agreement_details",
+  "payment_mode",
+  "registered_agreement"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Lessee/Tenant ID",
+   "no_copy": 1,
+   "options": "EST/LES/.YY./",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "lessee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lessee Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_xmrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Phone",
+   "label": "Contact Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agreement_details",
+   "fieldtype": "Small Text",
+   "label": "Agreement Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_office",
+   "fieldtype": "Data",
+   "label": "Registration Office"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stamp_duty",
+   "fieldtype": "Data",
+   "label": "Stamp Duty"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "registration_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Registration Status",
+   "options": "Select\nInitiated\nCompleted\nPending",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Select\nUPI\nNEFT\nRTGS\nCheque"
+  },
+  {
+   "fieldname": "registered_agreement",
+   "fieldtype": "Attach",
+   "label": "Registered Agreement",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-08 14:03:34.466359",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Lesse_Tenant Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "lessee_name,contact_details",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "naming_series",
+ "track_changes": 1
+}

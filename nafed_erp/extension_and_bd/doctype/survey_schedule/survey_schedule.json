@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SUR-.######",
+ "creation": "2026-02-18 22:14:05.396683",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qc2t",
+  "amended_from",
+  "surveyor",
+  "surveyor_name",
+  "purchase_order",
+  "export_order",
+  "company",
+  "column_break_nidu",
+  "survey_type",
+  "survey_date",
+  "survey_time",
+  "section_break_jtal",
+  "survey_location",
+  "inspection"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qc2t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "export_order",
+   "fieldtype": "Link",
+   "label": "Export Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_nidu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "survey_type",
+   "fieldtype": "Select",
+   "label": "Survey Type",
+   "options": "Pre-dispatch\nQuality\nInspection\nLoading"
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "label": "Survey Date"
+  },
+  {
+   "fieldname": "survey_time",
+   "fieldtype": "Time",
+   "label": "Survey Time"
+  },
+  {
+   "fieldname": "section_break_jtal",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "survey_location",
+   "fieldtype": "Small Text",
+   "label": "Survey Location"
+  },
+  {
+   "fieldname": "surveyor",
+   "fieldtype": "Link",
+   "label": "Surveyor",
+   "options": "Surveyor"
+  },
+  {
+   "fetch_from": "surveyor.surveyor_name",
+   "fieldname": "surveyor_name",
+   "fieldtype": "Data",
+   "label": "Surveyor Name"
+  },
+  {
+   "fieldname": "inspection",
+   "fieldtype": "Table",
+   "label": "Inspection",
+   "options": "Inspection"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-15 11:56:15.065631",
+ "modified_by": "Administrator",
+ "module": "Extension and BD",
+ "name": "Survey Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-02 11:00:35.554181",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wt4a",
+  "naming_series",
+  "indent_reference_no",
+  "jute_miller",
+  "date_of_issue",
+  "column_break_wjqx",
+  "sla_name",
+  "sla_id",
+  "ref",
+  "status",
+  "delivery_location_section",
+  "delivery_location_table",
+  "section_break_xzaa",
+  "total_quantity",
+  "column_break_gtnp",
+  "total_price",
+  "section_break_dsty",
+  "gunny_bag_details_table",
+  "dispatch_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wt4a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Work Order No.",
+   "options": "WO/.YYYY./.####."
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "indent_reference_no",
+   "fieldtype": "Link",
+   "label": "Indent Reference No.",
+   "options": "Indent"
+  },
+  {
+   "fieldname": "section_break_dsty",
+   "fieldtype": "Section Break",
+   "label": "Gunny Bag Details"
+  },
+  {
+   "fieldname": "dispatch_by",
+   "fieldtype": "Date",
+   "label": "Dispatch By"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Jute Work Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "delivery_location_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Location"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "delivery_location_table",
+   "fieldtype": "Table",
+   "label": "Delivery Location Table",
+   "options": "Delivery Location Details"
+  },
+  {
+   "fieldname": "gunny_bag_details_table",
+   "fieldtype": "Table",
+   "label": "Gunny Bag Details Table ",
+   "options": "Gunny Items Child"
+  },
+  {
+   "fieldname": "column_break_wjqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "indent_reference_no.sla_name",
+   "fieldname": "sla_name",
+   "fieldtype": "Data",
+   "label": "SLA Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "indent_reference_no.sla",
+   "fieldname": "sla_id",
+   "fieldtype": "Link",
+   "label": "SLA Id",
+   "options": "SLA Registration"
+  },
+  {
+   "fieldname": "jute_miller",
+   "fieldtype": "Link",
+   "label": "Jute Miller",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_global_search": 1,
+   "label": "Ref",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "section_break_xzaa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gtnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "label": "Status",
+   "options": "\nDraft\nSubmitted\nDispatch Created\nInvoice Created\nInvoice Paid",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "custom_jute_work_order"
+  }
+ ],
+ "modified": "2026-04-15 16:04:51.465227",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Jute Work Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Red",
+   "title": "Draft"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  },
+  {
+   "color": "Blue",
+   "title": "Dispatch Created"
+  },
+  {
+   "color": "Yellow",
+   "title": "Invoice Created"
+  },
+  {
+   "color": "Green",
+   "title": "Invoice Paid"
+  }
+ ]
+}

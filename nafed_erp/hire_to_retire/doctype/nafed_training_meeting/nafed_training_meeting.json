@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "autoname": "format:NTF-{###}",
+ "creation": "2025-12-03 15:31:49.872654",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_title",
+  "organizer",
+  "trainer",
+  "status",
+  "amended_from",
+  "learning_path",
+  "meeting_date",
+  "meeting_end_date",
+  "duration",
+  "start_time",
+  "end_time",
+  "training_objective",
+  "attendees"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_title",
+   "fieldtype": "Text",
+   "label": "Training Title"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Start Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "organizer",
+   "fieldtype": "Link",
+   "label": "Organizer",
+   "options": "User"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer Name",
+   "link_filters": "[[\"Trainer\",\"status\",\"=\",\"Available\"]]",
+   "options": "Trainer"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Nafed Training Attendee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOngoing\nCompleted\nRejected"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Nafed Training Meeting",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "learning_path",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Learning Path",
+   "options": "Learning Path"
+  },
+  {
+   "fieldname": "meeting_end_date",
+   "fieldtype": "Date",
+   "label": "Meeting End Date"
+  },
+  {
+   "fieldname": "training_objective",
+   "fieldtype": "Text",
+   "label": "Training Objective"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-31 14:56:35.186989",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Nafed Training Meeting",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

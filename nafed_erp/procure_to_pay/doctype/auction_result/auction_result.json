@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-13 11:22:05.338658",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "auction_portal",
+  "bidder_id",
+  "bid_price",
+  "awarded_quantity",
+  "criteria",
+  "round",
+  "bid_log_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "auction_portal",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Auction Portal"
+  },
+  {
+   "fieldname": "bidder_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bidder ID"
+  },
+  {
+   "fieldname": "bid_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bid Price"
+  },
+  {
+   "fieldname": "awarded_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Awarded Quantity"
+  },
+  {
+   "fieldname": "criteria",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Criteria"
+  },
+  {
+   "fieldname": "round",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Round "
+  },
+  {
+   "fieldname": "bid_log_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Bid Log Time"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-17 16:02:02.609550",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Auction Result",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

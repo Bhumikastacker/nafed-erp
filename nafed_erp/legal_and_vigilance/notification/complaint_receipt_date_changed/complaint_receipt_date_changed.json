@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-24 15:17:13.129390",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Complaint Receipts",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A new vigilance complaint has been successfully registered in the system.</p>\n\n<p>\nComplaint ID: {{ doc.name }}<br>\nComplainant: {{ doc.complainant_name }}<br>\nComplaint Type: {{ doc.complaint_type }}<br>\nDate of Receipt: {{ doc.date }}<br>\n</p>\n\n<p><b>Remarks:</b></p>\n\n{% if doc.logs %}\n    {% for row in doc.logs %}\n        <p>\n            {{ row.remarks | safe }} <br>\n            <small>\n                By: {{ row.action_taken_by }} on {{ row.action_taken_on }}\n            </small>\n        </p>\n    {% endfor %}\n{% else %}\n    <p>No remarks available.</p>\n{% endif %}\n\n<p>Please review the complaint and take necessary action as per the vigilance procedure.</p>",
+ "message_type": "HTML",
+ "modified": "2026-03-18 12:49:42.189504",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Complaint Receipt Date Changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Complaint Receipt Date Changed for Vigilance Complaint  \u2013 {{ doc.name }}",
+ "value_changed": "date"
+}

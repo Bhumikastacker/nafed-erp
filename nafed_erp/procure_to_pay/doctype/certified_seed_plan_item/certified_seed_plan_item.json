@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-14 13:32:22.058705",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tdfj",
+  "crop",
+  "year",
+  "season",
+  "age_varieties",
+  "varient",
+  "target_physical",
+  "target_financial",
+  "achievement_physical",
+  "achievement_financial"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tdfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "age_varieties",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Age Varieties",
+   "options": "0 to 5 Years\n5 to 10 Years\n>10 Years"
+  },
+  {
+   "fieldname": "varient",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Varient",
+   "options": "V1\nV2\nV3\nV4"
+  },
+  {
+   "fieldname": "target_physical",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Physical"
+  },
+  {
+   "fieldname": "target_financial",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Target Financial"
+  },
+  {
+   "fieldname": "achievement_physical",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Achievement Physical"
+  },
+  {
+   "fieldname": "achievement_financial",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Achievement Financial"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-15 16:08:43.216260",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Certified Seed Plan Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

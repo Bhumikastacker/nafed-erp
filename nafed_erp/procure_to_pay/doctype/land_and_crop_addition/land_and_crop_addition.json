@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-06 11:18:38.628525",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jtrh",
+  "naming_series",
+  "land_addition_date",
+  "amended_from",
+  "survey_no",
+  "khata_no",
+  "farmer_id",
+  "farmer_name",
+  "land_type",
+  "commodity",
+  "column_break_qskr",
+  "district",
+  "state",
+  "taluka",
+  "village",
+  "total_sown_area",
+  "season_id",
+  "total_permissible_procurement_limit",
+  "registered_by_society"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jtrh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Land And Crop addition",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer Id",
+   "options": "Farmer Registation",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "farmer_id.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_qskr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "label": "Taluka"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "land_type",
+   "fieldtype": "Link",
+   "label": "Land type",
+   "options": "Land type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "survey_no",
+   "fieldtype": "Data",
+   "label": "Survey no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "khata_no",
+   "fieldtype": "Data",
+   "label": "khata no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "label": "Commodity",
+   "options": "Item"
+  },
+  {
+   "fieldname": "total_sown_area",
+   "fieldtype": "Data",
+   "label": "Total Sown area"
+  },
+  {
+   "fieldname": "season_id",
+   "fieldtype": "Data",
+   "label": "Season Id"
+  },
+  {
+   "fieldname": "total_permissible_procurement_limit",
+   "fieldtype": "Data",
+   "label": "Total Permissible Procurement Limit"
+  },
+  {
+   "fieldname": "registered_by_society",
+   "fieldtype": "Link",
+   "label": "Registered By Society",
+   "link_filters": "[[\"Supplier\",\"custom_is_sla\",\"=\",1]]",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "land_addition_date",
+   "fieldtype": "Date",
+   "label": "Land Addition Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LCA-.YYYY.-",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-06 11:28:11.557015",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Land And Crop addition",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

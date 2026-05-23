@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-02-05 14:25:53.389389",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Leave Encashment Request",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Approver,<br><br>\n\nA new <b>Leave Encashment Request</b> has been submitted by\n<b>{{ doc.employee_name }}</b>.<br><br>\n\n<b>Status:</b> {{ doc.status }}<br><br>\n<b>Request Date:</b> {{ doc.request_date }}<br><br>\n<b>Leave Days to Encash:</b> {{ doc.leave_days_to_encash }}<br><br>\n\nYou can review the request here:<br>\n<a href=\"{{ frappe.utils.get_url() }}/app/leave-encashment-request/{{ doc.name }}\" target=\"_blank\">\nOpen Request\n</a><br><br>\n\nThank you.\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:29:40.548578",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Leave Encashment Request Employee Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "request_approver_user_id,leave_encashment_request_approvers"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.name}} Leave Encashment Request needs your Approval"
+}

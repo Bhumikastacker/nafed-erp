@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "autoname": "LP.{YYYY}.#####",
+ "creation": "2025-12-09 16:34:47.961885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requisition",
+  "employee_details",
+  "core_courses",
+  "elective_courses",
+  "status",
+  "approval_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "requisition",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Requisition",
+   "options": "Training Requisition",
+   "reqd": 1
+  },
+  {
+   "fieldname": "core_courses",
+   "fieldtype": "Table",
+   "label": "Core Courses",
+   "options": "Learning Path Core Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "elective_courses",
+   "fieldtype": "Table",
+   "label": "Elective Courses",
+   "options": "Learning Path Elective Course"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nApproved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Learning Path",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Table",
+   "label": "Employee Details",
+   "options": "Training Requisition Table"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-14 19:47:07.869820",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Learning Path",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 13:45:24.631559",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Reply Processing from Accused",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Status changed for reply<br><br></p>\n\n<p><b>Memo ID:</b> {{ doc.name }}<br>\n<b>Template ID:</b> {{ doc.template_id }}<br>\n<b>Recipient Name:</b> {{ doc.recipient_name }}<br>\n<b>Issued By:</b> {{ doc.issued_by }}<br>\n<b>Issuance Date:</b> {{ doc.issuance_date }}<br>\n<b>Deadline:</b> {{ doc.deadline }}<br>\n<b>Status:</b> {{ doc.status }}<br></p\n\n<p>The reply document has been attached for examination.<br><br></p>\n\n<p>Please review the submission and update the review status accordingly.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:12:15.094137",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Review status for reply",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Reply Submitted by Accused \u2013 Memo {{ doc.memo_id }}",
+ "value_changed": "review_status"
+}

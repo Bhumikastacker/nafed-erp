@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "autoname": "format:BM-{YYYY}-{####}",
+ "creation": "2026-01-01 13:45:08.936352",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_type",
+  "meeting_date",
+  "meeting_time",
+  "venue",
+  "purpose",
+  "status",
+  "attendance",
+  "amended_from",
+  "linked_agenda",
+  "linked_mom"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Board Members",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nAgenda Submitted\nAgenda Approved\nAttendance Recorded\nMoM Draft\nMoM Approved\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Meeting Type",
+   "options": "Meeting Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Meeting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Meeting Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Venue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Table",
+   "label": "Attendance",
+   "options": "Attendance Meeting"
+  },
+  {
+   "fieldname": "linked_agenda",
+   "fieldtype": "Link",
+   "label": "Linked Agenda ",
+   "no_copy": 1,
+   "options": "Meeting Agenda",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_mom",
+   "fieldtype": "Link",
+   "label": "Linked MOM",
+   "no_copy": 1,
+   "options": "Meeting MoM",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-02 14:54:23.476946",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Meeting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Budget Branch",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

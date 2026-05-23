@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "format:MOM-{YYYY}-{####}",
+ "creation": "2026-01-01 14:05:57.751205",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting",
+  "mom_content",
+  "status",
+  "reason",
+  "attachment",
+  "check_mom_from_div",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Meeting",
+   "options": "Board Meeting",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "mom_content",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Mom Content",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nApproved\nRejected\nReset",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Meeting MoM",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason",
+   "no_copy": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "check_mom_from_div",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "check_mom_from_div"
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Mom From Division",
+   "link_fieldname": "mom_no"
+  }
+ ],
+ "modified": "2026-02-27 13:20:20.801263",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Meeting MoM",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

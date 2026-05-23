@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-24 22:07:38.537790",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "templates_tab",
+  "ebd_customer_email_template",
+  "background_jobs_tab",
+  "e_samridhi_section",
+  "enable_e_samridhi",
+  "e_samridhi_domain",
+  "username_esamridhi",
+  "password_esamrishi",
+  "jwt_token_esamridhi",
+  "sync_mode",
+  "custom_fetch_from_date",
+  "column_break_epiz",
+  "enable_fetch_farmer",
+  "last_farmer_sync",
+  "enable_commoditycrop_fetch",
+  "last_crop_sync",
+  "enable_lot_custom",
+  "last_lot_custom_fetch",
+  "column_break_dbjn",
+  "enable_lot_dispatch",
+  "last_lot_dispatch",
+  "enable_purchase_receiptwarehouse_ledger",
+  "last_purchase_receipt_fetch",
+  "enable_payment_entry",
+  "last_payment_entry_fetch",
+  "e_prabha_section",
+  "enable_e_prabha",
+  "e_auction_section",
+  "enable_e_auction"
+ ],
+ "fields": [
+  {
+   "fieldname": "templates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Email Templates"
+  },
+  {
+   "fieldname": "ebd_customer_email_template",
+   "fieldtype": "Link",
+   "label": "EBD Customer Email Template",
+   "options": "Email Template"
+  },
+  {
+   "fieldname": "background_jobs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Background Jobs"
+  },
+  {
+   "fieldname": "e_samridhi_section",
+   "fieldtype": "Section Break",
+   "label": "E Samridhi"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_fetch_farmer",
+   "fieldtype": "Check",
+   "label": "Enable Fetch Farmer"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_commoditycrop_fetch",
+   "fieldtype": "Check",
+   "label": "Enable Commodity/Crop Fetch"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_lot_custom",
+   "fieldtype": "Check",
+   "label": "Enable LOT Custom"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_lot_dispatch",
+   "fieldtype": "Check",
+   "label": "Enable LOT Dispatch"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_purchase_receiptwarehouse_ledger",
+   "fieldtype": "Check",
+   "label": "Enable Purchase Receipt/Warehouse Ledger"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "enable_payment_entry",
+   "fieldtype": "Check",
+   "label": "Enable Payment Entry"
+  },
+  {
+   "fieldname": "e_prabha_section",
+   "fieldtype": "Section Break",
+   "label": "E Prabha"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_e_prabha",
+   "fieldtype": "Check",
+   "label": "Enable E prabha"
+  },
+  {
+   "fieldname": "e_auction_section",
+   "fieldtype": "Section Break",
+   "label": "E Auction"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_e_auction",
+   "fieldtype": "Check",
+   "label": "Enable E Auction"
+  },
+  {
+   "fieldname": "column_break_epiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dbjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_e_samridhi",
+   "fieldtype": "Check",
+   "label": "Enable E Samridhi"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "username_esamridhi",
+   "fieldtype": "Data",
+   "label": "Username ESamridhi"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "password_esamrishi",
+   "fieldtype": "Password",
+   "label": "Password ESamrishi"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "jwt_token_esamridhi",
+   "fieldtype": "Data",
+   "label": "Jwt Token ESamrishi",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "e_samridhi_domain",
+   "fieldtype": "Data",
+   "label": "E Samridhi Domain"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_farmer_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Farmer Sync"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_crop_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Crop Sync"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_lot_custom_fetch",
+   "fieldtype": "Datetime",
+   "label": "Last LOT Custom Fetch"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_lot_dispatch",
+   "fieldtype": "Datetime",
+   "label": "Last LOT Dispatch"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_purchase_receipt_fetch",
+   "fieldtype": "Datetime",
+   "label": "Last Purchase Receipt Fetch"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "last_payment_entry_fetch",
+   "fieldtype": "Datetime",
+   "label": "Last Payment Entry Fetch"
+  },
+  {
+   "depends_on": "eval:doc.enable_e_samridhi",
+   "fieldname": "sync_mode",
+   "fieldtype": "Select",
+   "label": "Sync Mode",
+   "options": "\nFULL\nINCREMENTAL\nCUSTOM"
+  },
+  {
+   "depends_on": "eval:doc.sync_mode == 'CUSTOM' && doc.enable_e_samridhi",
+   "description": "Used when Need to call data for specific date.",
+   "fieldname": "custom_fetch_from_date",
+   "fieldtype": "Date",
+   "label": "Custom Fetch From Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-11 23:47:39.963171",
+ "modified_by": "Administrator",
+ "module": "Nafed ERP",
+ "name": "Nafed Global Defaults",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

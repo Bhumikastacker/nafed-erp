@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:grade_pay",
+ "creation": "2025-12-10 12:26:34.370654",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "grade_pay",
+  "pay_band"
+ ],
+ "fields": [
+  {
+   "fieldname": "grade_pay",
+   "fieldtype": "Data",
+   "label": "Grade Pay",
+   "unique": 1
+  },
+  {
+   "fieldname": "pay_band",
+   "fieldtype": "Link",
+   "label": "Pay Band",
+   "options": "Pay Scale"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-10 12:26:34.370654",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Grade Pay",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

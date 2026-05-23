@@ -1,0 +1,102 @@
+/* url('/assets/nafed_erp/fonts/ClashGrotesk-Regular.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Bold.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Extralight.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Medium.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Light.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Semibold.otf') format('opentype'),
+url('/assets/nafed_erp/fonts/ClashGrotesk-Variable.ttf') format('truetype'), */
+@font-face {
+    font-family: 'Manrope';
+    src:
+        url('/assets/nafed_erp/fonts/Manrope-Medium.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Semibold.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-VariableFont_wght.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Regular.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Bold.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Extrabold.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Extralight.ttf') format('truetype'),
+        url('/assets/nafed_erp/fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: transparent !important;
+    scrollbar-gutter: auto !important;
+}
+
+body {
+
+    font-family: 'Manrope' !important;
+    background-color: transparent !important;
+}
+
+.sticky-top {
+    margin: 15px 15px 0 15px !important;
+}
+
+body .container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.page-head .container{
+    width: 98% !important;
+    max-width: 100% !important;
+}
+.layout-main .layout-side-section {
+    margin-left: 30px !important;
+}
+
+[data-page-route]:not([data-page-route="Workspaces"]) .layout-main .layout-side-section {
+    margin-left: 15px !important;
+}
+
+.page-container,
+.page-head {
+    background-color: transparent !important;
+}
+
+.page-head {
+    margin-bottom: 0 !important;
+
+}
+
+.layout-main-section.frappe-card {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+[data-page-route=Workspaces] .layout-main .layout-main-section{
+    position: relative;
+    padding: 0 !important;
+    border: none !important;
+}
+
+[data-route="Workspaces/NAFED ERP"] .layout-main .layout-main-section{
+    border: none !important;
+    padding: 0 10% !important;
+}
+
+[data-route="Workspaces/NAFED ERP"] .layout-side-section{
+    display: none;
+    
+}
+.col.layout-main-section-wrapper {
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+}
+
+[data-page-route]:not([data-page-route="Workspaces"]) .col.layout-main-section-wrapper {
+    margin-left: 0 !important;
+}
+
+[data-page-route=Workspaces] .workspace-footer{
+    margin-bottom: 100px !important;
+}
+
+[data-page-route=Workspaces] .layout-main{
+    height: calc(100vh - 100px - var(--page-head-height) - 40px);
+}
+[data-page-route=Workspaces] .layout-main-section-wrapper{
+        padding-top: 0 !important;
+    }

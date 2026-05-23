@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "certification_number",
+ "creation": "2026-03-19 16:36:53.227949",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9ncg",
+  "amended_from",
+  "section_break_wrpq",
+  "seed_details_tab",
+  "naming_series",
+  "certification_application",
+  "lot_id",
+  "sample_id",
+  "crop",
+  "variety",
+  "seed_class",
+  "state",
+  "test_values_tab",
+  "germination_",
+  "purity_",
+  "moisture_",
+  "certification_details_tab",
+  "certification_number",
+  "certified_quantity",
+  "certification_date",
+  "valid_till",
+  "certification_status",
+  "files_and_output_tab",
+  "certificate_file",
+  "barcode_no",
+  "approval_tab",
+  "issued_by",
+  "approved_by",
+  "approved_on",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9ncg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seed Certification",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "seed_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Seed Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Certification ID"
+  },
+  {
+   "fieldname": "certification_application",
+   "fieldtype": "Link",
+   "label": "Certification Application",
+   "options": "Seed Certification Application"
+  },
+  {
+   "fieldname": "lot_id",
+   "fieldtype": "Link",
+   "label": "Lot ID",
+   "options": "Lot"
+  },
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Link",
+   "label": "Variety",
+   "options": "Variety"
+  },
+  {
+   "fieldname": "seed_class",
+   "fieldtype": "Select",
+   "label": "Seed Class",
+   "options": "\nGrade I\nGrade 2"
+  },
+  {
+   "fieldname": "test_values_tab",
+   "fieldtype": "Tab Break",
+   "label": "Test Values"
+  },
+  {
+   "fieldname": "germination_",
+   "fieldtype": "Float",
+   "label": "Germination %"
+  },
+  {
+   "fieldname": "purity_",
+   "fieldtype": "Float",
+   "label": "Purity %"
+  },
+  {
+   "fieldname": "moisture_",
+   "fieldtype": "Float",
+   "label": "Moisture %"
+  },
+  {
+   "fieldname": "certification_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Certification Details"
+  },
+  {
+   "fieldname": "certification_number",
+   "fieldtype": "Data",
+   "label": "Certification Number"
+  },
+  {
+   "fieldname": "certified_quantity",
+   "fieldtype": "Float",
+   "label": "Certified Quantity"
+  },
+  {
+   "fieldname": "certification_date",
+   "fieldtype": "Date",
+   "label": "Certification Date"
+  },
+  {
+   "fieldname": "valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "certification_status",
+   "fieldtype": "Select",
+   "label": "Certification Status",
+   "options": "Draft\nUnder Review\nApproved\nQA Verified"
+  },
+  {
+   "fieldname": "files_and_output_tab",
+   "fieldtype": "Tab Break",
+   "label": "Files And Output"
+  },
+  {
+   "fieldname": "certificate_file",
+   "fieldtype": "Attach",
+   "label": "Certificate File"
+  },
+  {
+   "fieldname": "barcode_no",
+   "fieldtype": "Data",
+   "label": "Barcode No"
+  },
+  {
+   "fieldname": "approval_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Link",
+   "label": "Issued By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Date",
+   "label": "Approved On"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "section_break_wrpq",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-10 11:46:23.513509",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Seed Certification",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "certification_number"
+}

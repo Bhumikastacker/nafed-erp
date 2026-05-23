@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{party_name}",
+ "creation": "2026-01-14 10:59:22.277318",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "party_name",
+  "parent_case",
+  "child_case",
+  "link_type",
+  "other_link_type",
+  "column_break_uwvx",
+  "status",
+  "linked_by",
+  "linked_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_case",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent Case",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "child_case",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Child Case",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link_type",
+   "fieldtype": "Select",
+   "label": "Link Type",
+   "options": "Appeal\nRelated\nExecution\nOther"
+  },
+  {
+   "fieldname": "column_break_uwvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "linked_by",
+   "fieldtype": "Link",
+   "label": "Linked By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_date",
+   "fieldtype": "Date",
+   "label": "Linked Date",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.link_type==\"Other\"",
+   "fieldname": "other_link_type",
+   "fieldtype": "Data",
+   "label": "Specify Other"
+  },
+  {
+   "fetch_from": "parent_case.party_name",
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name",
+   "read_only": 1,
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-19 11:08:02.742821",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Link",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

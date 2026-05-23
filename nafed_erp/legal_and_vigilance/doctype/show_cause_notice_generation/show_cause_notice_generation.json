@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 12:48:46.504457",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rkzd",
+  "naming_series",
+  "linked_memoreply_id",
+  "complaint_receipt_id",
+  "approval_timestamp",
+  "approval_workflow_level",
+  "ref",
+  "column_break_djrf",
+  "drafting_officer",
+  "issuance_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rkzd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "SCN-.YYYY.-.#####",
+   "depends_on": "                                                                                                                                                                                                                            ",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Notice ID",
+   "options": "SCN-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "linked_memoreply_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Memo/Reply ID",
+   "options": "Memo Issuance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Approval Timestamp"
+  },
+  {
+   "fieldname": "approval_workflow_level",
+   "fieldtype": "Select",
+   "label": "Approval Workflow Level ",
+   "options": "\nL1\nL2"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Ref",
+   "options": "Reply Processing from Accused"
+  },
+  {
+   "fieldname": "column_break_djrf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "drafting_officer",
+   "fieldtype": "Link",
+   "label": "Drafting Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "issuance_date",
+   "fieldtype": "Date",
+   "label": "Issuance Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nApproval\nRejection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Show Cause Notice Generation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "linked_memoreply_id.complaint_receipt_id",
+   "fieldname": "complaint_receipt_id",
+   "fieldtype": "Link",
+   "label": "Complaint Receipt ID",
+   "options": "Complaint Receipt",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Investigation and Fact-Finding Initiation",
+   "link_fieldname": "ref"
+  }
+ ],
+ "modified": "2026-02-13 12:36:32.580750",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Show Cause Notice Generation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

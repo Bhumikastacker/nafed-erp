@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:probation_review_template_title",
+ "creation": "2025-12-10 11:01:42.675605",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "probation_review_template_title",
+  "description_section",
+  "small_text_ccsc",
+  "section_break_mdhw",
+  "probation_review"
+ ],
+ "fields": [
+  {
+   "fieldname": "probation_review_template_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Probation Review Template Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "small_text_ccsc",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_mdhw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "probation_review",
+   "fieldtype": "Table",
+   "label": "Probation Review",
+   "options": "Probation Checklist Template Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-10 11:01:42.675605",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Probation Checklist Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

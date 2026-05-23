@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:GAP-.YYYY.-.#####",
+ "creation": "2026-04-20 17:09:43.928194",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gmd3",
+  "amended_from",
+  "basic_tab",
+  "naming_series",
+  "plan_year",
+  "column_break_5kjg",
+  "approval_date",
+  "status",
+  "annual_plan",
+  "financials_section",
+  "approved_quantity",
+  "budget_allocation",
+  "government_action_plan_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gmd3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Government Action Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "GAP-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "plan_year",
+   "fieldtype": "Data",
+   "label": "Plan Year"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nUnder Review\nApproved\nRejected"
+  },
+  {
+   "fieldname": "annual_plan",
+   "fieldtype": "Link",
+   "label": "Annual Plan",
+   "options": "Annual Seed Production Plan"
+  },
+  {
+   "fieldname": "financials_section",
+   "fieldtype": "Section Break",
+   "label": "Financials"
+  },
+  {
+   "fieldname": "approved_quantity",
+   "fieldtype": "Float",
+   "label": "Approved Quantity"
+  },
+  {
+   "fieldname": "budget_allocation",
+   "fieldtype": "Currency",
+   "label": "Budget Allocation"
+  },
+  {
+   "fieldname": "government_action_plan_item",
+   "fieldtype": "Table",
+   "label": "Government Action Plan Item",
+   "options": "Government Action Plan Item"
+  },
+  {
+   "fieldname": "column_break_5kjg",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-22 10:56:47.194352",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Government Action Plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

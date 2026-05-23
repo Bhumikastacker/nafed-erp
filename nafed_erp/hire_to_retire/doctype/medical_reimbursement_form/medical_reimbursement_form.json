@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MRF-{####}",
+ "creation": "2025-11-08 12:13:28.439341",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "name_of_the_claimant",
+  "designation_of_the_claimant",
+  "relationship_with_the_claimant",
+  "name_of_the_hospital",
+  "column_break_jcgs",
+  "name_of_the_patient",
+  "basic_pay_at_the_time_of_hospitalisation",
+  "date_of_admission",
+  "date_of_discharge",
+  "section_break_abpg",
+  "medical_reimbursement_details",
+  "section_break_nypf",
+  "total",
+  "column_break_jnhs",
+  "total_bill_amount",
+  "section_break_wtco",
+  "less_advances",
+  "signature_of_claimant",
+  "note",
+  "declaration",
+  "column_break_afso",
+  "net_amount",
+  "bank_account_no",
+  "bank_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_patient",
+   "fieldtype": "Data",
+   "label": "Name Of The Dependent",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "relationship_with_the_claimant",
+   "fieldtype": "Link",
+   "label": "Relationship With The Employee",
+   "options": "Claimant Relationship",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "basic_pay_at_the_time_of_hospitalisation",
+   "fieldtype": "Currency",
+   "label": "Basic Pay At The Time Of Hospitalization",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "name_of_the_hospital",
+   "fieldtype": "Link",
+   "label": "Name Of The Hospital",
+   "options": "Hospital Name",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "date_of_admission",
+   "fieldtype": "Date",
+   "label": "Date Of Admission",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "date_of_discharge",
+   "fieldtype": "Date",
+   "label": "Date Of Discharge",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "section_break_wtco",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "less_advances",
+   "fieldtype": "Currency",
+   "label": "Less Advances",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "signature_of_claimant",
+   "fieldtype": "Signature",
+   "label": "Signature Of Employee ",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "HTML",
+   "label": "Note",
+   "options": "<p>NOTE : All the columns excepting Col. No.5 &amp; 6 are to be filled in by the claimant</p>",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "column_break_jcgs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_afso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_abpg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_reimbursement_details",
+   "fieldtype": "Table",
+   "label": "Medical Reimbursement Details",
+   "options": "Medical Reimbursement Details"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total Admissible Amount",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fieldname": "section_break_nypf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jnhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_bill_amount",
+   "fieldtype": "Float",
+   "label": "Total Bill Amount",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fetch_from": "employee_code.designation",
+   "fieldname": "designation_of_the_claimant",
+   "fieldtype": "Data",
+   "label": "Designation Of The Employee"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "name_of_the_claimant",
+   "fieldtype": "Data",
+   "label": "Name Of The Employee"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Account No.",
+   "read_only_depends_on": "eval:doc.docstatus == 0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bank Name",
+   "options": "Bank",
+   "read_only_depends_on": "eval:doc.docstatus == 0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "declaration",
+   "fieldtype": "HTML",
+   "label": "Declaration",
+   "options": "<p>Please enclosed dependents declaration duly verified by RM/BM from Service book</p>",
+   "read_only_depends_on": "eval:doc.docstatus == 0"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-16 14:45:22.576398",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Medical Reimbursement Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

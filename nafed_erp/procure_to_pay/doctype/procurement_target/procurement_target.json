@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-04-21 14:53:23.939315",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_98pm",
+  "naming_series",
+  "state",
+  "kms_year",
+  "season",
+  "scheme",
+  "column_break_gdmx",
+  "commodity_name",
+  "no_of_procurement_centers",
+  "procurement_start_date",
+  "procurement_for",
+  "column_break_hack",
+  "amended_from",
+  "total_allocated_qty",
+  "msp_pmt",
+  "supporting_document",
+  "total_row",
+  "section_break_essk",
+  "commodity_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_98pm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Procurement Target",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Target ID",
+   "options": "TAR/.YYYY./.####."
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Season",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_procurement_centers",
+   "fieldtype": "Int",
+   "label": "Total No. of Procurement Centers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gdmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procurement_start_date",
+   "fieldtype": "Date",
+   "label": "Procurement Start Date"
+  },
+  {
+   "fieldname": "supporting_document",
+   "fieldtype": "Attach",
+   "label": "Supporting Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_essk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "commodity_details",
+   "fieldtype": "Table",
+   "label": "District wise Procurement Details",
+   "options": "Procurement Item Child"
+  },
+  {
+   "fieldname": "kms_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "KMS Year",
+   "options": "KMS Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Scheme",
+   "options": "Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commodity_name",
+   "fieldtype": "Link",
+   "label": "Commodity Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_hack",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_allocated_qty",
+   "fieldtype": "Float",
+   "label": "Total Allocated Qty (MT)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msp_pmt",
+   "fieldtype": "Currency",
+   "label": "MSP (Per MT)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "procurement_for",
+   "fieldtype": "Select",
+   "label": "Procurement For",
+   "options": "\nState Govt\nFCI\nOthers"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_row",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Total Row"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-20 11:06:38.036649",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Procurement Target",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

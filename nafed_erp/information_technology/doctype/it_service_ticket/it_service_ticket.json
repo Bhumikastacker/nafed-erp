@@ -1,0 +1,249 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-20 15:05:43.606622",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "it_support_ticket_section",
+  "naming_series",
+  "issue_title",
+  "ticket_type",
+  "priority",
+  "raised_by",
+  "department",
+  "column_break_tdwc",
+  "category",
+  "sub_category",
+  "description",
+  "branchlocation",
+  "contact_details",
+  "supporting_attachments_section",
+  "attachments",
+  "section_break_szpv",
+  "assigned_to",
+  "assigned_group",
+  "resolution_notes",
+  "root_cause",
+  "column_break_tarb",
+  "sla_target",
+  "created_on",
+  "last_updated_on",
+  "feedback_rating",
+  "feedback_comments",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "it_support_ticket_section",
+   "fieldtype": "Section Break",
+   "label": "IT Support Ticket"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Ticket ID",
+   "options": "IT/ST/.YY./",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "raised_by",
+   "fieldtype": "Link",
+   "label": "Raised By",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raised_by.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raised_by.branch",
+   "fieldname": "branchlocation",
+   "fieldtype": "Data",
+   "label": "Branch/Location",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raised_by.cell_number",
+   "fieldname": "contact_details",
+   "fieldtype": "Data",
+   "label": "Contact Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tdwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_title",
+   "fieldtype": "Data",
+   "label": "Issue Title"
+  },
+  {
+   "fieldname": "ticket_type",
+   "fieldtype": "Select",
+   "label": "Ticket Type",
+   "options": "Select\nIncident\nService Request\nAccess Request\nChange Request"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Select\nHardware\nSoftware\nNetwork\nAccess\nOthers"
+  },
+  {
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "label": "Sub Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "section_break_szpv",
+   "fieldtype": "Section Break",
+   "label": "Action Against Ticket"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Support Settings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_group",
+   "fieldtype": "Link",
+   "label": "Assigned Group",
+   "options": "Support Settings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolution_notes",
+   "fieldtype": "Small Text",
+   "label": "Resolution Notes"
+  },
+  {
+   "fieldname": "column_break_tarb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sla_target",
+   "fieldtype": "Datetime",
+   "label": "SLA Target"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_updated_on",
+   "fieldtype": "Datetime",
+   "label": "Last Updated On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "root_cause",
+   "fieldtype": "Small Text",
+   "label": "Root Cause"
+  },
+  {
+   "fieldname": "feedback_rating",
+   "fieldtype": "Int",
+   "label": "Feedback Rating",
+   "length": 5,
+   "placeholder": "Rate between 1-5",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "feedback_comments",
+   "fieldtype": "Small Text",
+   "label": "Feedback Comments"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nNew\nOpen\nPending\nResolved\nClosed"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "supporting_attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Supporting Attachments"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "IT Support Documents",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-02 13:42:20.237964",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "IT Service Ticket",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Audit Team",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

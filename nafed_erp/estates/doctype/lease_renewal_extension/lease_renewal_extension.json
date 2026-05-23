@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 09:55:33.100222",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lease_assignment_id",
+  "property_id",
+  "tenantid",
+  "current_lease_end_date",
+  "proposed_renewal_duration",
+  "revised_rent",
+  "updated_lease_end_date",
+  "escalation_rate",
+  "column_break_rihi",
+  "revised_terms",
+  "renewal_reason",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "lease_assignment_id",
+   "fieldtype": "Link",
+   "label": "Lease Assignment ID",
+   "options": "Assign Lessee to Property"
+  },
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property ID",
+   "options": "Property"
+  },
+  {
+   "fieldname": "tenantid",
+   "fieldtype": "Link",
+   "label": "TenantID",
+   "options": "Lesse_Tenant Master"
+  },
+  {
+   "fieldname": "current_lease_end_date",
+   "fieldtype": "Date",
+   "label": "Current Lease End Date"
+  },
+  {
+   "fieldname": "proposed_renewal_duration",
+   "fieldtype": "Float",
+   "label": "Proposed Renewal Duration"
+  },
+  {
+   "fieldname": "revised_rent",
+   "fieldtype": "Currency",
+   "label": "Revised Rent"
+  },
+  {
+   "fieldname": "updated_lease_end_date",
+   "fieldtype": "Date",
+   "label": "Updated Lease End Date"
+  },
+  {
+   "fieldname": "escalation_rate",
+   "fieldtype": "Float",
+   "label": "Escalation Rate"
+  },
+  {
+   "fieldname": "column_break_rihi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revised_terms",
+   "fieldtype": "Small Text",
+   "label": "Revised Terms"
+  },
+  {
+   "fieldname": "renewal_reason",
+   "fieldtype": "Small Text",
+   "label": "Renewal Reason"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Lease Renewal_Extension Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:07:58.238430",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Lease Renewal_Extension",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

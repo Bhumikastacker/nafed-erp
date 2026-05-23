@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-01 14:53:39.049963",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jjlp",
+  "naming_series",
+  "state",
+  "sla",
+  "sla_name",
+  "upload_document",
+  "scheme",
+  "column_break_yneh",
+  "request_date",
+  "request_no",
+  "kms_year",
+  "commodity",
+  "gunny_bag_details_section",
+  "bag_table",
+  "delivery_location_details_section",
+  "location_table",
+  "amended_from",
+  "section_break_sdst",
+  "total_quantity",
+  "column_break_rcos",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jjlp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "sla",
+   "fieldtype": "Link",
+   "label": "SLA",
+   "options": "SLA Registration"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request Document No."
+  },
+  {
+   "fieldname": "upload_document",
+   "fieldtype": "Attach",
+   "label": "Upload Document"
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Table",
+   "label": "Commodity",
+   "options": "Commodity Items"
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Scheme"
+  },
+  {
+   "fieldname": "kms_year",
+   "fieldtype": "Link",
+   "label": "KMS Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "gunny_bag_details_section",
+   "fieldtype": "Section Break",
+   "label": "Gunny Bag Details"
+  },
+  {
+   "fieldname": "delivery_location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Location Details"
+  },
+  {
+   "fieldname": "column_break_yneh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Indent No.",
+   "options": "JI/.YYYY./.####."
+  },
+  {
+   "fieldname": "bag_table",
+   "fieldtype": "Table",
+   "label": "Bag Table",
+   "options": "Gunny Items Child"
+  },
+  {
+   "fieldname": "location_table",
+   "fieldtype": "Table",
+   "label": "Location Table",
+   "options": "Delivery Location Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Indent",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "sla.society_name",
+   "fieldname": "sla_name",
+   "fieldtype": "Data",
+   "label": "SLA Name"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "section_break_sdst",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rcos",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-16 11:36:50.688249",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Indent",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

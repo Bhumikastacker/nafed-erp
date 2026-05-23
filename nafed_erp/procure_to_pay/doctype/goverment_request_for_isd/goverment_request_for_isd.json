@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-18 12:58:51.297316",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_saxy",
+  "amended_from",
+  "government_id",
+  "requesting_agency",
+  "requesting_date",
+  "column_break_sbdk",
+  "requires_by",
+  "request_letter",
+  "section_break_3qsc",
+  "item_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_saxy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Goverment Request For ISD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "government_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Govt. Request Letter No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requesting_agency",
+   "fieldtype": "Link",
+   "label": "Requesting Agency",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "requesting_date",
+   "fieldtype": "Date",
+   "label": "Requesting Date"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Table",
+   "label": "Item Details",
+   "options": "Item Details"
+  },
+  {
+   "fieldname": "requires_by",
+   "fieldtype": "Date",
+   "label": "Required By"
+  },
+  {
+   "fieldname": "request_letter",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Upload Request Letter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sbdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3qsc",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-22 11:57:51.344344",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Goverment Request For ISD",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{branch_code}-{commodity_name}-{DD}{MM}{YY}-{####}",
+ "creation": "2026-04-29 20:26:01.550100",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "scheme",
+  "season",
+  "start_time_price_discovery_round",
+  "excluted_portals",
+  "total_warehouse_added",
+  "total_warehouse_need_to_be_submitted",
+  "column_break_ddwb",
+  "commodity",
+  "commodity_name",
+  "state",
+  "branch",
+  "branch_code",
+  "reserve_price",
+  "total_auction_quantity_added",
+  "total_auction_quantity_need_to_be_submitted",
+  "section_break_jlzs",
+  "auction_details",
+  "auction_details_view"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Auction Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Season",
+   "options": "Season",
+   "read_only_depends_on": "eval:doc.docstatus==0"
+  },
+  {
+   "fieldname": "start_time_price_discovery_round",
+   "fieldtype": "Time",
+   "label": "Start Time (Price Discovery Round)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "excluted_portals",
+   "fieldtype": "Table MultiSelect",
+   "label": "Excluted Portals",
+   "options": "Add Protals"
+  },
+  {
+   "fieldname": "total_warehouse_added",
+   "fieldtype": "Int",
+   "label": "Total Warehouse Added",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_warehouse_need_to_be_submitted",
+   "fieldtype": "Int",
+   "label": "Total Warehouse Need to be Submitted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ddwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commodity",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "branch.custom_state_",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State ",
+   "options": "State"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Company"
+  },
+  {
+   "fieldname": "reserve_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reserve Price",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_auction_quantity_added",
+   "fieldtype": "Float",
+   "label": "Total Auction Quantity Added ",
+   "precision": "3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_auction_quantity_need_to_be_submitted",
+   "fieldtype": "Float",
+   "label": "Total Auction Quantity Need to be Submitted ",
+   "precision": "3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_jlzs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "auction_details",
+   "fieldtype": "Table",
+   "label": "Auction Details",
+   "options": "Auction Child table"
+  },
+  {
+   "fetch_from": "branch.abbr",
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Code"
+  },
+  {
+   "fetch_from": "commodity.item_name",
+   "fieldname": "commodity_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Commodity Name"
+  },
+  {
+   "fieldname": "auction_details_view",
+   "fieldtype": "Table",
+   "label": "Auction Details View ",
+   "options": "Auction Child table",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Auction",
+   "link_fieldname": "auction_schedule_id"
+  }
+ ],
+ "modified": "2026-05-15 12:52:04.548845",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Auction Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

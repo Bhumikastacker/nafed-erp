@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 14:37:44.146773",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rntj",
+  "complaint_receipt_id",
+  "naming_series",
+  "committee_id",
+  "members",
+  "status",
+  "section_break_qfej",
+  "assigned_by",
+  "directive_issue_date",
+  "ref",
+  "column_break_qbkz",
+  "deadline",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rntj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "committee_id",
+   "fieldtype": "Data",
+   "label": "Committee ID"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status ",
+   "options": "\nInitiated\nOngoing\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Link",
+   "label": "Assigned By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_qfej",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "directive_issue_date",
+   "fieldtype": "Date",
+   "label": "Directive Issue Date"
+  },
+  {
+   "fieldname": "column_break_qbkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investigation and Fact-Finding Initiation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Members"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ref",
+   "options": "Show Cause Notice Generation"
+  },
+  {
+   "default": "IN-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Investigation ID",
+   "options": "IN-.YYYY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "complaint_receipt_id",
+   "fieldtype": "Link",
+   "label": "Complaint Receipt ID",
+   "options": "Complaint Receipt"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Charge sheet Issuance",
+   "link_fieldname": "investigation_id"
+  }
+ ],
+ "modified": "2026-02-18 13:56:38.195261",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Investigation and Fact-Finding Initiation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

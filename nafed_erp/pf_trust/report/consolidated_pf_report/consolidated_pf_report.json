@@ -1,0 +1,79 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-02-06 13:17:24.515407",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2026-02-06 13:17:24.515407",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "Consolidated PF Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Salary Slip",
+ "report_name": "Consolidated PF Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Z Salary Slip - Maker"
+  },
+  {
+   "role": "Z Salary Slip - Checker"
+  },
+  {
+   "role": "Z Salary Slip - Manager"
+  },
+  {
+   "role": "Z Salary Slip - View"
+  },
+  {
+   "role": "Z HR - Maker"
+  },
+  {
+   "role": "HR - Checker"
+  },
+  {
+   "role": "Z HR - Manager"
+  },
+  {
+   "role": "Z HR - View"
+  },
+  {
+   "role": "Z Employee - Checker"
+  },
+  {
+   "role": "Z Payroll Entry - Maker"
+  },
+  {
+   "role": "Z Payroll Entry - Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  }
+ ],
+ "timeout": 0
+}

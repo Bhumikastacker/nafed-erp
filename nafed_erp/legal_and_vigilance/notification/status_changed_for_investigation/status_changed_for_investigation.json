@@ -1,0 +1,39 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 15:20:19.392713",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Investigation and Fact-Finding Initiation",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>An investigation and fact-finding status has been changed as per directive.<br><br></p>\n<p><b>Committee ID:</b> {{ doc.committee_id }}<br>\n<b>Status:</b> {{ doc.status }}<br>\n<b>Assigned By:</b> {{ doc.assigned_by }}<br>\n<b>Directive Issue Date:</b> {{ doc.directive_issue_date }}<br>\n<b>Deadline:</b> {{ doc.deadline }}<br></p\n\n<p>The committee members are required to commence the investigation and submit findings within the stipulated timeline.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:14:43.110567",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Status changed for investigation",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "member,members"
+  },
+  {
+   "receiver_by_document_field": "assigned_by"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Status changed for Investigation  \u2013 Committee {{ doc.committee_id }}",
+ "value_changed": "status"
+}

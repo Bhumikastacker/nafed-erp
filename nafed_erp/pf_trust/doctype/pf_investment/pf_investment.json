@@ -1,0 +1,289 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PI-{#####}",
+ "creation": "2026-01-30 14:05:20.649335",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rxgc",
+  "party_name",
+  "investment",
+  "interest_paid",
+  "invoice_number",
+  "invoice_date",
+  "payment_entry_created",
+  "nature_of_transaction",
+  "issuer_of_security",
+  "name_of_security",
+  "isin_no",
+  "quantity",
+  "maturity_date",
+  "coupon_rate",
+  "rate",
+  "face_value",
+  "column_break_tszz",
+  "company",
+  "investment_category",
+  "investment_yield",
+  "maturity_amount",
+  "total_amount",
+  "stamp_duty_paid",
+  "amended_from",
+  "last_ip_date",
+  "deal_date",
+  "settlement_date",
+  "purchase_consideration",
+  "mode_of_delivery",
+  "maturity_details_section",
+  "interest_mode",
+  "maturity_details_table",
+  "interest_frequency",
+  "day_base_calculation",
+  "first_interest_date",
+  "table_hrug"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rxgc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "maturity_amount",
+   "fieldtype": "Currency",
+   "label": "Maturity Amount"
+  },
+  {
+   "fieldname": "column_break_tszz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PF Investment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "maturity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Maturity Frequency"
+  },
+  {
+   "fieldname": "maturity_details_table",
+   "fieldtype": "Table",
+   "options": "Maturity Details"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "label": "Party Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "investment",
+   "fieldtype": "Link",
+   "label": "Investment",
+   "options": "Investment"
+  },
+  {
+   "fetch_from": "investment.investment_category",
+   "fetch_if_empty": 1,
+   "fieldname": "investment_category",
+   "fieldtype": "Link",
+   "label": "Investment Category",
+   "options": "Investment Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "face_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Face Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stamp_duty_paid",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty Paid"
+  },
+  {
+   "fetch_from": "investment.investment_yield",
+   "fetch_if_empty": 1,
+   "fieldname": "investment_yield",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Investment Yield",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "link_filters": "[[\"Company\",\"custom_is_pf_trust\",\"=\",1]]",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interest_paid",
+   "fieldtype": "Currency",
+   "label": "Interest Paid"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_entry_created",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Payment Entry Created"
+  },
+  {
+   "fieldname": "nature_of_transaction",
+   "fieldtype": "Data",
+   "label": "Nature of Transaction"
+  },
+  {
+   "fieldname": "issuer_of_security",
+   "fieldtype": "Data",
+   "label": "Issuer of Security"
+  },
+  {
+   "fieldname": "name_of_security",
+   "fieldtype": "Data",
+   "label": "Name of Security"
+  },
+  {
+   "fieldname": "isin_no",
+   "fieldtype": "Data",
+   "label": "ISIN No."
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "maturity_date",
+   "fieldtype": "Date",
+   "label": "Maturity Date"
+  },
+  {
+   "fieldname": "coupon_rate",
+   "fieldtype": "Percent",
+   "label": "Coupon Rate"
+  },
+  {
+   "fieldname": "last_ip_date",
+   "fieldtype": "Date",
+   "label": "Last IP Date"
+  },
+  {
+   "fieldname": "deal_date",
+   "fieldtype": "Date",
+   "label": "Deal Date"
+  },
+  {
+   "fieldname": "settlement_date",
+   "fieldtype": "Date",
+   "label": "Settlement Date"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Percent",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "purchase_consideration",
+   "fieldtype": "Currency",
+   "label": "Purchase Consideration"
+  },
+  {
+   "fieldname": "mode_of_delivery",
+   "fieldtype": "Small Text",
+   "label": "Mode of Delivery"
+  },
+  {
+   "fieldname": "interest_mode",
+   "fieldtype": "Select",
+   "label": "Investment Maturity Frequency",
+   "options": "\nYearly\nHalf Yearly\nQuarterly\nMonthly"
+  },
+  {
+   "fieldname": "interest_frequency",
+   "fieldtype": "Select",
+   "label": "Interest Frequency",
+   "options": "\nYearly\nHalf Yearly\nQuarterly\nMonthly",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_hrug",
+   "fieldtype": "Table",
+   "options": "Interest Frequency"
+  },
+  {
+   "fetch_from": "investment_category.day_base_calculation",
+   "fieldname": "day_base_calculation",
+   "fieldtype": "Data",
+   "label": "Day Base Calculation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_interest_date",
+   "fieldtype": "Date",
+   "label": "First Interest Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Journal Entry",
+   "link_fieldname": "custom_pf_investment"
+  }
+ ],
+ "modified": "2026-03-17 12:36:32.997324",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "PF Investment",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

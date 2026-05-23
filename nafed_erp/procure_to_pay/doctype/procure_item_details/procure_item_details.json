@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-24 11:49:59.982464",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scheme",
+  "commodity_name",
+  "crop_year",
+  "season",
+  "commodity_uom",
+  "quantity",
+  "bag",
+  "bag_size",
+  "bag_uom",
+  "required_bag_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Scheme",
+   "options": "Scheme"
+  },
+  {
+   "fieldname": "commodity_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Commodity Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Commodity Qty"
+  },
+  {
+   "fieldname": "bag",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bag ",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "bag.weight_per_unit",
+   "fieldname": "bag_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag Size"
+  },
+  {
+   "fieldname": "required_bag_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Required Bag Qty"
+  },
+  {
+   "fetch_from": "commodity_name.stock_uom",
+   "fieldname": "commodity_uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Commodity UOM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "bag.weight_uom",
+   "fieldname": "bag_uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "crop_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Season"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-27 17:42:41.406324",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Procure Item Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

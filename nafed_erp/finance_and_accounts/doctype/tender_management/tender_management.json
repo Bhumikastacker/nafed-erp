@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-03-10 12:20:32.425212",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5k5l",
+  "naming_series",
+  "title",
+  "submission_deadline",
+  "tender_amount",
+  "attachment",
+  "status",
+  "amended_from",
+  "column_break_yzjp",
+  "feedback_status",
+  "description",
+  "section_break_whqq",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5k5l",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description Of Tendor"
+  },
+  {
+   "fieldname": "submission_deadline",
+   "fieldtype": "Date",
+   "label": "Submission Deadline"
+  },
+  {
+   "fieldname": "tender_amount",
+   "fieldtype": "Currency",
+   "label": "Tender Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed\nAwarded"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tender Management",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "feedback_status",
+   "fieldtype": "Select",
+   "label": "Feedback Status",
+   "options": "\nAccept\nReject"
+  },
+  {
+   "fieldname": "column_break_yzjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_whqq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "mandatory_depends_on": "eval:doc.feedback_status == \"Accept\" || doc.feedback_status == \"Reject\""
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TEN-MAN-",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Auditor Empanelment",
+   "link_fieldname": "ref"
+  }
+ ],
+ "modified": "2026-05-19 15:16:57.694502",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Tender Management",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-07 12:34:43.634928",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "source_company",
+  "salary_slip",
+  "employee_pf",
+  "employer_pf",
+  "voluntary_pf",
+  "total_pf"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_slip",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Slip",
+   "options": "Salary Slip",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_pf",
+   "fieldtype": "Currency",
+   "label": "Employee PF"
+  },
+  {
+   "fieldname": "employer_pf",
+   "fieldtype": "Currency",
+   "label": "Employer PF"
+  },
+  {
+   "fieldname": "voluntary_pf",
+   "fieldtype": "Currency",
+   "label": "Voluntary PF"
+  },
+  {
+   "fieldname": "total_pf",
+   "fieldtype": "Currency",
+   "label": "Total PF"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-07 12:38:31.322681",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "PF Contribution Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

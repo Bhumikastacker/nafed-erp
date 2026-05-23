@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:loan_type_code",
+ "creation": "2026-02-23 16:34:39.927041",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_type_code",
+  "loan_type_name",
+  "description",
+  "column_break_recg",
+  "is_active",
+  "loan_category",
+  "advance_category",
+  "membership_period_type",
+  "membership_period",
+  "loan_category_name",
+  "admissable_conditions_section",
+  "use_salary_month_limit",
+  "salary_months_limit",
+  "use_total_employee_and_employer_share_with_interest",
+  "use_employee_share_with_interest_only",
+  "use_share_percentage_limit",
+  "share_percentage_on",
+  "share_percentage_value",
+  "section_break_qukf",
+  "housing_rules",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "loan_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Loan Type Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "loan_type_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Loan Type Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "membership_period_type",
+   "fieldtype": "Select",
+   "label": "Membership Period Type",
+   "options": "\nMonths\nYears"
+  },
+  {
+   "depends_on": "eval:doc.membership_period_type",
+   "fieldname": "membership_period",
+   "fieldtype": "Int",
+   "label": "Membership Period"
+  },
+  {
+   "fieldname": "column_break_recg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loan_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Loan Category",
+   "options": "Loan Category",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.loan_category==\"Non-Refundable\"",
+   "fieldname": "advance_category",
+   "fieldtype": "Select",
+   "label": "Advance Category",
+   "mandatory_depends_on": "eval:doc.loan_category==\"Non-Refundable\"",
+   "options": "\nHousing Related Advance (Para 68B)\nWithdrawal For Repayment of Loans (Para 68BB)\nUnemployment Advance (Para 68H)\nMedical Advance (Para 68J)\nMarriage/Education Advance (Para 68K)\nPhysical Disability Advance (Para 68N)\nPre Retirement Advance (Para 68NN)"
+  },
+  {
+   "fieldname": "section_break_qukf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.use_salary_month_limit && !doc.salary_months_limit && doc.advance_category==\"Housing Related Advance (Para 68B)\"",
+   "fieldname": "housing_rules",
+   "fieldtype": "Table",
+   "label": "Housing Rules",
+   "options": "Housing Rule"
+  },
+  {
+   "depends_on": "eval:doc.use_salary_month_limit && doc.advance_category!=\"Housing Related Advance (Para 68B)\"",
+   "description": "Basic and DA",
+   "fieldname": "salary_months_limit",
+   "fieldtype": "Int",
+   "label": "Salary Months Limit",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "admissable_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Admissable Conditions"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.advance_category==\"Housing Related Advance (Para 68B)\" || doc.advance_category==\"Withdrawal For Repayment of Loans (Para 68BB)\"",
+   "fieldname": "use_total_employee_and_employer_share_with_interest",
+   "fieldtype": "Check",
+   "label": "Use Total Employee and Employer Share with Interest"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.advance_category==\"Unemployment Advance (Para 68H)\" || doc.advance_category==\"Medical Advance (Para 68J)\" || doc.advance_category==\"Physical Disability Advance (Para 68N)\" || doc.advance_category==\"Housing Related Advance (Para 68B)\"",
+   "fieldname": "use_employee_share_with_interest_only",
+   "fieldtype": "Check",
+   "label": "Use Employee Share with Interest Only"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.advance_category==\"Unemployment Advance (Para 68H)\" || doc.advance_category==\"Marriage/Education Advance (Para 68K)\" || doc.advance_category==\"Pre Retirement Advance (Para 68NN)\"",
+   "fieldname": "use_share_percentage_limit",
+   "fieldtype": "Check",
+   "label": "Use Share Percentage Limit"
+  },
+  {
+   "depends_on": "eval:doc.use_share_percentage_limit",
+   "fieldname": "share_percentage_on",
+   "fieldtype": "Select",
+   "label": "Share Percentage On",
+   "mandatory_depends_on": "eval:doc.use_share_percentage_limit",
+   "options": "\nEmployee Share\nEmployer Share\nTotal"
+  },
+  {
+   "depends_on": "eval:doc.share_percentage_on",
+   "fieldname": "share_percentage_value",
+   "fieldtype": "Float",
+   "label": "Share Percentage Value",
+   "mandatory_depends_on": "eval:doc.share_percentage_on",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.advance_category==\"Medical Advance (Para 68J)\" || doc.advance_category==\"Physical Disability Advance (Para 68N)\" || doc.advance_category==\"Housing Related Advance (Para 68B)\" || doc.advance_category==\"Withdrawal For Repayment of Loans (Para 68BB)\"",
+   "fieldname": "use_salary_month_limit",
+   "fieldtype": "Check",
+   "label": "Use Salary Month Limit"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Loan Type",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "loan_category.loan_category_name",
+   "fieldname": "loan_category_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Loan Category Name",
+   "options": "Loan Category",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-13 19:21:19.082326",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "Loan Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-04 09:38:41.484234",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "property_id",
+  "tenant_id",
+  "naming_series",
+  "lease_start_date",
+  "lease_end_date",
+  "rent_amount",
+  "billing_frequency",
+  "security_deposit",
+  "column_break_wpez",
+  "escalation_terms",
+  "registration_required",
+  "registration_deadline",
+  "compliance_notes",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property_ID",
+   "link_filters": "[[\"Property\",\"ownership_status\",\"=\",\"Leasehold\"]]",
+   "options": "Property"
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Link",
+   "label": "Tenant ID",
+   "options": "Lesse_Tenant Master"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Lease Assignment ID",
+   "options": "EST/LA/.YY./",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lease_start_date",
+   "fieldtype": "Date",
+   "label": "Lease Start Date"
+  },
+  {
+   "fieldname": "lease_end_date",
+   "fieldtype": "Date",
+   "label": "Lease End Date"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount"
+  },
+  {
+   "fieldname": "billing_frequency",
+   "fieldtype": "Select",
+   "label": "Billing Frequency",
+   "options": "Monthly\nQuarterly\nAnnual"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "column_break_wpez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "escalation_terms",
+   "fieldtype": "Small Text",
+   "label": "Escalation Terms"
+  },
+  {
+   "default": "0",
+   "fieldname": "registration_required",
+   "fieldtype": "Check",
+   "label": "Registration Required?"
+  },
+  {
+   "fieldname": "registration_deadline",
+   "fieldtype": "Date",
+   "label": "Registration Deadline"
+  },
+  {
+   "fieldname": "compliance_notes",
+   "fieldtype": "Small Text",
+   "label": "Compliance Notes"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Lease Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:07:43.172273",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Assign Lessee to Property",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,315 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-02 18:41:21.151467",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o7go",
+  "serial_no",
+  "society_name_1",
+  "sociaty_name_2",
+  "state",
+  "district",
+  "address",
+  "pincode",
+  "counter_no",
+  "reason",
+  "column_break_dlmm",
+  "membership_no",
+  "ex_law_code",
+  "member_type",
+  "agm_year",
+  "share_capital",
+  "status",
+  "landline",
+  "active",
+  "mobile",
+  "email",
+  "bank_name",
+  "bank_ifsc",
+  "account_number",
+  "account_holder_name",
+  "section_break_ichw",
+  "registration_flag",
+  "registartion_date",
+  "registration_name",
+  "director_flag",
+  "column_break_lnbc",
+  "delegate_flag",
+  "rep_name",
+  "designation",
+  "father_name",
+  "amended_from",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o7go",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Text",
+   "label": "Serial No",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "society_name_1",
+   "fieldtype": "Data",
+   "label": "Society Name 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sociaty_name_2",
+   "fieldtype": "Data",
+   "label": "Society Name 2"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "counter_no",
+   "fieldtype": "Link",
+   "label": "Counter No",
+   "options": "AGM Counter"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Text",
+   "label": "Reason",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_dlmm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "membership_no",
+   "fieldtype": "Data",
+   "label": "Membership No",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ex_law_code",
+   "fieldtype": "Link",
+   "label": "By Laws",
+   "options": "Law Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_type",
+   "fieldtype": "Link",
+   "label": "Member Type",
+   "link_filters": "[[\"Member Type\",\"active\",\"=\",1]]",
+   "options": "Member Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agm_year",
+   "fieldtype": "Link",
+   "label": "AGM Year",
+   "link_filters": "[[\"AGM Year\",\"active\",\"=\",1]]",
+   "options": "AGM Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "share_capital",
+   "fieldtype": "Data",
+   "label": "Share Capital"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nApproved\nRejected\nCancel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Active",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_ichw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "registration_flag",
+   "fieldtype": "Select",
+   "label": "Registration Flag",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.registration_flag==\"Yes\";",
+   "fieldname": "registartion_date",
+   "fieldtype": "Date",
+   "label": "Registartion Date"
+  },
+  {
+   "depends_on": "eval:doc.registration_flag==\"Yes\";",
+   "fieldname": "registration_name",
+   "fieldtype": "Data",
+   "label": "Registration Name"
+  },
+  {
+   "depends_on": "eval:doc.registration_flag==\"Yes\";",
+   "fieldname": "director_flag",
+   "fieldtype": "Select",
+   "label": "Director Flag",
+   "mandatory_depends_on": "eval:doc.registration_flag==\"Yes\";",
+   "options": "\nYES\nNo"
+  },
+  {
+   "fieldname": "column_break_lnbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delegate_flag",
+   "fieldtype": "Select",
+   "label": "Delegate Flag",
+   "options": "\nYes\nNo"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.delegate_flag==\"Yes\";",
+   "fieldname": "rep_name",
+   "fieldtype": "Data",
+   "label": "Rep. Name",
+   "mandatory_depends_on": "eval:doc.delegate_flag==\"Yes\";"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.delegate_flag==\"Yes\";",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "mandatory_depends_on": "eval:doc.delegate_flag==\"Yes\";"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.delegate_flag==\"Yes\";",
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "bank_name.branch_code",
+   "fieldname": "bank_ifsc",
+   "fieldtype": "Data",
+   "label": "Bank IFSC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "account_holder_name",
+   "fieldtype": "Data",
+   "label": "Account Holder Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Board Members",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Attachment",
+   "no_copy": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-21 14:59:27.073829",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Members",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "membership_no",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

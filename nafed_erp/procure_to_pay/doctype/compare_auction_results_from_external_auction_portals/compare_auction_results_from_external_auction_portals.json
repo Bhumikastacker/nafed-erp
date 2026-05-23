@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-31 15:39:24.074929",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9hfm",
+  "auctionid",
+  "amended_from",
+  "fetchrecordid",
+  "externalauctionref",
+  "column_break_vtvl",
+  "portalid",
+  "parse_status",
+  "receivedon",
+  "section_break_sbwd",
+  "bid_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9hfm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compare Auction Results from External Auction Portals",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "fetchrecordid",
+   "fieldtype": "Data",
+   "label": "FetchRecordID"
+  },
+  {
+   "fieldname": "auctionid",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "AuctionID",
+   "options": "Auction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "externalauctionref",
+   "fieldtype": "Data",
+   "label": "ExternalAuctionRef"
+  },
+  {
+   "fieldname": "portalid",
+   "fieldtype": "Data",
+   "label": "PortalID"
+  },
+  {
+   "fieldname": "receivedon",
+   "fieldtype": "Datetime",
+   "label": "ReceivedOn"
+  },
+  {
+   "fieldname": "parse_status",
+   "fieldtype": "Select",
+   "label": "Parse Status",
+   "options": "\nPending\nParsed\nFailed"
+  },
+  {
+   "fieldname": "section_break_sbwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bid_records",
+   "fieldtype": "Table",
+   "label": "Bid Records",
+   "options": "Bid Records"
+  },
+  {
+   "fieldname": "column_break_vtvl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-31 15:47:26.065076",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Compare Auction Results from External Auction Portals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

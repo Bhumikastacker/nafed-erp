@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 07:19:21.321580",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "expenditure_id",
+  "expense_category",
+  "vendor",
+  "amount_payable",
+  "amount_paid",
+  "penaltyinterest"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "expenditure_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Expenditure ID",
+   "options": "Property Financial Expenditures",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "expenditure_id.expense_category",
+   "fieldname": "expense_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Category",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "expenditure_id.vendor",
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "expenditure_id.amount_payable",
+   "fieldname": "amount_payable",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount Payable",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "expenditure_id.amount_paid",
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount Paid",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "expenditure_id.penaltyinterest",
+   "fieldname": "penaltyinterest",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Penalty/Interest",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-04 07:30:03.859173",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property Expenditure Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

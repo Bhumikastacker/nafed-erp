@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-01-31 17:18:55.084865",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Court Order",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A court order has been recorded for the following legal case.</p>\n\n<p>Case ID: {{ doc.case_id }}<br>\nCourt: {{ doc.court_name }}<br>\nOrder Date: {{ doc.order_date }}<br></p>\n\n<p>Order Summary:\n{{ doc.remarks }}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:04:21.525362",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Court Order",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "assigned_to"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Court Order {{ doc.name }} Received \u2013 Legal Case - {{ doc.case_id}}",
+ "value_changed": "priority"
+}

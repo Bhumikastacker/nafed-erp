@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:tag_type",
+ "creation": "2026-01-23 12:28:11.525469",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tag_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "tag_type",
+   "fieldtype": "Data",
+   "label": "Tag Type",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-23 12:28:34.927497",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Tag Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

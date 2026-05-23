@@ -1,0 +1,229 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Z1E_DdX9VK\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>LEGAL DASHBOARD</b>\",\"col\":12}},{\"id\":\"FhKhQM9WTr\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Weekly Cases\",\"col\":3}},{\"id\":\"_EYd5OV3C-\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>ADVOCATE DASHBOARD</b>\",\"col\":12}},{\"id\":\"9KAnKNMSCC\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Advocates\",\"col\":4}},{\"id\":\"YgLLbgpAg2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Advocate Active Cases\",\"col\":4}},{\"id\":\"XV_R61p5OR\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>LEGAL&nbsp; &nbsp;TRANSACTIONS</b>\",\"col\":12}},{\"id\":\"bhwwjwmucR\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"rs7dl9v1HL\",\"type\":\"card\",\"data\":{\"card_name\":\"Legal Transactions\",\"col\":4}}]",
+ "creation": "2026-03-18 10:22:08.093919",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "legal-and-vigilance",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Legal Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Jurisdiction",
+   "link_count": 0,
+   "link_to": "Jurisdiction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Advocate Fee Schedule",
+   "link_count": 0,
+   "link_to": "Advocate Fee Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Advocates",
+   "link_count": 0,
+   "link_to": "Legal Advocates",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Court",
+   "link_count": 0,
+   "link_to": "Jurisdiction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Advocate Fee Schedule",
+   "link_count": 0,
+   "link_to": "Advocate Fee Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Transactions",
+   "link_count": 11,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Case Registration",
+   "link_count": 0,
+   "link_to": "Legal Case Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Case Assignment",
+   "link_count": 0,
+   "link_to": "Legal Case Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Case Hearing",
+   "link_count": 0,
+   "link_to": "Legal Case Hearing",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Case Hearing Outcome",
+   "link_count": 0,
+   "link_to": "Legal Case Hearing Outcome",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Legal Tagging Related Case",
+   "link_count": 0,
+   "link_to": "Legal Tagging Related Case",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Advocate Bill Approval",
+   "link_count": 0,
+   "link_to": "Invoice Submission And Advocate Bill Approval",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contract CRN Generation",
+   "link_count": 0,
+   "link_to": "Contract CRN Generation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internal Legal Query",
+   "link_count": 0,
+   "link_to": "Internal Legal Query",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Auto-Generate Renewal Documents",
+   "link_count": 0,
+   "link_to": "Auto-Generate Renewal Documents",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RTI Form",
+   "link_count": 0,
+   "link_to": "RTI  FORM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-15 16:45:05.010627",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Division",
+ "number_cards": [
+  {
+   "label": "Weekly Cases",
+   "number_card_name": "Weekly Cases"
+  },
+  {
+   "label": "Total Advocates",
+   "number_card_name": "Total Advocates"
+  },
+  {
+   "label": "Advocate Active Cases",
+   "number_card_name": "Advocate Active Cases"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Legal and Vigilance",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Legal User"
+  },
+  {
+   "role": "Legal Manager"
+  }
+ ],
+ "sequence_id": 50.0,
+ "shortcuts": [],
+ "title": "Legal Division"
+}

@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BUD-{MM}-{####}",
+ "creation": "2026-02-05 17:22:45.449404",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "commodity_group",
+  "export_type",
+  "scheme",
+  "budget_year",
+  "budget_purchase_qty",
+  "budget_sale_qty",
+  "export_qty",
+  "column_break_xv2h",
+  "iot_branch",
+  "commodity",
+  "region",
+  "unit_of_measure",
+  "status",
+  "budget_purchase_value",
+  "budget_sale_value",
+  "budget_export_value",
+  "profit",
+  "remarks",
+  "section_break_sfbo",
+  "amended_from",
+  "hire_logs"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commodity_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Commodity Group",
+   "options": "Commodity Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Scheme",
+   "options": "Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "label": "Budget Year",
+   "options": "budgetary year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_purchase_qty",
+   "fieldtype": "Float",
+   "label": "Budget Purchase Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_sale_qty",
+   "fieldtype": "Float",
+   "label": "Budget Sale Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "export_qty",
+   "fieldtype": "Float",
+   "label": "Export Qty"
+  },
+  {
+   "fieldname": "export_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Export Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSend To Division Head\nCoordination Division\nSent To MD\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xv2h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iot_branch",
+   "fieldtype": "Link",
+   "label": "IOT Branch",
+   "options": "Iot Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "label": "Commodity",
+   "options": "Commodity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Zone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_purchase_value",
+   "fieldtype": "Float",
+   "label": "Budget Purchase Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_sale_value",
+   "fieldtype": "Float",
+   "label": "Budget Sale Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_export_value",
+   "fieldtype": "Float",
+   "label": "Budget Export Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Float",
+   "label": "Profit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_sfbo",
+   "fieldtype": "Section Break",
+   "label": "Logs"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Estimated Budget Entry Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "hire_logs",
+   "fieldtype": "Table",
+   "label": "Active logs",
+   "options": "Hire To Retire Logs"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-17 17:24:01.027954",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Estimated Budget Entry Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

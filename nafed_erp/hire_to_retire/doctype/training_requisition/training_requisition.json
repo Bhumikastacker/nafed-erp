@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "autoname": "format:TRN-{YYYY}-{####}",
+ "creation": "2025-12-09 12:31:29.520740",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "training_requisition_id",
+  "trainer_type",
+  "internal_type",
+  "external_type",
+  "training_type",
+  "month_year",
+  "status",
+  "amended_from",
+  "column_break_qolp",
+  "branch",
+  "division",
+  "cost_center",
+  "debit_account",
+  "credit_account",
+  "budget_amount",
+  "justification",
+  "approved_by",
+  "approval_date",
+  "no_of_study_tours_person",
+  "employee_filter_section",
+  "employee_division",
+  "designation",
+  "department",
+  "employment_type",
+  "column_break_scdv",
+  "employee_branch",
+  "company",
+  "grade",
+  "section_break_qqds",
+  "employee_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "training_requisition_id",
+   "fieldtype": "Data",
+   "label": "Training Requisition ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Division",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Training Type",
+   "options": "Technical\nBehavioural\nInduction\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trainer_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Trainer Type",
+   "options": "\nInternal\nExternal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month_year",
+   "fieldtype": "Date",
+   "label": "Month / Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Small Text",
+   "label": "Justification",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "Draft\nSubmitted To TA\nSubmitted To MD\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "approval_remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Requisition",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_qolp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "fieldname": "budget_amount",
+   "fieldtype": "Currency",
+   "label": "Budget Amount",
+   "mandatory_depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\""
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "fieldname": "debit_account",
+   "fieldtype": "Link",
+   "label": "Debit Account",
+   "mandatory_depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "options": "Account"
+  },
+  {
+   "depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "fieldname": "credit_account",
+   "fieldtype": "Link",
+   "label": "Credit Account",
+   "mandatory_depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "options": "Account"
+  },
+  {
+   "depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "mandatory_depends_on": "eval:doc.internal_type==\"Training\" || doc.external_type==\"Training\"",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "section_break_qqds",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.external_type!=\"Study Tours\"",
+   "fieldname": "employee_details",
+   "fieldtype": "Table",
+   "label": "Employee Details",
+   "options": "Training Requisition Table"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.external_type!=\"Study Tours\"",
+   "fieldname": "employee_filter_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Filter"
+  },
+  {
+   "fieldname": "employee_division",
+   "fieldtype": "Link",
+   "label": "Employee Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "column_break_scdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_branch",
+   "fieldtype": "Link",
+   "label": "Employee Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "depends_on": "eval: doc.trainer_type ==\"Internal\"",
+   "fieldname": "internal_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Internal Type",
+   "mandatory_depends_on": "eval: doc.trainer_type ==\"Internal\"",
+   "options": "\nTraining\nOrientation"
+  },
+  {
+   "depends_on": "eval: doc.trainer_type ==\"External\"",
+   "fieldname": "external_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "External Type",
+   "mandatory_depends_on": "eval: doc.trainer_type ==\"External\"",
+   "options": "\nTraining\nStudy Tours"
+  },
+  {
+   "depends_on": "eval:doc.external_type==\"Study Tours\"",
+   "fieldname": "no_of_study_tours_person",
+   "fieldtype": "Int",
+   "label": "No. of Persons",
+   "mandatory_depends_on": "eval:doc.external_type==\"Study Tours\""
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-16 17:04:32.054251",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Training Requisition",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Training Admin",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Managing Director",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Division Head",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-05-06 18:00:34.155471",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dsja",
+  "amended_from",
+  "naming_series",
+  "schedule_reference",
+  "actual_treatment_date",
+  "treatment_method",
+  "chemicals_used",
+  "service_provider",
+  "column_break_mb20",
+  "observation_remarks",
+  "pest_activity_level",
+  "corrective_actions",
+  "section_break_oglg",
+  "attachment",
+  "treatment_status",
+  "next_due_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dsja",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Treatment Execution",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "schedule_reference",
+   "fieldtype": "Link",
+   "label": "Schedule Reference",
+   "options": "Fumigation Schedule"
+  },
+  {
+   "fieldname": "actual_treatment_date",
+   "fieldtype": "Date",
+   "label": "Actual Treatment Date"
+  },
+  {
+   "fieldname": "treatment_method",
+   "fieldtype": "Small Text",
+   "label": "Treatment Method"
+  },
+  {
+   "fieldname": "chemicals_used",
+   "fieldtype": "Small Text",
+   "label": "Chemicals Used"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Data",
+   "label": "Service Provider"
+  },
+  {
+   "fieldname": "column_break_mb20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_remarks",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Observation Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pest_activity_level",
+   "fieldtype": "Select",
+   "label": "Pest Activity Level",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "corrective_actions",
+   "fieldtype": "Small Text",
+   "label": "Corrective Actions"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Table",
+   "label": "Attachment",
+   "options": "Treatment Attachments"
+  },
+  {
+   "fieldname": "treatment_status",
+   "fieldtype": "Select",
+   "label": "Treatment Status",
+   "options": "Completed\nDeferred\nPartial"
+  },
+  {
+   "fieldname": "next_due_date",
+   "fieldtype": "Date",
+   "label": "Next Due Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Treatment Execution Id",
+   "options": "RBD-TEC-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "section_break_oglg",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-08 17:14:06.606553",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Treatment Execution",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

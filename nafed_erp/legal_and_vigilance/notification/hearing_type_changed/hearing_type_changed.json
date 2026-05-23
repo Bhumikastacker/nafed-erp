@@ -1,0 +1,39 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-24 14:16:40.285327",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Hearing",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A hearing type has been changed for the following legal case:</p>\n\n<p>Case ID: {{ doc.case_id }} <br>\nHearing Date: {{ doc.hearing_date }} <br>\nHearing Type: {{ doc.hearing_type }} <br>\nHearing Attendees: {{ doc.attendees }} <br>\nCourt: {{ doc.venue}}</p>\n\n<p>Please prepare accordingly.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-03-18 12:24:46.878338",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Hearing Type Changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "created_by"
+  },
+  {
+   "receiver_by_document_field": "uploaded_by,hearing_documents"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Hearing Type Changed \u2013 Legal Case {{ doc.name}}",
+ "value_changed": "hearing_type"
+}

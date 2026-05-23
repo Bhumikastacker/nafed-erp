@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_id}-{lawyer}",
+ "creation": "2026-01-14 15:06:13.144329",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_id",
+  "action_by",
+  "lawyer",
+  "action",
+  "action_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case ID",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Action By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "Assigned\nReassigned\nRevoked\nExpired",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Action Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lawyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lawyer / Advocate",
+   "options": "Legal Advocates",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-20 14:55:39.259946",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Assignment History",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

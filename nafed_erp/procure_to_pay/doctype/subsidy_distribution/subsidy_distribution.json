@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-20 20:25:01.502608",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y25u",
+  "naming_series",
+  "distribute_subsidy",
+  "fund_receipt",
+  "status",
+  "column_break_afih",
+  "paid_amount",
+  "balance_amount",
+  "distribution_date",
+  "total_amount",
+  "subsidy_distribution_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y25u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fund_receipt",
+   "fieldtype": "Link",
+   "label": "Fund Receipt",
+   "options": "Fund Receipt"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SD-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "distribution_date",
+   "fieldtype": "Date",
+   "label": "Distribution Date"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "balance_amount",
+   "fieldtype": "Currency",
+   "label": "Balance Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPartial\nCompleted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Subsidy Distribution",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "subsidy_distribution_item",
+   "fieldtype": "Table",
+   "label": "Subsidy Distribution Item",
+   "options": "Subsidy Distribution Item"
+  },
+  {
+   "fieldname": "distribute_subsidy",
+   "fieldtype": "Button",
+   "label": "Distribute Subsidy"
+  },
+  {
+   "fieldname": "column_break_afih",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-29 12:48:23.744269",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Subsidy Distribution",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

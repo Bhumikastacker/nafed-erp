@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "creation": "2026-02-17 13:25:21.777774",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "board_member",
+  "name1",
+  "email",
+  "attendance",
+  "proxy_member",
+  "proxy_member_designation",
+  "attendance_date",
+  "show"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.show==1",
+   "fieldname": "board_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "link_filters": "[[\"Board Members\",\"active\",\"=\",1]]",
+   "options": "Board Members"
+  },
+  {
+   "fetch_from": "board_member.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Attendance",
+   "options": "Present\nAbsent\nProxy",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.attendance=='Proxy'",
+   "fieldname": "proxy_member",
+   "fieldtype": "Data",
+   "label": "Proxy Member"
+  },
+  {
+   "depends_on": "eval:doc.attendance=='Proxy'",
+   "fieldname": "proxy_member_designation",
+   "fieldtype": "Data",
+   "label": "Proxy Member Designation"
+  },
+  {
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "label": "Attendance Date"
+  },
+  {
+   "depends_on": "eval:doc.show==0",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "show",
+   "fieldtype": "Check",
+   "label": "Show",
+   "options": "Meeting Type"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-24 18:17:58.399487",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Attendance Meeting",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

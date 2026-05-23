@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-13 18:30:48.779022",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "upload_batch",
+  "row_number",
+  "validation_status",
+  "error_message",
+  "mapped_payload",
+  "created_case"
+ ],
+ "fields": [
+  {
+   "fieldname": "upload_batch",
+   "fieldtype": "Link",
+   "label": "Upload Batch",
+   "options": "Legal Case Upload Batch"
+  },
+  {
+   "fieldname": "row_number",
+   "fieldtype": "Int",
+   "label": "Row Number"
+  },
+  {
+   "fieldname": "validation_status",
+   "fieldtype": "Select",
+   "label": "Validation Status",
+   "options": "Valid\nError\nWarning"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Text",
+   "label": "Error Message"
+  },
+  {
+   "fieldname": "mapped_payload",
+   "fieldtype": "JSON",
+   "label": "Mapped Payload"
+  },
+  {
+   "fieldname": "created_case",
+   "fieldtype": "Data",
+   "label": "Created Case"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-14 10:46:08.088266",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Upload Staging",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-29 13:05:58.277211",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_27it",
+  "crop",
+  "variety",
+  "produced_qty",
+  "accepted_qty",
+  "eligible_qty",
+  "subsidy_rate",
+  "line_subsidy"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_27it",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Variety",
+   "options": "Variety"
+  },
+  {
+   "fieldname": "produced_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Produced Qty"
+  },
+  {
+   "fieldname": "accepted_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accepted Qty"
+  },
+  {
+   "fieldname": "eligible_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Eligible Qty"
+  },
+  {
+   "fieldname": "subsidy_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Subsidy Rate"
+  },
+  {
+   "fieldname": "line_subsidy",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Line Subsidy"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-29 13:11:54.809612",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Subsidy Claim Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

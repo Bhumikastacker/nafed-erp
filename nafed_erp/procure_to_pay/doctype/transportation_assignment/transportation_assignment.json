@@ -1,0 +1,215 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-13 16:02:03.746022",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_x837",
+  "naming_series",
+  "transportation_mode",
+  "status",
+  "column_break_fbja",
+  "company",
+  "branch",
+  "lot_dispatch_id",
+  "amended_from",
+  "section_break_ndvh",
+  "items",
+  "transport_details_section",
+  "transporter_name",
+  "vehicle_number",
+  "vehicle_capacity",
+  "column_break_qdpn",
+  "driver_name",
+  "rail_consignment_no",
+  "mobile_no",
+  "schedule_and_routing_section",
+  "expected_loading_date",
+  "transit_time_days",
+  "column_break_wjuz",
+  "expected_delivery_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_x837",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transportation Assignment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "TA-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TA-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transportation_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transportation Mode",
+   "options": "\nTruck\nTrain"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nAssigned\nReady for Dispatch\nIn Transit\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_fbja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_ndvh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items Detail",
+   "options": "Transportation Lot Detail"
+  },
+  {
+   "fieldname": "transport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Transport Details"
+  },
+  {
+   "fieldname": "transporter_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Transporter Name",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval:doc.transportation_mode == \"Truck\"",
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number",
+   "mandatory_depends_on": "eval:doc.transportation_mode == \"Truck\""
+  },
+  {
+   "depends_on": "eval:doc.transportation_mode == \"Train\"",
+   "fieldname": "rail_consignment_no",
+   "fieldtype": "Data",
+   "label": "Rail Consignment No"
+  },
+  {
+   "fieldname": "column_break_qdpn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.transportation_mode == \"Truck\"",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name ",
+   "mandatory_depends_on": "eval:doc.transportation_mode == \"Truck\""
+  },
+  {
+   "fieldname": "schedule_and_routing_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule and Routing"
+  },
+  {
+   "fieldname": "expected_loading_date",
+   "fieldtype": "Date",
+   "label": "Expected Loading Date"
+  },
+  {
+   "fieldname": "transit_time_days",
+   "fieldtype": "Int",
+   "label": "Transit Time (Days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wjuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_delivery_date",
+   "fieldtype": "Date",
+   "label": "Expected Delivery Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "lot_dispatch_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lot Dispatch ID",
+   "options": "Lot Dispatch"
+  },
+  {
+   "depends_on": "eval:doc.transportation_mode == \"Truck\"",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:doc.transportation_mode == \"Truck\"",
+   "fieldname": "vehicle_capacity",
+   "fieldtype": "Float",
+   "label": "Vehicle Capacity",
+   "mandatory_depends_on": "eval:doc.transportation_mode == \"Truck\""
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-03 16:43:49.310912",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Transportation Assignment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

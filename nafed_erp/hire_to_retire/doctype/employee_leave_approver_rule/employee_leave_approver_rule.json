@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-17 12:20:37.021897",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "leave_approver",
+  "leave_approver_name",
+  "upto_days",
+  "approver_upto_days",
+  "approver_name_upto_days",
+  "approver_above_days",
+  "approver_name_above_days",
+  "column_break_ndxa",
+  "second_approver",
+  "second_approver_name",
+  "third_approver",
+  "third_approver_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Leave Type",
+   "options": "Leave Type"
+  },
+  {
+   "depends_on": "eval: !doc.leave_approver",
+   "fieldname": "upto_days",
+   "fieldtype": "Int",
+   "label": "Upto Days"
+  },
+  {
+   "depends_on": "eval:doc.upto_days && !doc.leave_approver",
+   "fieldname": "approver_upto_days",
+   "fieldtype": "Link",
+   "label": "Primary Approver (Upto Days)",
+   "mandatory_depends_on": "eval:doc.upto_days",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:doc.upto_days && !doc.leave_approver",
+   "fieldname": "approver_above_days",
+   "fieldtype": "Link",
+   "label": "Primary Approver (Above Days)",
+   "mandatory_depends_on": "eval:doc.upto_days",
+   "options": "User"
+  },
+  {
+   "fieldname": "leave_approver",
+   "fieldtype": "Link",
+   "label": "Primary Approver",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:doc.approver_upto_days",
+   "fetch_from": "approver_upto_days.full_name",
+   "fieldname": "approver_name_upto_days",
+   "fieldtype": "Data",
+   "label": "Primary Approver Name (Upto Days)"
+  },
+  {
+   "depends_on": "eval:doc.approver_above_days",
+   "fetch_from": "approver_above_days.full_name",
+   "fieldname": "approver_name_above_days",
+   "fieldtype": "Data",
+   "label": "Primary Approver Name (Above Days)"
+  },
+  {
+   "depends_on": "eval:doc.leave_approver",
+   "fetch_from": "leave_approver.full_name",
+   "fieldname": "leave_approver_name",
+   "fieldtype": "Data",
+   "label": "Primary Approver Name"
+  },
+  {
+   "fieldname": "column_break_ndxa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_approver",
+   "fieldtype": "Link",
+   "label": "Second Approver",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.second_approver",
+   "fetch_from": "second_approver.full_name",
+   "fieldname": "second_approver_name",
+   "fieldtype": "Data",
+   "label": "Second Approver Name"
+  },
+  {
+   "fieldname": "third_approver",
+   "fieldtype": "Link",
+   "label": "Third Approver",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.third_approver",
+   "fetch_from": "third_approver.full_name",
+   "fieldname": "third_approver_name",
+   "fieldtype": "Data",
+   "label": "Third Approver Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-13 12:20:21.836613",
+ "modified_by": "suraj.a@stackerbee.com",
+ "module": "Hire to Retire",
+ "name": "Employee Leave Approver Rule",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,96 @@
+{
+ "charts": [
+  {
+   "chart_name": "study",
+   "label": "Training Effectiveness (Meeting Score)"
+  }
+ ],
+ "content": "[{\"id\":\"fc_55UjKx1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Training</span>\",\"col\":12}},{\"id\":\"KctouoGLsc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ManPower Dashboard\",\"col\":3}},{\"id\":\"0k7AcvTMdr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Organizational Chart\",\"col\":3}},{\"id\":\"WallpyCklH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"id\":\"3QfGUedksR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Lifecycle Dashboard\",\"col\":3}},{\"id\":\"vIevcnc8CY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"HR Dashboard\",\"col\":9}},{\"id\":\"BA2ZrptPKR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Learning Path\",\"col\":4}},{\"id\":\"p-n-iur42c\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Training Meeting\",\"col\":4}},{\"id\":\"nvN9vtK4Kx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Attendance\",\"col\":4}},{\"id\":\"nxCbvEdMEl\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Training Requisition\",\"col\":4}},{\"id\":\"K9gycKlpgD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Training Feedback\",\"col\":4}},{\"id\":\"LUmEy2OqV8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Budget\",\"col\":4}},{\"id\":\"gAmthmfVYM\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Training Effectiveness (Meeting Score)\",\"col\":12}}]",
+ "creation": "2026-02-19 15:30:05.179979",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "close-alt",
+ "idx": 0,
+ "indicator_color": "cyan",
+ "is_hidden": 1,
+ "label": "Training",
+ "links": [],
+ "logs": [],
+ "modified": "2026-04-13 15:05:59.232232",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Training",
+ "number_cards": [
+  {
+   "label": "Learning Path",
+   "number_card_name": "Learning Path"
+  },
+  {
+   "label": "Nafed Training Meeting",
+   "number_card_name": "Nafed Training Meeting"
+  },
+  {
+   "label": "Nafed Attendance",
+   "number_card_name": "Nafed Attendance"
+  },
+  {
+   "label": "Nafed Training Feedback",
+   "number_card_name": "Nafed Training Feedback"
+  },
+  {
+   "label": "Budget",
+   "number_card_name": "Employee Skill"
+  },
+  {
+   "label": "Training Requisition",
+   "number_card_name": "Training Req"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 69.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "ManPower Dashboard",
+   "link_to": "Recruitment",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Lifecycle Dashboard",
+   "link_to": "Employee Lifecycle",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Attendance Dashboard",
+   "link_to": "Attendance",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Organizational Chart",
+   "link_to": "nafed-organizational",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "HR Dashboard",
+   "link_to": "Human Resource",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Training"
+}

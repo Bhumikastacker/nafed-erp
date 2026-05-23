@@ -1,0 +1,333 @@
+{
+ "actions": [],
+ "creation": "2026-03-09 16:36:25.294741",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kqf8",
+  "amended_from",
+  "vendor_id",
+  "vendor_name",
+  "vendor_code",
+  "amendment_category",
+  "change_request_id",
+  "request_date",
+  "reason_for_change",
+  "version_number",
+  "proposed_new_values_section",
+  "new_contact_name",
+  "new_mobile_number",
+  "new_email_id",
+  "new_address",
+  "new_state",
+  "column_break_nmhu",
+  "new_gstin",
+  "new_pan",
+  "new_bank_account_number",
+  "new_ifsc_code",
+  "new_bank_name",
+  "new_fssai_number",
+  "new_msme_number",
+  "new_license_expiry_date",
+  "supporting_documents_section",
+  "supporting_document_1",
+  "supporting_document_2",
+  "declaration_signed",
+  "validation_flags_section",
+  "gstin_verified",
+  "bank_verified",
+  "manual_verification_required",
+  "review__and_approval_section",
+  "branch_remarks",
+  "ho_remarks",
+  "rejection_reason",
+  "approved_by",
+  "approval_date",
+  "emergency_update",
+  "emergency_audit_note",
+  "partial_approval_notes",
+  "expiry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kqf8",
+   "fieldtype": "Section Break",
+   "label": "Request Info "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor Amendment Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "Vendor Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amendment_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Amendment Category",
+   "options": "Contact/Address\nFinancial\nRegulatory/Tax\nDocument Renewal\nEmergency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_request_id",
+   "fieldtype": "Data",
+   "label": "Change Request Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request_Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Small Text",
+   "label": "Reason for Change",
+   "reqd": 1
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Int",
+   "label": "Version Number",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "proposed_new_values_section",
+   "fieldtype": "Section Break",
+   "label": "Proposed New Values "
+  },
+  {
+   "fieldname": "new_contact_name",
+   "fieldtype": "Data",
+   "label": "New Contact Name"
+  },
+  {
+   "fieldname": "new_mobile_number",
+   "fieldtype": "Data",
+   "label": "New Mobile Number"
+  },
+  {
+   "fieldname": "new_email_id",
+   "fieldtype": "Data",
+   "label": "New Email Id"
+  },
+  {
+   "fieldname": "new_address",
+   "fieldtype": "Small Text",
+   "label": "New Address"
+  },
+  {
+   "fieldname": "new_state",
+   "fieldtype": "Select",
+   "label": "New State"
+  },
+  {
+   "fieldname": "new_gstin",
+   "fieldtype": "Data",
+   "label": "New Gstin"
+  },
+  {
+   "fieldname": "new_pan",
+   "fieldtype": "Data",
+   "label": "New Pan"
+  },
+  {
+   "fieldname": "new_bank_account_number",
+   "fieldtype": "Data",
+   "label": "New Bank Account Number"
+  },
+  {
+   "fieldname": "new_ifsc_code",
+   "fieldtype": "Data",
+   "label": "New Ifsc Code"
+  },
+  {
+   "fieldname": "new_bank_name",
+   "fieldtype": "Data",
+   "label": "New Bank Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_fssai_number",
+   "fieldtype": "Data",
+   "label": "New_Fssai Number"
+  },
+  {
+   "fieldname": "new_msme_number",
+   "fieldtype": "Data",
+   "label": "New Msme Number"
+  },
+  {
+   "fieldname": "new_license_expiry_date",
+   "fieldtype": "Data",
+   "label": "New License Expiry Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents "
+  },
+  {
+   "fieldname": "supporting_document_1",
+   "fieldtype": "Attach",
+   "label": "Supporting_Document_1"
+  },
+  {
+   "fieldname": "supporting_document_2",
+   "fieldtype": "Attach",
+   "label": "Supporting_Document_2"
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration_signed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Declaration Signed",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "validation_flags_section",
+   "fieldtype": "Section Break",
+   "label": "Validation Flags "
+  },
+  {
+   "default": "0",
+   "fieldname": "gstin_verified",
+   "fieldtype": "Check",
+   "label": "Gstin Verified",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bank_verified",
+   "fieldtype": "Check",
+   "label": "Bank Verified",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "manual_verification_required",
+   "fieldtype": "Check",
+   "label": "Manual Verification Required"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "review__and_approval_section",
+   "fieldtype": "Section Break",
+   "label": "Review  And Approval "
+  },
+  {
+   "fieldname": "branch_remarks",
+   "fieldtype": "Small Text",
+   "label": "Branch Remarks"
+  },
+  {
+   "fieldname": "ho_remarks",
+   "fieldtype": "Small Text",
+   "label": "Ho_Remarks"
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Small Text",
+   "label": "Rejection_Reason"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved_By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "emergency_update",
+   "fieldtype": "Check",
+   "label": "Emergency Update"
+  },
+  {
+   "fieldname": "emergency_audit_note",
+   "fieldtype": "Small Text",
+   "label": "Emergency Audit Note"
+  },
+  {
+   "fieldname": "partial_approval_notes",
+   "fieldtype": "Small Text",
+   "label": "Partial Approval Notes"
+  },
+  {
+   "bold": 1,
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_nmhu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor Id",
+   "options": "Vendor Registration",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-12 18:29:47.728671",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Vendor Amendment Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vendor_code"
+}

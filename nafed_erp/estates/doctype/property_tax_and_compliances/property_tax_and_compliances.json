@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-02 11:10:25.397691",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "property_id",
+  "compliance_type",
+  "assessment_year",
+  "tax_amount",
+  "payment_status",
+  "due_date",
+  "penalty",
+  "interest",
+  "additional_charges",
+  "column_break_zxtw",
+  "payment_date",
+  "challanreceipt_number",
+  "supporting_documents",
+  "taxcompliance_description",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property ID",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "compliance_type",
+   "fieldtype": "Select",
+   "label": "Compliance Type",
+   "options": "Select\nMunicipal Tax\nProperty Tax\nWater/Sewerage Charge\nGovt. Dues",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax_Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Select\nPaid\nUnpaid",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "taxcompliance_description",
+   "fieldtype": "Small Text",
+   "label": "Tax/Compliance Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zxtw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "challanreceipt_number",
+   "fieldtype": "Data",
+   "label": "Challan/Receipt Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Property Tax and Compliance Documents",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_year",
+   "fieldtype": "Link",
+   "label": "Assessment Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Tax ID",
+   "no_copy": 1,
+   "options": "EST/TAX/.YY./",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "penalty",
+   "fieldtype": "Currency",
+   "label": "Penalty",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "additional_charges",
+   "fieldtype": "Currency",
+   "label": "Additional Charges",
+   "non_negative": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:06:29.284256",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property Tax and Compliances",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

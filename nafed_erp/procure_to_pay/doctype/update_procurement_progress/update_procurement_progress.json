@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-04-29 15:20:00.828741",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nbnu",
+  "amended_from",
+  "naming_series",
+  "procurement_target_id",
+  "state",
+  "kms_year",
+  "column_break_iqnr",
+  "season",
+  "scheme",
+  "commodity_name",
+  "total_no_of_procurement_centers",
+  "column_break_gwlg",
+  "date",
+  "procurement_for",
+  "total_allocated_qty_mt",
+  "msp_per_mt",
+  "section_break_pwdy",
+  "procurement",
+  "cmr_details_section",
+  "cmr_to_be_deliverin_percent",
+  "table_xgxr",
+  "section_break_ftcs",
+  "others"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nbnu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Update Procurement Progress",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "procurement_target_id",
+   "fieldtype": "Link",
+   "label": "Reference Target ID",
+   "link_filters": "[[\"Procurement Target\",\"commodity_name\",\"=\",\"Paddy\"]]",
+   "options": "Procurement Target"
+  },
+  {
+   "fetch_from": "procurement_target_id.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "procurement_target_id.season",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_iqnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "procurement_target_id.scheme",
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Scheme"
+  },
+  {
+   "fetch_from": "procurement_target_id.kms_year",
+   "fieldname": "kms_year",
+   "fieldtype": "Link",
+   "label": "KMS Year",
+   "options": "KMS Year"
+  },
+  {
+   "fetch_from": "procurement_target_id.commodity_name",
+   "fieldname": "commodity_name",
+   "fieldtype": "Link",
+   "label": "Commodity Name",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "procurement_target_id.no_of_procurement_centers",
+   "fieldname": "total_no_of_procurement_centers",
+   "fieldtype": "Int",
+   "label": "Total No. of Procurement Centers"
+  },
+  {
+   "fieldname": "column_break_gwlg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "procurement_target_id.procurement_start_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "procurement_target_id.procurement_for",
+   "fieldname": "procurement_for",
+   "fieldtype": "Select",
+   "label": "Procurement For",
+   "options": "\nState Govt\nFCI"
+  },
+  {
+   "fetch_from": "procurement_target_id.total_allocated_qty",
+   "fieldname": "total_allocated_qty_mt",
+   "fieldtype": "Float",
+   "label": "Total Target Qty (MT)"
+  },
+  {
+   "fetch_from": "procurement_target_id.msp_pmt",
+   "fieldname": "msp_per_mt",
+   "fieldtype": "Currency",
+   "label": "MSP (Per MT)"
+  },
+  {
+   "fieldname": "section_break_pwdy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "procurement",
+   "fieldtype": "Table",
+   "label": "Procurement",
+   "options": "Update Procurement Progress Child"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Procurement Series",
+   "options": "\nPRO/.YYYY./.#####."
+  },
+  {
+   "fieldname": "cmr_details_section",
+   "fieldtype": "Section Break",
+   "label": "CMR Delivery Details"
+  },
+  {
+   "fieldname": "cmr_to_be_deliverin_percent",
+   "fieldtype": "Percent",
+   "label": "Paddy To CMR Conversion (in percent)"
+  },
+  {
+   "fieldname": "table_xgxr",
+   "fieldtype": "Table",
+   "options": "CMR Details Child"
+  },
+  {
+   "fieldname": "section_break_ftcs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Table",
+   "label": "Others",
+   "options": "Farmers Benfited Child"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-03 12:55:54.011760",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Update Procurement Progress",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

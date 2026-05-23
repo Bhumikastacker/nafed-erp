@@ -1,0 +1,406 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"8PVXY3i5qQ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Board Division</span>\",\"col\":12}},{\"id\":\"4sWzzQBbYh\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Members\",\"col\":4}},{\"id\":\"RrcEWXVB7Y\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Delegate Members\",\"col\":4}},{\"id\":\"F-U2HVGQ0V\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"In Active Members\",\"col\":4}},{\"id\":\"EORqbMe4K7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total AGM Meetings\",\"col\":4}},{\"id\":\"h_EgumTwl4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Others Meetings\",\"col\":4}},{\"id\":\"p1BMez-mZS\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total BOD Memebrs\",\"col\":4}},{\"id\":\"YY-8ufe_zt\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>File Location</b></span>\",\"col\":12}},{\"id\":\"DVqLZiJNVD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Send\",\"col\":4}},{\"id\":\"zlAXBjviqp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Inbox\",\"col\":4}},{\"id\":\"W-_CAX5fps\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Park\",\"col\":4}},{\"id\":\"pZyYnvZmuR\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\">Nomination Details</span>\",\"col\":12}},{\"id\":\"MUrLPWqlKI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Nominations Received\",\"col\":4}},{\"id\":\"EIwAQ91Aie\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Year Nominations\",\"col\":4}},{\"id\":\"LdoBfy3N1e\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Nominations\",\"col\":4}},{\"id\":\"f6y6ppDj1f\",\"type\":\"card\",\"data\":{\"card_name\":\"Board Information\",\"col\":4}},{\"id\":\"PTMUQNjqjO\",\"type\":\"card\",\"data\":{\"card_name\":\"Registration \",\"col\":4}},{\"id\":\"FpgYHbbAeB\",\"type\":\"card\",\"data\":{\"card_name\":\"AGM Master Configuration\",\"col\":4}},{\"id\":\"ImABwPF5Fd\",\"type\":\"card\",\"data\":{\"card_name\":\"Nomination Reports\",\"col\":4}}]",
+ "creation": "2026-05-21 12:17:13.102496",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "meeting-and-coordination",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Board Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget Commodity Branch Wise",
+   "link_count": 0,
+   "link_to": "Budget Commodity Branch Wise",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Budget Entry Form",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budgetary Year",
+   "link_count": 0,
+   "link_to": "budgetary year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "State-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "State-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Nominee  Form",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "District-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Nominee  Form",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Date-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "Date-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Nominee  Form",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AGM Master Configuration",
+   "link_count": 8,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AGM Year",
+   "link_count": 0,
+   "link_to": "AGM Year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AGM Counter",
+   "link_count": 0,
+   "link_to": "AGM Counter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Type",
+   "link_count": 0,
+   "link_to": "Member Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "By Laws",
+   "link_count": 0,
+   "link_to": "Law Code",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "State",
+   "link_count": 0,
+   "link_to": "State",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District",
+   "link_count": 0,
+   "link_to": "District",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Counter Mapping",
+   "link_count": 0,
+   "link_to": "Counter Mapping",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Division Emails Configuration",
+   "link_count": 0,
+   "link_to": "Mails Configurations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nomination Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "State-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "State-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "District-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "District-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Date-wise Nominations Received",
+   "link_count": 0,
+   "link_to": "Date-wise Nominations Received",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registration ",
+   "link_count": 9,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "TA/DA Request",
+   "link_count": 0,
+   "link_to": "Member TA DA Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting",
+   "link_count": 0,
+   "link_to": "Board Meeting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting MOM",
+   "link_count": 0,
+   "link_to": "Meeting MoM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting Agenda",
+   "link_count": 0,
+   "link_to": "Meeting Agenda",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Counter Mapped View",
+   "link_count": 0,
+   "link_to": "counter-mapping-page",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Counter Mapping ",
+   "link_count": 0,
+   "link_to": "Counter Mapping",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Agenda From Division",
+   "link_count": 0,
+   "link_to": "Agenda From Division",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "MOM From Division",
+   "link_count": 0,
+   "link_to": "Mom From Division",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "BOD Members",
+   "link_count": 0,
+   "link_to": "BOD List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Board Information",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Board Communication",
+   "link_count": 0,
+   "link_to": "Board Communication",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Board Members",
+   "link_count": 0,
+   "link_to": "Board Members",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nominee  Form",
+   "link_count": 0,
+   "link_to": "Nominee  Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-21 17:07:00.325769",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Division",
+ "number_cards": [
+  {
+   "label": "Send",
+   "number_card_name": "Send"
+  },
+  {
+   "label": "Total Nominations Received",
+   "number_card_name": "Total Nominations Received"
+  },
+  {
+   "label": "Current Year Nominations",
+   "number_card_name": "Current Year Nominations"
+  },
+  {
+   "label": "Park",
+   "number_card_name": "Parked"
+  },
+  {
+   "label": "Total AGM Meetings",
+   "number_card_name": "Total AGM Meetings"
+  },
+  {
+   "label": "Inbox",
+   "number_card_name": "Inbox"
+  },
+  {
+   "label": "Others Meetings",
+   "number_card_name": "Total Others Meetings"
+  },
+  {
+   "label": "Total BOD Memebrs",
+   "number_card_name": "BOD Members"
+  },
+  {
+   "label": "Active Members",
+   "number_card_name": "Active Members"
+  },
+  {
+   "label": "Delegate Members",
+   "number_card_name": "Delegated Members"
+  },
+  {
+   "label": "In Active Members",
+   "number_card_name": "In Active Members"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Meeting and Co-ordination",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Board Member Approver"
+  },
+  {
+   "role": "Board Member Checker"
+  },
+  {
+   "role": "Board Member Maker"
+  }
+ ],
+ "sequence_id": 60.1,
+ "shortcuts": [],
+ "title": "Board Division"
+}

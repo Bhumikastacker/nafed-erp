@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-04 10:07:52.352668",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "property_id",
+  "tenant_id",
+  "invoice_type",
+  "billing_duration",
+  "table_zehp",
+  "remarks",
+  "column_break_zrls",
+  "billing_amount",
+  "tax_amount",
+  "escalation_amount",
+  "penalties",
+  "facility_charges",
+  "utility_recoveries",
+  "late_fees",
+  "other_adhoc_charges",
+  "total_payable_amount",
+  "due_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property ID",
+   "options": "Property"
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Link",
+   "label": "Tenant ID",
+   "options": "Lesse_Tenant Master"
+  },
+  {
+   "fieldname": "invoice_type",
+   "fieldtype": "Select",
+   "label": "Invoice Type",
+   "options": "Rent\nUtility\nOther"
+  },
+  {
+   "fieldname": "billing_duration",
+   "fieldtype": "Duration",
+   "label": "Billing Duration"
+  },
+  {
+   "fieldname": "table_zehp",
+   "fieldtype": "Table",
+   "options": "Lease Invoice Documents"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_zrls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_amount",
+   "fieldtype": "Currency",
+   "label": "Billing Amount"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount"
+  },
+  {
+   "fieldname": "escalation_amount",
+   "fieldtype": "Currency",
+   "label": "Escalation Amount"
+  },
+  {
+   "fieldname": "penalties",
+   "fieldtype": "Currency",
+   "label": "Penalties"
+  },
+  {
+   "fieldname": "facility_charges",
+   "fieldtype": "Currency",
+   "label": "Facility Charges"
+  },
+  {
+   "fieldname": "utility_recoveries",
+   "fieldtype": "Currency",
+   "label": "Utility Recoveries"
+  },
+  {
+   "fieldname": "late_fees",
+   "fieldtype": "Currency",
+   "label": "Late Fees"
+  },
+  {
+   "fieldname": "other_adhoc_charges",
+   "fieldtype": "Currency",
+   "label": "Other Adhoc Charges"
+  },
+  {
+   "fieldname": "total_payable_amount",
+   "fieldtype": "Currency",
+   "label": "Total Payable Amount"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Number",
+   "no_copy": 1,
+   "options": "EST/L-INV/.YY./",
+   "set_only_once": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:08:38.336956",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Lease Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{purpose_of_meeting}-{##}",
+ "creation": "2025-12-04 12:11:26.437614",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting",
+  "purpose_of_meeting",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meeting",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "purpose_of_meeting",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Purpose Of Meeting",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nInactive",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-16 18:17:17.787841",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Meeting Links",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

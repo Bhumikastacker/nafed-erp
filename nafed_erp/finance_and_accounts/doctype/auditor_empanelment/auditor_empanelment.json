@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-10 11:19:20.193232",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1qyq",
+  "naming_series",
+  "firm_name",
+  "auditor_name",
+  "auditor_type",
+  "registration_no",
+  "department",
+  "status",
+  "is_supplier",
+  "column_break_jjss",
+  "empanelment_date",
+  "expiry_date",
+  "pan_no",
+  "email",
+  "contact_person",
+  "amended_from",
+  "auditor_rate_card",
+  "rate",
+  "purchase_invoice",
+  "section_break_olkq",
+  "add_others_auditor_empanelment",
+  "ref"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1qyq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Auditor ID",
+   "options": "AYD-"
+  },
+  {
+   "fieldname": "firm_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Firm Name",
+   "mandatory_depends_on": "eval:doc.auditor_type == \"Statutory\""
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact No.",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "empanelment_date",
+   "fieldtype": "Date",
+   "label": "Empanelment Start  Date"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Empanelment End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nExpired\nSuspended"
+  },
+  {
+   "fieldname": "column_break_jjss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auditor Empanelment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No.",
+   "length": 15
+  },
+  {
+   "fieldname": "auditor_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Auditor Type",
+   "options": "\nInternal\nStatutory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No.",
+   "length": 10
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "mandatory_depends_on": "eval:doc.auditor_type == \"Statutory\"",
+   "options": "Department"
+  },
+  {
+   "fieldname": "auditor_rate_card",
+   "fieldtype": "Link",
+   "label": "Auditor Rate Card",
+   "options": "Auditor Rate Card"
+  },
+  {
+   "fetch_from": "auditor_rate_card.rate",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.auditor_type == \"Statutory\"",
+   "fieldname": "is_supplier",
+   "fieldtype": "Check",
+   "label": "Is Supplier"
+  },
+  {
+   "fieldname": "auditor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Auditor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_olkq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_others_auditor_empanelment",
+   "fieldtype": "Table",
+   "label": "Add Others Auditor Empanelment ",
+   "options": "Auditor Empanelment Table"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "label": "ref",
+   "options": "Tender Management",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Audit Assignment",
+   "link_fieldname": "auditor"
+  }
+ ],
+ "modified": "2026-05-19 15:27:22.072965",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Auditor Empanelment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

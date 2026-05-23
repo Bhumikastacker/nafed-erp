@@ -1,0 +1,195 @@
+/* Light Green theme */
+:root,
+[data-theme="light"],
+html[data-theme="light"] {
+  /* Core brand palette */
+  --primary: #3fcb66;
+  --primary-color: var(--primary);
+  --primary-rgb: 63, 203, 102;
+  --primary-text-color: #124d2f;
+
+  /* Backgrounds & surfaces */
+  --bg-color: #f6fff8;
+  --page-bg: var(--bg-color);
+  --card-bg: #ffffff;
+  --sidebar-bg: #f0fff2;
+  --control-bg: #ffffff;
+  --border-color: #d5f1e2;
+  --scrollbar-thumb: rgba(63, 203, 102, 0.35);
+
+  /* Text colours */
+  --text-color: #255a3f;
+  --heading-color: #0c3b24;
+  --muted-text-color: #5b7e6d;
+  --placeholder-color: #85a993;
+
+  /* Accents */
+  --navbar-bg: #e8fced;
+  --navbar-text-color: var(--heading-color);
+  --menu-bg: #f0fff2;
+  --menu-item-hover-bg: rgba(63, 203, 102, 0.12);
+  --tag-bg: #e1f8ea;
+  --tag-text: #1d6039;
+  --indicator-bg: rgba(63, 203, 102, 0.12);
+  --indicator-border: rgba(63, 203, 102, 0.35);
+
+  /* Buttons */
+  --btn-primary-bg: var(--primary);
+  --btn-primary-border: #38b55d;
+  --btn-primary-text: #ffffff;
+  --btn-primary-bg-hover: #38b55d;
+  --btn-primary-bg-active: #30a654;
+  --btn-secondary-bg: #d8f4df;
+  --btn-secondary-border: #b6e7c6;
+  --btn-secondary-text: var(--heading-color);
+
+  /* Form controls */
+  --input-border: #b7e5cc;
+  --input-border-focus: #60d182;
+  --input-shadow-focus: rgba(63, 203, 102, 0.35);
+}
+
+body,
+.page-container,
+.page-body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+}
+
+::selection {
+  background: rgba(63, 203, 102, 0.2);
+  color: var(--heading-color);
+}
+
+a,
+a:hover,
+a:focus {
+  color: var(--primary);
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-border);
+  color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-bg-hover);
+  border-color: var(--btn-primary-bg-hover);
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active {
+  background-color: var(--btn-primary-bg-active);
+  border-color: var(--btn-primary-bg-active);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--btn-primary-border);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: rgba(63, 203, 102, 0.12);
+  border-color: var(--btn-primary-bg-hover);
+}
+
+.btn-secondary,
+.btn-default {
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-secondary-border);
+  color: var(--btn-secondary-text);
+}
+
+.navbar,
+.navbar.navbar-light {
+  background: var(--navbar-bg);
+  color: var(--navbar-text-color);
+}
+
+.navbar .navbar-brand,
+.navbar a,
+.navbar .nav-link {
+  color: var(--navbar-text-color);
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  background: var(--menu-item-hover-bg);
+}
+
+.layout-side-section,
+.standard-sidebar {
+  background: var(--sidebar-bg);
+}
+
+.page-head {
+  border-bottom-color: var(--border-color);
+}
+
+.page-head .page-title {
+  color: var(--heading-color);
+}
+
+.indicator-pill,
+.indicator {
+  background: var(--indicator-bg);
+  border-color: var(--indicator-border);
+  color: var(--tag-text);
+}
+
+.badge-primary,
+.tag-pill {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+}
+
+.form-control,
+.input-with-feedback {
+  background-color: var(--control-bg);
+  border-color: var(--input-border);
+  color: var(--text-color);
+}
+
+.form-control:focus,
+.input-with-feedback:focus {
+  border-color: var(--input-border-focus);
+  box-shadow: 0 0 0 3px var(--input-shadow-focus);
+}
+
+.table th {
+  background-color: rgba(63, 203, 102, 0.08);
+  color: var(--heading-color);
+}
+
+.timeline-head,
+.dashboard-graph .graph-head {
+  background-color: rgba(63, 203, 102, 0.08);
+  border-color: var(--border-color);
+}
+
+.navbar .navbar-search {
+  background: #ffffff;
+  border-color: var(--input-border);
+}
+
+.listview-row {
+  border-bottom-color: var(--border-color);
+}
+
+.modal-header,
+.modal-footer {
+  background-color: rgba(63, 203, 102, 0.06);
+  border-color: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(63, 203, 102, 0.5);
+}

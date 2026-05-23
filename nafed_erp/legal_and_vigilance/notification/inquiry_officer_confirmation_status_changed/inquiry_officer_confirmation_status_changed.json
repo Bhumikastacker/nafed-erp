@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 16:31:58.132076",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Inquiry Officer Appointment",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "An Inquiry Officer status changed in connection with the following inquiry case.<br><br>\n\n<b>Appointment ID:</b> {{ doc.name }}<br>\n<b>Inquiry Case ID:</b> {{ doc.inquiry_case_id }}<br>\n<b>Appointment Letter ID:</b> {{ doc.appointment_letter_id }}<br>\n<b>Officer Name:</b> {{ doc.officer_name }}<br>\n<b>Role Type:</b> {{ doc.role_type }}<br>\n<b>Appointment Date:</b> {{ doc.appointment_date }}<br>\n<b>Confirmation Status:</b> {{ doc.confirmation_status }}<br>\n\n\nThe appointed officer is required to acknowledge the appointment and proceed as per the prescribed inquiry procedure.",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:00:28.183918",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Inquiry officer confirmation status changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Inquiry Officer status changed \u2013 Case {{ doc.inquiry_case_id }}",
+ "value_changed": "confirmation_status"
+}

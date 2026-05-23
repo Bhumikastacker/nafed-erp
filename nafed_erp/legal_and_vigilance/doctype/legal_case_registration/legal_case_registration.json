@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "autoname": "format:LGL-{YYYY}-{###}",
+ "creation": "2026-01-13 17:30:14.989606",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_details_section",
+  "case_number",
+  "party_name",
+  "case_category",
+  "other_case_category",
+  "matter_value",
+  "assigned_advocate",
+  "status",
+  "column_break_sabt",
+  "jurisdiction",
+  "branch_name",
+  "concerned_division",
+  "agreement_type",
+  "amended_from",
+  "view_mode",
+  "related_cases_html",
+  "case_status",
+  "section_break_hgyr",
+  "table_rqgs",
+  "section_break_ktxz",
+  "opposing_party",
+  "court",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Party Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opposing_party",
+   "fieldtype": "Table",
+   "label": "Opposing Party",
+   "options": "Legal Opposing Party"
+  },
+  {
+   "fieldname": "case_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Case Category",
+   "options": "Litigation\nContract\nCompliance\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "matter_value",
+   "fieldtype": "Int",
+   "label": "Matter Value"
+  },
+  {
+   "fieldname": "assigned_advocate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Law Firm ",
+   "options": "Legal Advocates",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sabt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jurisdiction",
+   "fieldtype": "Link",
+   "label": "Court",
+   "options": "Jurisdiction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Link",
+   "label": "Head Office /Branch Name",
+   "link_filters": "[[\"Company\",\"is_group\",\"=\",0]]",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Legal Case Registration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Individual",
+   "fieldname": "view_mode",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "View Mode",
+   "options": "Individual\nAggregated"
+  },
+  {
+   "fieldname": "related_cases_html",
+   "fieldtype": "HTML",
+   "label": "Related Cases",
+   "read_only": 1
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Select",
+   "label": "Case Status",
+   "options": "Awaiting Order\nIn Progress\nHearing Completed\nCompliance Pending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ktxz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "court",
+   "fieldtype": "Table",
+   "label": "Court",
+   "options": "Court Name"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Table",
+   "label": "Noting Sheet",
+   "options": "Legal Case Registration Remarks"
+  },
+  {
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nRegistered\nClosed",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.case_category==\"Other\"\n",
+   "fieldname": "other_case_category",
+   "fieldtype": "Data",
+   "label": "Specify Case Category"
+  },
+  {
+   "fieldname": "section_break_hgyr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_rqgs",
+   "fieldtype": "Table",
+   "label": "Advocates",
+   "options": "Advocate List"
+  },
+  {
+   "fieldname": "concerned_division",
+   "fieldtype": "Data",
+   "label": "Concerned Division",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agreement_type",
+   "fieldtype": "Link",
+   "label": "Agreement Type",
+   "options": "Agreement Type",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Legal Case Assignment",
+   "link_fieldname": "case_id"
+  },
+  {
+   "link_doctype": "Legal Case Hearing",
+   "link_fieldname": "case_id"
+  },
+  {
+   "link_doctype": "Legal Case Status Log",
+   "link_fieldname": "case_id"
+  },
+  {
+   "link_doctype": "Case Outcome Recording And  Closure Processing",
+   "link_fieldname": "case_id"
+  }
+ ],
+ "modified": "2026-05-15 13:22:46.462678",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

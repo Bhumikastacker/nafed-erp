@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2026-01-13 17:47:34.292466",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "phone",
+  "mail",
+  "is_supplier",
+  "column_break_wziz",
+  "address",
+  "conflict_notes",
+  "empanelment_and_availability_section",
+  "empanelled",
+  "empanelment_status",
+  "column_break_uykh",
+  "current_active_cases",
+  "max_active_cases",
+  "section_break_rxxu",
+  "advocate_fee_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "length": 10,
+   "no_copy": 1,
+   "options": "Phone",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "mail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "no_copy": 1,
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_wziz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "empanelment_and_availability_section",
+   "fieldtype": "Section Break",
+   "label": "Empanelment and Availability"
+  },
+  {
+   "default": "0",
+   "fieldname": "empanelled",
+   "fieldtype": "Check",
+   "label": "Empanelled"
+  },
+  {
+   "fieldname": "empanelment_status",
+   "fieldtype": "Select",
+   "label": "Empanelment Status",
+   "options": "Active\nSuspended\nExpired",
+   "reqd": 1
+  },
+  {
+   "fieldname": "max_active_cases",
+   "fieldtype": "Int",
+   "label": "Max Active Cases",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_active_cases",
+   "fieldtype": "Int",
+   "label": "Currently Active Cases",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uykh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conflict_notes",
+   "fieldtype": "Small Text",
+   "label": "Conflict Notes"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_supplier",
+   "fieldtype": "Check",
+   "label": "Is Supplier"
+  },
+  {
+   "fieldname": "advocate_fee_schedule",
+   "fieldtype": "Link",
+   "label": "Advocate Fee Schedule",
+   "options": "Advocate Fee Schedule",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rxxu",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-19 11:19:54.431133",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Advocates",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

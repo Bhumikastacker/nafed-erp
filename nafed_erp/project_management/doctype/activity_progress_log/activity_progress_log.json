@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PPL-{#####}",
+ "creation": "2026-01-28 12:23:00.353721",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "milestone",
+  "project",
+  "technical_partner",
+  "division",
+  "remarks",
+  "column_break_sepy",
+  "activity_progress_percent",
+  "actual_start_date",
+  "actual_end_date",
+  "approval_status",
+  "input_waste_quantity",
+  "biofuel_output_quantity",
+  "uom",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.activity",
+   "fetch_from": "activity.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.activity",
+   "fetch_from": "activity.parent_task",
+   "fieldname": "milestone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MIlestone",
+   "link_filters": "[[\"Task\",\"is_group\",\"=\",1]]",
+   "options": "Task",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.division==\"Climate Resilient Innovations\"",
+   "fieldname": "input_waste_quantity",
+   "fieldtype": "Float",
+   "label": "Input Waste Quantity",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.division==\"Climate Resilient Innovations\"",
+   "fieldname": "biofuel_output_quantity",
+   "fieldtype": "Float",
+   "label": "Biofuel Output Quantity",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.division==\"Climate Resilient Innovations\"",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_sepy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "label": "Actual End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Activity Progress Log",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity",
+   "link_filters": "[[\"Task\",\"status\",\"in\",[\"Open\",\"Working\"]],[\"Task\",\"is_group\",\"=\",0],[\"Task\",\"custom_apply_workflow\",\"=\",1]]",
+   "options": "Task",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_progress_percent",
+   "fieldtype": "Percent",
+   "label": "Activity Progress Percent",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.activity",
+   "fetch_from": "activity.custom_technical_partner",
+   "fieldname": "technical_partner",
+   "fieldtype": "Link",
+   "label": "Technical Partner",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "activity.custom_division",
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "link_filters": "[[\"Division\",\"allow_project_creation\",\"=\",1]]",
+   "options": "Division",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "Draft\nPending for Approval\nApproved\nRejected",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-27 16:08:51.974580",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Activity Progress Log",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

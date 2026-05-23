@@ -1,0 +1,198 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"J8Fc6hdb5Q\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Procure to pay</span>\",\"col\":12}},{\"id\":\"_9T3pnnm8L\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Maize Division\",\"col\":2}},{\"id\":\"MhY8pfBNno\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Seed Division\",\"col\":2}},{\"id\":\"hbd-yabFqZ\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Admin Division\",\"col\":2}},{\"id\":\"jGbIyIZd8V\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Horticulture Division\",\"col\":2}},{\"id\":\"RhhdP7Q3SJ\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Food Grain Division\",\"col\":2}},{\"id\":\"v7fruMGqDR\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Jute Division\",\"col\":2}},{\"id\":\"Dofbuq-M-n\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Public Relation Division\",\"col\":2}},{\"id\":\"3QSWzIuB0w\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Pulses & Oil Seed Division\",\"col\":2}},{\"id\":\"68N3VYdbTk\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Retail Business Division (RBD)\",\"col\":2}},{\"id\":\"7cy0Z0NoV7\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Institution Supply Division\",\"col\":2}},{\"id\":\"yMGvxK8VvY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Outright Business Division\",\"col\":2}}]",
+ "creation": "2025-11-08 19:55:23.344460",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Outright Business Division",
+   "label": "Outright Business Division"
+  },
+  {
+   "custom_block_name": "Institution Supply Division",
+   "label": "Institution Supply Division"
+  },
+  {
+   "custom_block_name": "Maize Division",
+   "label": "Maize Division"
+  },
+  {
+   "custom_block_name": "Seed Division",
+   "label": "Seed Division"
+  },
+  {
+   "custom_block_name": "Admin Division",
+   "label": "Admin Division"
+  },
+  {
+   "custom_block_name": "Horticulture Division",
+   "label": "Horticulture Division"
+  },
+  {
+   "custom_block_name": "Food Grain Division",
+   "label": "Food Grain Division"
+  },
+  {
+   "custom_block_name": "Jute Division",
+   "label": "Jute Division"
+  },
+  {
+   "custom_block_name": "Public Relation Division",
+   "label": "Public Relation Division"
+  },
+  {
+   "custom_block_name": "Pulses & Oil Seed Division",
+   "label": "Pulses & Oil Seed Division"
+  },
+  {
+   "custom_block_name": "Retail Business Division (RBD)",
+   "label": "Retail Business Division (RBD)"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "procure-to-pay",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Procure to pay",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier Group",
+   "link_count": 0,
+   "link_to": "Supplier Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Warehouse",
+   "link_count": 0,
+   "link_to": "Warehouse",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-04-23 17:24:38.902987",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Procure to pay",
+ "number_cards": [],
+ "owner": "administrator@erpnext.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Admin Manager"
+  },
+  {
+   "role": "Admin User"
+  },
+  {
+   "role": "Jute DivIsion User"
+  },
+  {
+   "role": "Jute Division Manager"
+  },
+  {
+   "role": "Maize Division Manager"
+  },
+  {
+   "role": "Maize Divison User"
+  },
+  {
+   "role": "ISD  Division Manager"
+  },
+  {
+   "role": "ISD Division User"
+  },
+  {
+   "role": "ISD Officer"
+  },
+  {
+   "role": "Seed Division Manager"
+  },
+  {
+   "role": "Seed Division Officer"
+  },
+  {
+   "role": "Seed Division User"
+  },
+  {
+   "role": "Horticulture Division Manager"
+  },
+  {
+   "role": "horticulture Division user"
+  },
+  {
+   "role": "Food Grain Division Manager"
+  },
+  {
+   "role": "Food Grain Division User"
+  },
+  {
+   "role": "Z - Public Relation Manager"
+  },
+  {
+   "role": "Z - Public Relation User"
+  },
+  {
+   "role": "POS Division Manager"
+  },
+  {
+   "role": "POS division User"
+  },
+  {
+   "role": "RBD Division Manager"
+  },
+  {
+   "role": "RBD Division User"
+  },
+  {
+   "role": "ISD  Division Manager"
+  },
+  {
+   "role": "ISD Division User"
+  },
+  {
+   "role": "ISD Officer"
+  },
+  {
+   "role": "OBD Division User"
+  },
+  {
+   "role": "OBD Division Manager"
+  }
+ ],
+ "sequence_id": 10.0,
+ "shortcuts": [],
+ "title": "Procure to pay"
+}

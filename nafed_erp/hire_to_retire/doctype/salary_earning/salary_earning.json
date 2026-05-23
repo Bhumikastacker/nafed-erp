@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-23 14:41:27.386494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0pjy",
+  "earning",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0pjy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "earning",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Earning",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-23 16:29:10.683962",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Salary Earning",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

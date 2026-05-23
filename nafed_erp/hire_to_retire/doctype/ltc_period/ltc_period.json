@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{travel_category}-{year_slab}",
+ "creation": "2025-12-11 16:26:20.258425",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_category",
+  "period_start",
+  "period_end",
+  "allowed_years",
+  "year_slab"
+ ],
+ "fields": [
+  {
+   "fieldname": "travel_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Travel Category",
+   "options": "\nHome Town\nOther Place",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period_start",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Period Start",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period_end",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Period End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allowed_years",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Allowed Years",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "year_slab",
+   "fieldtype": "Data",
+   "label": "Year Slab",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-11 16:56:26.601535",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "LTC Period",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

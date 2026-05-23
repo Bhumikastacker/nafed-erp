@@ -1,0 +1,411 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"eYL5pcVXDF\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>DASHBOARDS</b><b></b></span>\",\"col\":12}},{\"id\":\"RT7q57jfIJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ManPower Dashboard\",\"col\":3}},{\"id\":\"9Ndu20xhi0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"HR Dashboard\",\"col\":3}},{\"id\":\"6jFnOcdY2U\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Lifecycle Dashboard\",\"col\":3}},{\"id\":\"O89jh81-Xt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"id\":\"sZtvouZPGq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Organizational Chart\",\"col\":9}},{\"id\":\"S0tdK428fz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Learning Path\",\"col\":4}},{\"id\":\"UqqPC49icu\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Training Meeting\",\"col\":4}},{\"id\":\"ftPaiJA8-K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Attendance\",\"col\":4}},{\"id\":\"aHc02nNzRE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Training Requisition\",\"col\":4}},{\"id\":\"H3cqh8_Wru\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nafed Training Feedback\",\"col\":4}},{\"id\":\"rkKLl3TRks\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Budget\",\"col\":4}},{\"id\":\"weZNvBx5du\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Training Division</b></span>\",\"col\":12}},{\"id\":\"pnbRNUJmqY\",\"type\":\"card\",\"data\":{\"card_name\":\"Training Master\",\"col\":4}},{\"id\":\"tFhTzyXlRh\",\"type\":\"card\",\"data\":{\"card_name\":\"Training Module\",\"col\":4}},{\"id\":\"5YB8tG16dF\",\"type\":\"card\",\"data\":{\"card_name\":\"Training reports\",\"col\":4}}]",
+ "creation": "2026-04-03 12:05:24.693542",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "hire-to-retire",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Training Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Component",
+   "link_count": 0,
+   "link_to": "Salary Component",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Structure",
+   "link_count": 0,
+   "link_to": "Salary Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Structure Assignment",
+   "link_count": 0,
+   "link_to": "Salary Structure Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bulk Salary Structure Assignment",
+   "link_count": 0,
+   "link_to": "Bulk Salary Structure Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Setup",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Holiday List",
+   "link_count": 0,
+   "link_to": "Holiday List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Type",
+   "link_count": 0,
+   "link_to": "Leave Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Period",
+   "link_count": 0,
+   "link_to": "Leave Period",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Policy",
+   "link_count": 0,
+   "link_to": "Leave Policy",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Block List",
+   "link_count": 0,
+   "link_to": "Leave Block List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Rule",
+   "link_count": 0,
+   "link_to": "Leave Rule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Deduction Log",
+   "link_count": 0,
+   "link_to": "Leave Deduction Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Master",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting Links",
+   "link_count": 0,
+   "link_to": "Meeting Links",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trainer",
+   "link_count": 0,
+   "link_to": "Trainer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Skill",
+   "link_count": 0,
+   "link_to": "Skill",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget",
+   "link_count": 0,
+   "link_to": "Budget",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Course",
+   "link_count": 0,
+   "link_to": "Course",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Training Module",
+   "link_count": 0,
+   "link_to": "Training Module",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Study Tours",
+   "link_count": 0,
+   "link_to": "Study Tours",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Training Requisition",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Skill Update",
+   "link_count": 0,
+   "link_to": "Employee Skill Update",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Employee Skill Map",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Module",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Requisition",
+   "link_count": 0,
+   "link_to": "Training Requisition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Learning Path",
+   "link_count": 0,
+   "link_to": "Learning Path",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Meeting",
+   "link_count": 0,
+   "link_to": "Nafed Training Meeting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Feedback",
+   "link_count": 0,
+   "link_to": "Nafed Training Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Skill Map",
+   "link_count": 0,
+   "link_to": "Employee Skill Map",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Milestones",
+   "link_count": 0,
+   "link_to": "Nafed Milestones",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Intership Trainee",
+   "link_count": 0,
+   "link_to": "Intership Trainee Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-12 11:54:05.004745",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Training Division",
+ "number_cards": [
+  {
+   "label": "Learning Path",
+   "number_card_name": "Learning Path"
+  },
+  {
+   "label": "Nafed Training Meeting",
+   "number_card_name": "Nafed Training Meeting"
+  },
+  {
+   "label": "Nafed Attendance",
+   "number_card_name": "Nafed Attendance"
+  },
+  {
+   "label": "Budget",
+   "number_card_name": "Total Project Budget"
+  },
+  {
+   "label": "Training Requisition",
+   "number_card_name": "Training Req"
+  },
+  {
+   "label": "Nafed Training Feedback",
+   "number_card_name": "Nafed Training Feedback"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Hire To Retire",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Training Admin"
+  },
+  {
+   "role": "Division Head"
+  },
+  {
+   "role": "Managing Director"
+  }
+ ],
+ "sequence_id": 49.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "ManPower Dashboard",
+   "link_to": "Recruitment",
+   "restrict_to_domain": "",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Organizational Chart",
+   "link_to": "organizational-chart",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "HR Dashboard",
+   "link_to": "Human Resource",
+   "restrict_to_domain": "",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Lifecycle Dashboard",
+   "link_to": "Employee Lifecycle",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Attendance Dashboard",
+   "link_to": "Attendance",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Training Division"
+}
