@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-18 13:39:04.403984",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "complainant_name",
+  "complaint_type",
+  "column_break_ennu",
+  "date",
+  "section_break_ptji",
+  "logs"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.complaint_type === \"Pseudonymous\"\n",
+   "fieldname": "complainant_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Complainant Name",
+   "mandatory_depends_on": "eval:doc.complaint_type === \"Pseudonymous\"\n",
+   "read_only_depends_on": "eval:(doc.action_taken_by && doc.action_taken_by !== frappe.session.user) \n|| doc.workflow_state === \"Closed\" \n|| doc.workflow_state === \"Reopen\""
+  },
+  {
+   "fieldname": "column_break_ennu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "read_only_depends_on": "eval:(doc.action_taken_by && doc.action_taken_by !== frappe.session.user) \n|| doc.workflow_state === \"Closed\" \n|| doc.workflow_state === \"Reopen\""
+  },
+  {
+   "fieldname": "complaint_type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Complaint Type",
+   "options": "\nAnonymous\nPseudonymous",
+   "read_only_depends_on": "eval:(doc.action_taken_by && doc.action_taken_by !== frappe.session.user) \n|| doc.workflow_state === \"Closed\" \n|| doc.workflow_state === \"Reopen\"",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ptji",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Complaint ID",
+   "options": "VIG/.YYYY./.###.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "logs",
+   "fieldtype": "Table",
+   "label": "Noting Sheet",
+   "options": "Complaint Receipts Remarks",
+   "read_only_depends_on": "eval:doc.workflow_state === \"Closed\""
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Investigation",
+   "link_fieldname": "complaint_receipt"
+  },
+  {
+   "link_doctype": "Report Submission by  Members",
+   "link_fieldname": "complaint_receipt"
+  }
+ ],
+ "modified": "2026-04-09 22:09:16.879841",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Complaint Receipts",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

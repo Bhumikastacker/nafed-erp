@@ -1,0 +1,25 @@
+<p>A new vigilance complaint has been successfully registered in the system.</p>
+
+<p>
+Complaint ID: {{ doc.name }}<br>
+Complainant: {{ doc.complainant_name }}<br>
+Complaint Type: {{ doc.complaint_type }}<br>
+Date of Receipt: {{ doc.date }}<br>
+</p>
+
+<p><b>Remarks:</b></p>
+
+{% if doc.logs %}
+    {% for row in doc.logs %}
+        <p>
+            {{ row.remarks | safe }} <br>
+            <small>
+                By: {{ row.action_taken_by }} on {{ row.action_taken_on }}
+            </small>
+        </p>
+    {% endfor %}
+{% else %}
+    <p>No remarks available.</p>
+{% endif %}
+
+<p>Please review the complaint and take necessary action as per the vigilance procedure.</p>

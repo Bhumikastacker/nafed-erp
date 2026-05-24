@@ -1,0 +1,38 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-02-24 15:17:11.425234",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Assignment",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Lawyer type has been changed for the following case</p>\n\n<p>Case ID: {{ doc.case_id }}<br>\nLawyer:{{doc.lawyer}}<br>\nStatus:{{doc.status}}<br>\nDelegation Status:{{doc.delegation_status}}\nLawyer Type:{{doc.lawyer_type}}<br>\nAssigned On: {{ doc.assigned_on }}</p>\n\n<p>Please review and take necessary action.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-03-16 15:59:46.133864",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Delegation Status changed for legal case",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "closed_by"
+  },
+  {
+   "receiver_by_document_field": "assigned_by"
+  },
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Delegation Status Changed Legal Case: {{ doc.name }}",
+ "value_changed": "delegation_status"
+}

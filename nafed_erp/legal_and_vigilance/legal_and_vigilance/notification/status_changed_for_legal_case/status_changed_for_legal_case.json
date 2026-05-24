@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 18:27:51.609931",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Status has been changed for : <br>\nAgreement type:{{doc.agreement_type}}<br>\nAssigned Advocate:{{doc.assigned_advocate}}<br>\nRelated PO:{{doc.related_po__contract_ref}}<br>\nPriority:{{doc.priority}}<br>\nLegal Case Number: {{ doc.name }}<br>\nBranch: {{ doc.branch_name }}<br>\nJurisdiction: {{ doc.jurisdiction}}<br>\nStatus: {{ doc.status }}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 12:11:47.043955",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Status changed for legal case",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Case status changed for Legal Case : {{ doc.name}}",
+ "value_changed": "case_status"
+}

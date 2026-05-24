@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 15:53:41.463626",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Charge sheet Issuance",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>acknowledgement status changed for charge sheet has been changed as part of the disciplinary proceedings.<br><br></p>\n\n<b>Charge Sheet ID:</b> {{ doc.name }}<br>\n<b>Related Investigation ID:</b> {{ doc.investigation_id }}<br>\n<b>Reviewer:</b> {{ doc.reviewer }}<br>\n<b>Approval Date:</b> {{ doc.approval_date }}<br>\n<b>Dispatch Date:</b> {{ doc.dispatch_date }}<br>\n<b>Version Number:</b> {{ doc.version_number }}<br>\n<b>Acknowledgement Status:</b> {{ doc.acknowledgment_status }}<br>\n<p>The charge sheet has been formally issued and recorded in the system.\nPlease proceed with the next steps as per the applicable procedure.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:05:03.817708",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Acknowledgement status changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Acknowledgement status  changed for Charge Sheet  \u2013 {{ doc.name }}",
+ "value_changed": "acknowledgment_status"
+}

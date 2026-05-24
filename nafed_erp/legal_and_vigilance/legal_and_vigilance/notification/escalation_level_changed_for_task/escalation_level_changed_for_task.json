@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 13:03:50.661125",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Verification Routing",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Escalation Level has been changed for a verification task in relation to a vigilance complaint.<br><br></p>\n\n<p><b>Task ID:</b> {{ doc.task_id }}<br>\n<b>Related Complaint ID:</b> {{ doc.reference_name }}<br>\n<b>Task Status:</b> {{ doc.task_status }}<br>\n<b>Assigned Department:</b> {{ doc.assigned_department }}<br>\n<b>Responsible Officer:</b> {{ doc.responsible_officer }}<br>\n<b>Due Date:</b> {{ doc.due_date }}<br>\n<b>Reminder Interval:</b> {{ doc.reminder_interval }}<br>\n<b>Escalation Level:</b> {{ doc.escalation_level }}<br><br></p>\n\n<p>Please complete the verification within the stipulated timeline and update your findings in the system.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-13 11:06:10.655490",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Escalation level changed for task",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "responsible_officer"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Escalation Level changed for Verification Task Assigned by MD \u2013 Task {{ doc.task_id }}",
+ "value_changed": "escalation_level"
+}

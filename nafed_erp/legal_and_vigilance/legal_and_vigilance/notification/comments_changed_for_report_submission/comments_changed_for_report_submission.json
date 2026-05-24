@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 16:28:15.449860",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Report Submission by Committee",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Comments of report has been changed  for review and further action.<br><br>\n\n<b>Report ID:</b> {{ doc.name }}<br>\n<b>Case ID:</b> {{ doc.case_id }}<br>\n<b>Version Number:</b> {{ doc.version_number }}<br>\n<b>Uploaded By:</b> {{ doc.uploaded_by }}<br>\n<b>Upload Date:</b> {{ doc.upload_date }}<br>\n<b>Approval Status:</b> {{ doc.approval_status }}<br>\n\n\n<b>Reviewer Comments:</b><br>\n{{ doc.reviewer_comments }}<br><br>\n\nPlease review the submitted report and update the approval status as per the prescribed process.\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 16:59:15.111086",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Comments changed for report submission",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "uploaded_by"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Committee Report comment changed  \u2013 Case {{ doc.case_id }}",
+ "value_changed": "reviewer_comments"
+}

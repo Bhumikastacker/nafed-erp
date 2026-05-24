@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 11:26:56.055953",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Complaint Receipt",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A new vigilance complaint has been successfully registered in the system.</p>\n\n<p>Complaint ID: {{ doc.name }}<br>\nComplainant: {{ doc.complainant_name }}<br>\nComplaint Type:{{doc.complaint_type}}<br>\nDate of Receipt: {{ doc.date }}<br>\nDescription:{{doc.description}}<br>\nStatus: {{ doc.status }}</p>\n\n<p>Please review the complaint and take necessary action as per the vigilance procedure.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:11:15.195915",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "New Complaint Receipt",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "New Vigilance Complaint Received \u2013 {{ doc.name }}",
+ "value_changed": "stage"
+}

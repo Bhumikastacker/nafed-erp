@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-15 10:32:14.850559",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "case_id",
+  "hearing_date",
+  "previous_hearing_date",
+  "next_hearing_date",
+  "hearing_type",
+  "other_hearing_type",
+  "venue",
+  "created_by",
+  "attendees",
+  "column_break_zcoc",
+  "advocate",
+  "hearing_status",
+  "remarks",
+  "created_on",
+  "outcome_summary",
+  "purchase_invoice",
+  "section_break_ukas",
+  "hearing_documents",
+  "description",
+  "ref"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Hearing Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hearing_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Hearing Type",
+   "options": "Admission\nArgument\nFinal\nCompliance\nOther",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "case_id.jurisdiction",
+   "fieldname": "venue",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Venue / Court",
+   "options": "Jurisdiction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zcoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "ref.lawyer",
+   "fieldname": "advocate",
+   "fieldtype": "Link",
+   "label": "Advocate",
+   "options": "Legal Advocates",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hearing_status",
+   "fieldtype": "Select",
+   "label": "Hearing Status",
+   "options": "Pending\nReserved for judgement\nAppealed\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ukas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hearing_documents",
+   "fieldtype": "Table",
+   "label": "Hearing Documents",
+   "options": "Legal Case Hearing Document"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Text",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "outcome_summary",
+   "fieldtype": "Text",
+   "label": "Outcome Summary"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Hearing ID",
+   "options": "Legal-Hearing-.YYYY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice ",
+   "options": "Purchase Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_hearing_date",
+   "fieldtype": "Date",
+   "label": "Previous Hearing Date"
+  },
+  {
+   "fieldname": "next_hearing_date",
+   "fieldtype": "Date",
+   "label": "Next Hearing Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ref",
+   "options": "Legal Case Assignment"
+  },
+  {
+   "depends_on": "eval:doc.hearing_type==\"Other\"",
+   "fieldname": "other_hearing_type",
+   "fieldtype": "Data",
+   "label": "Specify Hearing Type"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Legal Case Hearing Outcome",
+   "link_fieldname": "hearing"
+  }
+ ],
+ "modified": "2026-03-13 12:17:32.487727",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Hearing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

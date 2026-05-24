@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 11:17:32.011823",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "task_id",
+  "complaint_receipt_id",
+  "section_break_euat",
+  "assigned_department",
+  "column_break_zdwu",
+  "responsible_officer",
+  "section_break_ngxj",
+  "due_date",
+  "column_break_jdvb",
+  "reminder_interval",
+  "section_break_gpoz",
+  "escalation_level",
+  "amended_from",
+  "task_status",
+  "ref"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Read Only",
+   "label": "Task ID"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "task_status",
+   "fieldtype": "Select",
+   "label": "Task Status",
+   "options": "\nPending\nIn-Progress\nRejected\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_euat",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Link",
+   "label": "Assigned Department ",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_zdwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "responsible_officer",
+   "fieldtype": "Link",
+   "label": "Responsible Officer",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_ngxj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_break_jdvb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reminder_interval",
+   "fieldtype": "Int",
+   "label": "Reminder Interval "
+  },
+  {
+   "fieldname": "section_break_gpoz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "escalation_level",
+   "fieldtype": "Select",
+   "label": "Escalation Level",
+   "options": "\nL1\nL2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Verification Routing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Ref",
+   "options": "Complaint Review by MD"
+  },
+  {
+   "default": "VR-.MM.-.YYYY.-.######",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Verification Routing ID",
+   "options": "VR-.MM.-.YYYY.-.######",
+   "read_only": 1
+  },
+  {
+   "fieldname": "complaint_receipt_id",
+   "fieldtype": "Link",
+   "label": "Complaint Receipt ID",
+   "options": "Complaint Receipt",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Verification Reporting",
+   "link_fieldname": "ref"
+  }
+ ],
+ "modified": "2026-02-13 10:55:38.860326",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Verification Routing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

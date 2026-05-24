@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-01-31 16:29:17.476019",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Hearing Outcome",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>The hearing outcome has been recorded for the following legal case:</p>\n\n<p>Case ID: {{ doc.case_id }}\nHearing Date: {{ doc.hearing_date}}\nOutcome: {{ doc.hearing_outcome }}</p>\n\n<p>Please review and proceed with next steps.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:08:13.108752",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Hearing Outcome",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "task_owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Hearing Outcome Recorded \u2013 Legal Case {{ doc.name}}",
+ "value_changed": "priority"
+}

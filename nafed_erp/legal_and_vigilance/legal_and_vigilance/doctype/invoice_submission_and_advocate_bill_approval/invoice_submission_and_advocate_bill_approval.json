@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-01-30 13:54:50.523635",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_06mx",
+  "amended_from",
+  "naming_series",
+  "invoice_date",
+  "advocate_name",
+  "case_id",
+  "column_break_hfnk",
+  "fee_type",
+  "amount",
+  "audit_trail",
+  "approval_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_06mx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invoice Submission And Advocate Bill Approval",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "advocate_name",
+   "fieldtype": "Link",
+   "label": "Advocate Name",
+   "options": "Legal Advocates",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case ID",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hfnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fee_type",
+   "fieldtype": "Select",
+   "label": "Fee Type",
+   "options": "\nPer Hearing Fee\nPer Case Fee\nMonthly Retainer\nAppearance Fee\nDrafting / Documentation Fee\nConsultation Fee\nOpinion Fee\nDocumentation / Filing Charges\nCourt Fee\nSettlement / Compromise Fee\nUrgent Hearing Fee\nOther (Specify)",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audit_trail",
+   "fieldtype": "Attach",
+   "label": "Audit Trail"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "\nPending\nApproved"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Invoice ID",
+   "options": "INV-.YY.-",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-30 14:04:15.568393",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Invoice Submission And Advocate Bill Approval",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

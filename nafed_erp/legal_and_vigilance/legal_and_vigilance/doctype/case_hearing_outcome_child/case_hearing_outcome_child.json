@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-06 10:57:57.625995",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hearing_id",
+  "date",
+  "status",
+  "advocate"
+ ],
+ "fields": [
+  {
+   "fieldname": "hearing_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hearing ID",
+   "link_filters": "[[\"Your Hearing DocType\",\"case_id\",\"=\",\"eval:doc.parentfield ? frappe.get_doc(doc.parenttype, doc.parent).case_id : ''\"]]\n",
+   "options": "Legal Case Hearing"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending\nReserved for judgement\nAppealed\nOther"
+  },
+  {
+   "fieldname": "advocate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Advocate",
+   "options": "Legal Advocates"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-24 11:08:58.224030",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Case Hearing outcome child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

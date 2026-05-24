@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_id}",
+ "creation": "2026-01-15 16:02:36.491488",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_hearing_outcome_section",
+  "case_id",
+  "hearing",
+  "hearing_date",
+  "hearing_outcome",
+  "awaiting_next_date",
+  "next_hearing_date",
+  "column_break_ewho",
+  "filing_deadline",
+  "compliance_deadline",
+  "task_owner",
+  "timeline_timestamp",
+  "created_by",
+  "outcome_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_hearing_outcome_section",
+   "fieldtype": "Section Break",
+   "label": "Case Hearing Outcome"
+  },
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Hearing Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hearing_outcome",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Hearing Outcome",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "awaiting_next_date",
+   "fieldtype": "Check",
+   "label": "Awaiting Next Date"
+  },
+  {
+   "depends_on": "eval:doc.awaiting_next_date=='1'",
+   "fieldname": "next_hearing_date",
+   "fieldtype": "Date",
+   "label": "Next Hearing Date",
+   "mandatory_depends_on": "eval:doc.awaiting_next_date=='1'"
+  },
+  {
+   "fieldname": "column_break_ewho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filing_deadline",
+   "fieldtype": "Date",
+   "label": "Filing Deadline"
+  },
+  {
+   "fieldname": "compliance_deadline",
+   "fieldtype": "Date",
+   "label": "Compliance Deadline"
+  },
+  {
+   "fieldname": "task_owner",
+   "fieldtype": "Link",
+   "label": "Task Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "outcome_documents",
+   "fieldtype": "Attach",
+   "label": "Outcome Documents"
+  },
+  {
+   "fieldname": "timeline_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timeline Timestamp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hearing",
+   "fieldtype": "Link",
+   "label": "Hearing ID",
+   "options": "Legal Case Hearing",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-05 15:04:21.606266",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Hearing Outcome",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-01-31 16:55:54.906213",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Tagging Related Case",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A related legal case has been linked.</p>\n\n<p>Primary Case:\n{{ doc.case_id }}</p>\n\n<p>Applied By:\n{{ doc.applied_by}}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:15:36.435497",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Tagging Related Case",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "applied_by"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Related Legal Case Tagged \u2013 {{ doc.case_id }}",
+ "value_changed": "priority"
+}

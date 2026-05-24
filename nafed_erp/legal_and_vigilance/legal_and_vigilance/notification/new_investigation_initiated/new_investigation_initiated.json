@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-24 15:17:13.174905",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Investigation",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>An investigation remarks has been changed as per directive.<br><br></p>\n\n<p>\n<b>Committee ID:</b> {{ doc.name }}<br>\n\n<p><b>Remarks:</b></p>\n<p>\n    {{ doc.remarks | safe }}\n</p>\n\n<p><b>Committee Members:</b></p>\n{% if doc.members %}\n    <ul>\n    {% for row in doc.members %}\n        <li>{{ row.member }}</li>\n    {% endfor %}\n    </ul>\n{% else %}\n    <p>No members assigned.</p>\n{% endif %}\n\n<p>The committee members are required to commence the investigation and submit findings within the stipulated timeline.</p>",
+ "message_type": "HTML",
+ "modified": "2026-03-18 12:55:47.361889",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "New Investigation initiated",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "member,members"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Investigation Initiated \u2013 Committee {{ doc.committee_id }}",
+ "value_changed": "remarks"
+}
