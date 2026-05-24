@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 11:29:41.831214",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Complaint Receipt",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A new status is defined for the vigilance complaint in the system.</p>\n\n<p>Complaint ID: {{ doc.name }}<br>\nComplainant: {{ doc.complainant_name }}<br>\nComplaint Type:{{doc.complaint_type}}<br>\nDate of Receipt: {{ doc.date }}<br>\nDescription:{{doc.description}}<br>\nStatus: {{ doc.status }}</p>\n\n<p>Please review the complaint and take necessary action as per the vigilance procedure.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-19 12:16:54.571639",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Status changed for complaint receipt",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Nafed Testing",
+ "sender_email": "rahul.c@stackerbee.com",
+ "subject": "Status Changed for Vigilance Complaint  \u2013 {{ doc.name }}",
+ "value_changed": "stage"
+}

@@ -1,0 +1,44 @@
+{
+  "doctype": "DocType",
+  "name": "Training Session Participant",
+  "module": "Hire To Retire",
+  "custom": 1,
+  "istable": 1,
+  "fields": [
+    {
+      "fieldname": "employee",
+      "label": "Employee",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "employee_email",
+      "label": "Employee Email",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "invited",
+      "label": "Invited",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "attendance_status",
+      "label": "Attendance Status",
+      "fieldtype": "Select",
+      "options": "Not Invited\nInvited\nAttended\nAbsent"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1
+    },
+    {
+      "role": "Training Admin",
+      "read": 1,
+      "write": 1
+    }
+  ]
+}

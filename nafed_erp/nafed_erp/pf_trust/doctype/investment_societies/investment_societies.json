@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:society_code",
+ "creation": "2026-02-20 16:55:35.494355",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "society_code",
+  "society_name",
+  "gstin",
+  "address",
+  "investment_category",
+  "column_break_dlou",
+  "tan_id",
+  "pan_id",
+  "email_id",
+  "phone_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "society_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Society Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_dlou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tan_id",
+   "fieldtype": "Data",
+   "label": "TAN ID"
+  },
+  {
+   "fieldname": "pan_id",
+   "fieldtype": "Data",
+   "label": "PAN ID"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No."
+  },
+  {
+   "fieldname": "investment_category",
+   "fieldtype": "Link",
+   "label": "Investment Category",
+   "options": "Investment Category"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 13:41:47.797344",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "Investment Societies",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

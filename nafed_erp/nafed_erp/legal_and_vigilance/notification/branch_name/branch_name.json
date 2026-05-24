@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 18:20:02.767583",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Status has been changed for : <br>\nLegal Case Number: {{ doc.name }}<br>\nBranch: {{ doc.branch_name }}<br>\nJurisdiction: {{ doc.jurisdiction}}<br>\nStatus: {{ doc.status }}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 12:11:42.518032",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Branch name",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Branch changed for Legal Case : {{ doc.name}}",
+ "value_changed": "branch_name"
+}

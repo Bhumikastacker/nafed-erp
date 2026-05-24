@@ -1,0 +1,281 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format: {property_name}",
+ "creation": "2025-12-02 00:22:56.638721",
+ "description": "Property Management",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "property_details_tab",
+  "property_details_section",
+  "naming_series",
+  "property_name",
+  "zone",
+  "branch",
+  "property_type",
+  "ownership_status",
+  "ageconstruction_year",
+  "current_status",
+  "size",
+  "unit_of_measures",
+  "document_status",
+  "supporting_documents",
+  "column_break_only",
+  "purpose",
+  "condition_assessment",
+  "inspection_date",
+  "addressgeolocation",
+  "tenant_details_section",
+  "tenant_id",
+  "tenant_name",
+  "registration_number",
+  "column_break_yhnt",
+  "registration_date",
+  "agreement_terms",
+  "survey_and_measurement_tab",
+  "survey_history_log",
+  "tax_and_compliances_tab",
+  "property_tax_log",
+  "financial_expenditure_tab",
+  "property_expenditure_log",
+  "property_history_tab",
+  "property_history_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_details_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property ID",
+   "no_copy": 1,
+   "read_only": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "label": "Property Name",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Select",
+   "label": "Property Type",
+   "options": "Select\nOffice\nStorage\nIU\nProject\nLand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ownership_status",
+   "fieldtype": "Select",
+   "label": "Ownership Status",
+   "options": "Select\nFreehold\nLeasehold",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ageconstruction_year",
+   "fieldtype": "Float",
+   "label": "Age/Construction Year"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "Select\nOccupied\nVacant\nLeased",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_only",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "label": "Inspection Date"
+  },
+  {
+   "fieldname": "condition_assessment",
+   "fieldtype": "Small Text",
+   "label": "Condition Assessment"
+  },
+  {
+   "fieldname": "property_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Property Details"
+  },
+  {
+   "fieldname": "survey_and_measurement_tab",
+   "fieldtype": "Tab Break",
+   "label": "Survey History"
+  },
+  {
+   "fieldname": "tax_and_compliances_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tax and Compliances"
+  },
+  {
+   "fieldname": "financial_expenditure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Financial Expenditure"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "document_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document Status",
+   "mandatory_depends_on": "eval: doc.document_status == ''",
+   "options": "Available\nSubmit Later",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "survey_history_log",
+   "fieldtype": "Table",
+   "options": "Property Survey Child Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "property_tax_log",
+   "fieldtype": "Table",
+   "options": "Property Tax Child Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "property_expenditure_log",
+   "fieldtype": "Table",
+   "options": "Property Expenditure Child Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "property_history_tab",
+   "fieldtype": "Tab Break",
+   "label": "Property History"
+  },
+  {
+   "fieldname": "property_history_log",
+   "fieldtype": "Table",
+   "options": "Property History Child Table",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.document_status == 'Available'",
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "mandatory_depends_on": "eval: doc.document_status == 'Available'",
+   "options": "Property Documents"
+  },
+  {
+   "fieldname": "tenant_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tenant Details"
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Link",
+   "label": "Tenant Name",
+   "options": "Lesse_Tenant Master"
+  },
+  {
+   "fetch_from": "tenant_id.lessee_name",
+   "fieldname": "tenant_name",
+   "fieldtype": "Data",
+   "label": "Tenant ID"
+  },
+  {
+   "fieldname": "column_break_yhnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "tenant_id.registration_date",
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fetch_from": "tenant_id.agreement_details",
+   "fieldname": "agreement_terms",
+   "fieldtype": "Small Text",
+   "label": "Agreement Terms"
+  },
+  {
+   "fetch_from": "tenant_id.registration_number",
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "addressgeolocation",
+   "fieldtype": "Geolocation",
+   "label": "Address/Geolocation"
+  },
+  {
+   "fieldname": "unit_of_measures",
+   "fieldtype": "Select",
+   "label": "Unit of Measures",
+   "options": "Select\nSq. Ft.\nAcres"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 04:15:48.396772",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "naming_series,branch",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

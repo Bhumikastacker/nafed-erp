@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TADA-{YY}-{####}",
+ "creation": "2025-12-30 15:54:36.706370",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "request_number",
+  "sociaty_name",
+  "state",
+  "meeting_id",
+  "agm_year",
+  "tada_date",
+  "taram1",
+  "tarem2",
+  "tarem3",
+  "payment_status",
+  "payment_no",
+  "payment_date",
+  "payment_amount",
+  "column_break_4pzh",
+  "kilometers",
+  "fare_c",
+  "fare_2",
+  "additional_amount",
+  "da_amount",
+  "number_of_days",
+  "total_da",
+  "total_amount",
+  "amended_from",
+  "status",
+  "remarks",
+  "members"
+ ],
+ "fields": [
+  {
+   "fieldname": "tada_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TA/DA Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "taram1",
+   "fieldtype": "Data",
+   "label": "TAREM1"
+  },
+  {
+   "fieldname": "tarem2",
+   "fieldtype": "Data",
+   "label": "TAREM2"
+  },
+  {
+   "fieldname": "tarem3",
+   "fieldtype": "Data",
+   "label": "TAREM3"
+  },
+  {
+   "fieldname": "column_break_4pzh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kilometers",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kilometers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_amount",
+   "fieldtype": "Float",
+   "label": "Additional Amount"
+  },
+  {
+   "fieldname": "da_amount",
+   "fieldtype": "Float",
+   "label": "DA Amount"
+  },
+  {
+   "fieldname": "number_of_days",
+   "fieldtype": "Int",
+   "label": "Number of Days"
+  },
+  {
+   "fieldname": "total_da",
+   "fieldtype": "Data",
+   "label": "Total DA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "\nPaid\nNot Paid"
+  },
+  {
+   "depends_on": "eval:doc.payment_status==\"Paid\";\n",
+   "fieldname": "payment_no",
+   "fieldtype": "Data",
+   "label": "Payment No.",
+   "mandatory_depends_on": "eval:doc.payment_status==\"Paid\";\n"
+  },
+  {
+   "depends_on": "eval:doc.payment_status==\"Paid\";\n",
+   "fieldname": "payment_date",
+   "fieldtype": "Datetime",
+   "label": "Payment Date",
+   "mandatory_depends_on": "eval:doc.payment_status==\"Paid\";\n"
+  },
+  {
+   "depends_on": "eval:doc.payment_status==\"Paid\";\n",
+   "fieldname": "payment_amount",
+   "fieldtype": "Float",
+   "label": "Payment Amount",
+   "mandatory_depends_on": "eval:doc.payment_status==\"Paid\";\n"
+  },
+  {
+   "fetch_from": "member_id.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Member TA DA Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "request_number",
+   "fieldtype": "Data",
+   "label": "Request Number",
+   "options": "Board Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fare_c",
+   "fieldtype": "Float",
+   "label": "Fare C1"
+  },
+  {
+   "fieldname": "fare_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fare C2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nApproved\nRejected\nCancel"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "agm_year",
+   "fieldtype": "Link",
+   "label": "AGM Year",
+   "options": "AGM Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member ID",
+   "options": "Board Members"
+  },
+  {
+   "fieldname": "meeting_id",
+   "fieldtype": "Link",
+   "label": "Meeting ID",
+   "link_filters": "[[\"Board Meeting\",\"status\",\"=\",\"Agenda Approved\"]]",
+   "options": "Board Meeting"
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "no_copy": 1,
+   "options": "Board Member child"
+  },
+  {
+   "fetch_from": "member_id.society_name_1",
+   "fetch_if_empty": 1,
+   "fieldname": "sociaty_name",
+   "fieldtype": "Data",
+   "label": "Society Name",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 11:46:17.107448",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Member TA DA Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

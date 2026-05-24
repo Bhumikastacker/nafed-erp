@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-02-23 16:01:02.549800",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "source",
+  "society_name",
+  "registration_number",
+  "society_type",
+  "branch",
+  "district",
+  "state",
+  "status",
+  "address",
+  "sla",
+  "column_break_anlv",
+  "contact_person_name",
+  "contact_number",
+  "email",
+  "bank_account_number",
+  "ifsc_code",
+  "registration_certificate",
+  "pan",
+  "gst_certificate",
+  "bank_proof",
+  "section_break_pawg",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "society_type",
+   "fieldtype": "Link",
+   "label": "Society Type",
+   "options": "Society Type"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_anlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "email"
+  },
+  {
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code "
+  },
+  {
+   "fieldname": "registration_certificate",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Registration Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "PAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_certificate",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "GST Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_proof",
+   "fieldtype": "Attach",
+   "label": "Bank Proof"
+  },
+  {
+   "fieldname": "section_break_pawg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nApprove\nReject\nSend Back for Clarification",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Societies Registration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series ",
+   "options": "SLA-.YYYY.-.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "\nE-samrdhi\nE-pravha\nE-auction\nNafed(Manual)\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sla",
+   "fieldtype": "Link",
+   "label": "SLA ",
+   "options": "SLA Registration"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-30 17:01:05.777226",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Societies Registration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

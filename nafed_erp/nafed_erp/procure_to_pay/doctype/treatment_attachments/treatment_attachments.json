@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-07 00:00:17.511252",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yyu9",
+  "attachment_type",
+  "file",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yyu9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "options": "Treatment Certificate\nInvoice\nPhotos\nCompliance Document\nOther"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-15 14:59:14.147765",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Treatment Attachments",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

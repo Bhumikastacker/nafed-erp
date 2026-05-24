@@ -1,0 +1,325 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:VR-XXXX",
+ "creation": "2026-02-19 16:13:41.599635",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cqbo",
+  "amended_from",
+  "naming_series",
+  "vendor_code",
+  "source",
+  "vendor_name",
+  "vendor_category",
+  "gstin",
+  "gst_verified",
+  "state",
+  "column_break_rp5k",
+  "contact_name",
+  "mobile_number",
+  "email_id",
+  "pan",
+  "pan_verified",
+  "accounting_section_break",
+  "address",
+  "section_break_section",
+  "account",
+  "bank_account_number",
+  "account_holder_name",
+  "ifsc_code",
+  "bank_name",
+  "bank_verified",
+  "document",
+  "msme_registered",
+  "msme_number",
+  "fssai_required",
+  "fssai_number",
+  "license_expiry_date",
+  "blacklisted",
+  "blacklist_reason",
+  "version_number",
+  "last_amendment_id",
+  "performance_score",
+  "rating_category",
+  "last_evaluation_date",
+  "tender_blocked"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cqbo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor Registration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Autocomplete",
+   "label": "Vendor Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name "
+  },
+  {
+   "fieldname": "vendor_category",
+   "fieldtype": "Link",
+   "label": "Vendor Category ",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  },
+  {
+   "fieldname": "column_break_rp5k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State ",
+   "options": "State"
+  },
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "Contact Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number "
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "accounting_section_break",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fetch_from": "account.bank_account_no",
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account.iban",
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "account.account_name",
+   "fieldname": "account_holder_name",
+   "fieldtype": "Data",
+   "label": "Account Holder Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "amended_from.naming_series",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Vendor Registration ID",
+   "options": "VR-XXXX"
+  },
+  {
+   "default": "0",
+   "fieldname": "pan_verified",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "PAN Verified",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gst_verified",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "GST Verified",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "blacklisted",
+   "fieldtype": "Check",
+   "label": "Blacklisted",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.blacklisted == 1",
+   "fieldname": "blacklist_reason",
+   "fieldtype": "Small Text",
+   "label": "Blacklist Reason",
+   "read_only": 1
+  },
+  {
+   "description": "Auto fetched from IFSC",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bank_verified",
+   "fieldtype": "Check",
+   "label": "Bank Verified",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "msme_registered",
+   "fieldtype": "Check",
+   "label": "MSME Registered"
+  },
+  {
+   "depends_on": "eval:doc.msme_registered == 1",
+   "fieldname": "msme_number",
+   "fieldtype": "Data",
+   "label": "MSME Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "fssai_required",
+   "fieldtype": "Check",
+   "label": "FSSAI Required"
+  },
+  {
+   "depends_on": "eval:doc.fssai_required == 1",
+   "fieldname": "fssai_number",
+   "fieldtype": "Data",
+   "label": "FSSAI Number"
+  },
+  {
+   "fieldname": "license_expiry_date",
+   "fieldtype": "Data",
+   "label": "License Expiry Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "version_number",
+   "fieldtype": "Int",
+   "label": "Version Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_amendment_id",
+   "fieldtype": "Link",
+   "label": "Last Amendment Id",
+   "options": "Vendor Amendment Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "performance_score",
+   "fieldtype": "Float",
+   "label": "Performance Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating_category",
+   "fieldtype": "Select",
+   "label": "Rating Category",
+   "options": "Excellent\nGood\nSatisfactory\nNeeds Improvement\nPoor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_evaluation_date",
+   "fieldtype": "Date",
+   "label": "Last Evaluation Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "tender_blocked",
+   "fieldtype": "Check",
+   "label": "Tender Blocked",
+   "read_only": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "\nE-samridhi\nE-pravha\nE-auction\nNafed(Manual)\nOther",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-24 11:00:37.609686",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Vendor Registration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vendor_name"
+}

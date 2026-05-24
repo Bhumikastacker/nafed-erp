@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-10 15:00:11.053170",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "remarks",
+  "action_taken_by",
+  "action_taken_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "action_taken_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Action Taken By",
+   "options": "User",
+   "read_only_depends_on": "eval:doc.action_taken_by && doc.action_taken_by !== frappe.session.user"
+  },
+  {
+   "fieldname": "action_taken_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Action Taken On",
+   "read_only_depends_on": "eval:doc.action_taken_by && doc.action_taken_by !== frappe.session.user"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "read_only_depends_on": "eval:doc.action_taken_by && doc.action_taken_by !== frappe.session.user"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-09 20:44:46.230246",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Complaint Receipts Remarks",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

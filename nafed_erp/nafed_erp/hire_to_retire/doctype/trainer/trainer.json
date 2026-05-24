@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "autoname": "field:trainer_name",
+ "creation": "2025-12-10 12:58:07.655443",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer_name",
+  "email",
+  "institution",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trainer Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "label": "External Institution"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOccupied",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-12-11 18:37:41.124715",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Trainer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Training Admin",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

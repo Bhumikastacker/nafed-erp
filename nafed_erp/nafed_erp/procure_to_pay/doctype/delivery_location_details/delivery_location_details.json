@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-01 15:51:02.519005",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location_name",
+  "location_address",
+  "location_contact",
+  "gunny_bags_req",
+  "gunny_bags_delivered"
+ ],
+ "fields": [
+  {
+   "fieldname": "location_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location Name"
+  },
+  {
+   "fieldname": "location_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Location Address"
+  },
+  {
+   "fieldname": "location_contact",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location Contact"
+  },
+  {
+   "fieldname": "gunny_bags_req",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gunny Bags Req. Qty"
+  },
+  {
+   "fieldname": "gunny_bags_delivered",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gunny Bags Delivered Qty"
+  }
+ ],
+ "grid_page_length": 51,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-20 12:52:52.904765",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Delivery Location Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 25,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

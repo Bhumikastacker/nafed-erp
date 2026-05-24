@@ -1,0 +1,75 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"AvU1GaaLjD\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Procure to Pay\",\"col\":2}},{\"id\":\"2OkMgzlYTq\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Order Management\",\"col\":2}},{\"id\":\"IdS_7W40yF\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Hire to Retire\",\"col\":2}},{\"id\":\"QNCQbwQhIh\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Finance and Accounts\",\"col\":2}},{\"id\":\"p7joYIrVDh\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Estates (Property and IU)\",\"col\":2}},{\"id\":\"N3jw4m5rrr\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Information Technology\",\"col\":2}},{\"id\":\"L-kVL3uvLR\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Project Management\",\"col\":2}},{\"id\":\"oEz4uTtrFz\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Legal Vigilance\",\"col\":2}},{\"id\":\"OaR2GJZ9q6\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Marketing and Co-ordination\",\"col\":2}},{\"id\":\"vgJ8H2ZK-f\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Extension and BD\",\"col\":2}},{\"id\":\"o_n7qUUQyP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Production\",\"col\":2}}]",
+ "creation": "2025-11-04 15:27:12.489662",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Extension and BD",
+   "label": "Extension and BD"
+  },
+  {
+   "custom_block_name": "Order Management",
+   "label": "Order Management"
+  },
+  {
+   "custom_block_name": "Procure to Pay",
+   "label": "Procure to Pay"
+  },
+  {
+   "custom_block_name": "Estates (Property and IU)",
+   "label": "Estates (Property and IU)"
+  },
+  {
+   "custom_block_name": "Information Technology",
+   "label": "Information Technology"
+  },
+  {
+   "custom_block_name": "Project Management",
+   "label": "Project Management"
+  },
+  {
+   "custom_block_name": "Production",
+   "label": "Production"
+  },
+  {
+   "custom_block_name": "Hire to Retire",
+   "label": "Hire to Retire"
+  },
+  {
+   "custom_block_name": "Legal Vigilance",
+   "label": "Legal Vigilance"
+  },
+  {
+   "custom_block_name": "Finance and Accounts",
+   "label": "Finance and Accounts"
+  },
+  {
+   "custom_block_name": "Marketing and Co-ordination",
+   "label": "Marketing and Co-ordination"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "nafed-erp-dashboard",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "NAFED ERP",
+ "links": [],
+ "logs": [],
+ "modified": "2026-04-15 18:22:01.255445",
+ "modified_by": "Administrator",
+ "module": "Nafed ERP",
+ "name": "NAFED ERP",
+ "number_cards": [],
+ "owner": "administrator@erpnext.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 4.0,
+ "shortcuts": [],
+ "title": "NAFED ERP"
+}

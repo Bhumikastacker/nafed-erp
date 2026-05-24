@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 20:34:14.698514",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Link",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Legal Case Update \u2013 Child Record Added</p>\n\n<p>Case ID: {{ doc.parent_case }}</p>\n\n<p>Link Type:{{doc.link_type}}</p>\n\n<p>Child Case Linked:\n{{ doc.child_case }}</p>\n\n<p>Linked By:\n{{doc.linked_by}}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:06:34.233208",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Link type changed for legal case",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "linked_by"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Legal Case Update \u2013 {{ doc.parent_case }}",
+ "value_changed": "link_type"
+}

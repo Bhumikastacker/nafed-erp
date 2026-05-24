@@ -1,0 +1,483 @@
+{
+ "charts": [
+  {
+   "chart_name": "Property Dashboard",
+   "label": "Property Dashboard"
+  }
+ ],
+ "content": "[{\"id\":\"auBCkttuFd\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Estates (Property and IU)</span>\",\"col\":12}},{\"id\":\"ILAXjT3KQN\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Property Dashboard\",\"col\":12}},{\"id\":\"Qiy9LWPmKU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"East Zone Properties\",\"col\":3}},{\"id\":\"DHukbkCBBD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"West Zone Properties\",\"col\":3}},{\"id\":\"9nILNQ1JwL\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"North Zone Properties\",\"col\":3}},{\"id\":\"lOpQ8-cdtd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"South Zone Properties\",\"col\":3}},{\"id\":\"kl0xJP-ZHR\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"id\":\"tE_nK3thaU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Property\",\"col\":3}},{\"id\":\"_1M5VoUxh6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Property Proposal\",\"col\":3}},{\"id\":\"66cz_zq6gw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Project Proposal\",\"col\":3}},{\"id\":\"NqYDOwlBVx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Disposal Proposal\",\"col\":3}},{\"id\":\"7JB9erugK_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"s6YcueXBwv\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Management\",\"col\":4}},{\"id\":\"CxNcxPpsNS\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Acquisition\",\"col\":3}},{\"id\":\"S-xQB8L9Kc\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Disposal\",\"col\":5}},{\"id\":\"qkZCaM52Ro\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Leasing\",\"col\":4}},{\"id\":\"wdNx6b-9qL\",\"type\":\"card\",\"data\":{\"card_name\":\"Project Implementation\",\"col\":4}},{\"id\":\"73xdJ26Bgg\",\"type\":\"card\",\"data\":{\"card_name\":\"Vendor Management\",\"col\":4}},{\"id\":\"Onr57hbWBT\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"nvat9FCAAI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Setup &amp; Configuration</b></span>\",\"col\":12}},{\"id\":\"tBXGC092AQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Zone\",\"col\":3}},{\"id\":\"nhlO5gKuYU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Branch\",\"col\":3}},{\"id\":\"84Pk8FNdbw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Role\",\"col\":3}},{\"id\":\"GcK2PELha2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Permission\",\"col\":3}}]",
+ "creation": "2025-11-10 18:59:34.138113",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "estates",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Estates (Property and IU)",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Implementation",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Proposal Details",
+   "link_count": 0,
+   "link_to": "Project Proposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DPR Details",
+   "link_count": 0,
+   "link_to": "Project Proposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Implementing agency",
+   "link_count": 0,
+   "link_to": "Project Proposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Expenditure",
+   "link_count": 0,
+   "link_to": "Project Proposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Acquisition",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Proposal Details",
+   "link_count": 0,
+   "link_to": "Property Proposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Title Verification",
+   "link_count": 0,
+   "link_to": "Title Verification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Leasing",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lessee/Tenant Registration",
+   "link_count": 0,
+   "link_to": "Lesse_Tenant Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Assign Property to Lessee/Tenant",
+   "link_count": 0,
+   "link_to": "Assign Lessee to Property",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Renewal & Extension of Lessee/Tenant",
+   "link_count": 0,
+   "link_to": "Lease Renewal_Extension",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Create Invoice to Lessee/Tenant",
+   "link_count": 0,
+   "link_to": "Lease Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment of Invoice",
+   "link_count": 0,
+   "link_to": "Lease Invoice Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Disposal",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Disposal Proposal Details",
+   "link_count": 0,
+   "link_to": "Property Disposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Initiate Tender or Bidding Process for Disposal",
+   "link_count": 0,
+   "link_to": "Disposal Tender",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Management",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Registration",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Tendering",
+   "link_count": 0,
+   "link_to": "Vendor Tendering",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Performance Management",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Create Vendor Bill",
+   "link_count": 0,
+   "link_to": "Vendor Bill",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Raise a Grievance",
+   "link_count": 0,
+   "link_to": "Raise Grievance By Vendor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Redressal of Grievance",
+   "link_count": 0,
+   "link_to": "Raise Grievance By Vendor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Management",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Details",
+   "link_count": 0,
+   "link_to": "Property",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Surveyor Registration",
+   "link_count": 0,
+   "link_to": "Property Surveyor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey & Measurement",
+   "link_count": 0,
+   "link_to": "Property Survey",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": " Property Tax and Other Compliances",
+   "link_count": 0,
+   "link_to": "Property Tax and Compliances",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Financial Expenditure",
+   "link_count": 0,
+   "link_to": "Property Financial Expenditures",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Historical Brief",
+   "link_count": 0,
+   "link_to": "Property Historical Brief",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Litigation and Court Case",
+   "link_count": 0,
+   "link_to": "Litigation and Court Cases",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-04 20:16:46.334605",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Estates (Property and IU)",
+ "number_cards": [
+  {
+   "label": "East Zone Properties",
+   "number_card_name": "East Zone"
+  },
+  {
+   "label": "West Zone Properties",
+   "number_card_name": "West Zone"
+  },
+  {
+   "label": "North Zone Properties",
+   "number_card_name": "North Zone"
+  },
+  {
+   "label": "South Zone Properties",
+   "number_card_name": "South Zone"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Estates HO User"
+  },
+  {
+   "role": "Estates Branch User"
+  },
+  {
+   "role": "Estates Branch Officer"
+  },
+  {
+   "role": "Estates HO Approver"
+  },
+  {
+   "role": "Estates Managing Director"
+  },
+  {
+   "role": "Estates Admin"
+  },
+  {
+   "role": "Estates Vendor"
+  },
+  {
+   "role": "Estates Compliance/Audit Team"
+  },
+  {
+   "role": "Estates Tendering Committee"
+  },
+  {
+   "role": "Estates Technical Reviewer"
+  },
+  {
+   "role": "Estates Surveyor"
+  },
+  {
+   "role": "Estates Project/Engineering Team"
+  },
+  {
+   "role": "Estates Project Manager"
+  },
+  {
+   "role": "Estates Legal Officer"
+  },
+  {
+   "role": "Estates Division Head"
+  },
+  {
+   "role": "Estates Finance Team"
+  },
+  {
+   "role": "Estates Officer"
+  }
+ ],
+ "sequence_id": 38.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Create Disposal Proposal",
+   "link_to": "Property Disposal",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Create Property Proposal",
+   "link_to": "Property Proposal",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Role",
+   "link_to": "Role",
+   "stats_filter": "[[\"Role\",\"role_name\",\"like\",\"%Estates%\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Create Property",
+   "link_to": "Property",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Zone",
+   "link_to": "Zone",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Create Project Proposal",
+   "link_to": "Project Proposal",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Branch",
+   "link_to": "Branch",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "User Permission",
+   "link_to": "Role",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Estates (Property and IU)"
+}

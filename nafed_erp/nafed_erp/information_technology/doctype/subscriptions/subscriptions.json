@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-21 16:52:42.768952",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subscription_id",
+  "cmdb_asset_id__item_code",
+  "vendor_id",
+  "vendor_name",
+  "license_key__subscription_ref",
+  "license_type",
+  "seats__quantity",
+  "start_date",
+  "end_date",
+  "renewal_term",
+  "billing_frequency",
+  "cost_centre__project_code",
+  "po_number__invoice_number",
+  "created_by",
+  "created_on",
+  "column_break_kumz",
+  "unit_cost",
+  "total_cost",
+  "support_level",
+  "sla_ref",
+  "activation_method",
+  "usage_constraints",
+  "entitlement_doc_refs",
+  "status",
+  "last_modified_by",
+  "last_modified_on",
+  "documentation_section",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "subscription_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subscription ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cmdb_asset_id__item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "CMDB Asset ID / Item Code",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_id",
+   "fieldtype": "Link",
+   "label": "Vendor ID",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "license_key__subscription_ref",
+   "fieldtype": "Data",
+   "label": "License Key / Subscription Ref"
+  },
+  {
+   "fieldname": "license_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "License Type",
+   "options": "Perpetual\nSubscription\nUser-based\nInstance-based",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seats__quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Seats / Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kumz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Data",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "renewal_term",
+   "fieldtype": "Data",
+   "label": "Renewal Term",
+   "reqd": 1
+  },
+  {
+   "fieldname": "billing_frequency",
+   "fieldtype": "Select",
+   "label": "Billing Frequency",
+   "options": "Monthly\nQuarterly\nAnnually",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_centre__project_code",
+   "fieldtype": "Link",
+   "label": "Cost Centre / Project Code",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "po_number__invoice_number",
+   "fieldtype": "Data",
+   "label": "PO Number / Invoice Number"
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Currency",
+   "label": "Unit Cost",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "non_negative": 1
+  },
+  {
+   "default": "Basic",
+   "fieldname": "support_level",
+   "fieldtype": "Select",
+   "label": "Support Level",
+   "options": "Basic\nStandard\nPremium"
+  },
+  {
+   "fieldname": "sla_ref",
+   "fieldtype": "Link",
+   "label": "SLA Ref",
+   "options": "SLA Fulfilled On Status"
+  },
+  {
+   "default": "Manual",
+   "fieldname": "activation_method",
+   "fieldtype": "Select",
+   "label": "Activation Method",
+   "options": "Manual\nAutomatic\nKey-based"
+  },
+  {
+   "fieldname": "usage_constraints",
+   "fieldtype": "Text Editor",
+   "label": "Usage Constraints"
+  },
+  {
+   "fieldname": "entitlement_doc_refs",
+   "fieldtype": "Attach",
+   "label": "Entitlement Doc Refs",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nRenewed"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_modified_by",
+   "fieldtype": "Link",
+   "label": "Last Modified By",
+   "options": "User"
+  },
+  {
+   "fieldname": "last_modified_on",
+   "fieldtype": "Datetime",
+   "label": "Last Modified On"
+  },
+  {
+   "fieldname": "documentation_section",
+   "fieldtype": "Section Break",
+   "label": "Documentation"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Subscription Supporting Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-31 16:55:00.090578",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Subscriptions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

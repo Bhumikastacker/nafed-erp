@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:INT-{YYYY}-{####}",
+ "creation": "2026-05-12 11:43:11.904469",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project_title",
+  "name1",
+  "email",
+  "phone",
+  "column_break_twma",
+  "purusing__institute",
+  "duration",
+  "mentordepartment",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Small Text",
+   "label": "Project Title"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_twma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purusing__institute",
+   "fieldtype": "Data",
+   "label": "Purusing / Institute"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "mentordepartment",
+   "fieldtype": "Data",
+   "label": "Mentor/Department"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Series",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-12 12:51:20.204977",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Intership Trainee Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

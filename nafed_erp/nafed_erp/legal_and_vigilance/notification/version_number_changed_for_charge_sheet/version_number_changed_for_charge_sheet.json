@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 15:52:49.814038",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Charge sheet Issuance",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>version changed for charge sheet has been changed as part of the disciplinary proceedings.<br><br></p>\n\n<b>Charge Sheet ID:</b> {{ doc.name }}<br>\n<b>Related Investigation ID:</b> {{ doc.investigation_id }}<br>\n<b>Reviewer:</b> {{ doc.reviewer }}<br>\n<b>Approval Date:</b> {{ doc.approval_date }}<br>\n<b>Dispatch Date:</b> {{ doc.dispatch_date }}<br>\n<b>Version Number:</b> {{ doc.version_number }}<br>\n<b>Acknowledgement Status:</b> {{ doc.acknowledgment_status }}<br>\n<p>The charge sheet has been formally issued and recorded in the system.\nPlease proceed with the next steps as per the applicable procedure.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-13 11:53:39.206451",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Version Number changed for charge sheet",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Version number changed for Charge Sheet  \u2013 {{ doc.name }}",
+ "value_changed": "version_number"
+}

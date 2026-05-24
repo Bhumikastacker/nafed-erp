@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VPR-XXXX",
+ "creation": "2026-03-10 14:25:55.455516",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mqfy",
+  "amended_from",
+  "evaluation_info_section",
+  "vendor_performance_id",
+  "vendor_id",
+  "vendor_name",
+  "vendor_code",
+  "evaluation_period",
+  "section_break_b517",
+  "period_start_date",
+  "period_end_date",
+  "evaluation_type",
+  "initiated_by",
+  "kpi_scores_section",
+  "kpi_scores",
+  "results_section",
+  "overall_performance_score",
+  "rating_category",
+  "tender_eligible",
+  "previous_ops",
+  "ops_trend",
+  "data_quality_flags_section",
+  "missing_data_flag",
+  "data_mismatch_flag",
+  "missing_data_notes",
+  "approval_section",
+  "reviewed_by",
+  "review_date",
+  "ho_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mqfy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor Performance Record",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "evaluation_info_section",
+   "fieldtype": "Section Break",
+   "label": " Evaluation Info"
+  },
+  {
+   "fieldname": "vendor_performance_id",
+   "fieldtype": "Data",
+   "label": "Vendor Performance Id",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "vendor_id",
+   "fieldtype": "Link",
+   "label": "Vendor Id",
+   "options": "Vendor Registration"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "Vendor Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "evaluation_period",
+   "fieldtype": "Select",
+   "label": "Evaluation Period",
+   "options": "Monthly\nQuarterly\nAnnually Contract Completion"
+  },
+  {
+   "fieldname": "period_start_date",
+   "fieldtype": "Date",
+   "label": "Period Start Date"
+  },
+  {
+   "fieldname": "period_end_date",
+   "fieldtype": "Date",
+   "label": "Period End Date"
+  },
+  {
+   "fieldname": "evaluation_type",
+   "fieldtype": "Select",
+   "label": "Evaluation Type",
+   "options": "Auto\nmanual"
+  },
+  {
+   "fieldname": "initiated_by",
+   "fieldtype": "Link",
+   "label": "Initiated By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kpi_scores_section",
+   "fieldtype": "Section Break",
+   "label": "KPI Scores "
+  },
+  {
+   "fieldname": "kpi_scores",
+   "fieldtype": "Table",
+   "label": "KPI Scores ",
+   "options": "KPI Score"
+  },
+  {
+   "fieldname": "results_section",
+   "fieldtype": "Section Break",
+   "label": "Results"
+  },
+  {
+   "fieldname": "overall_performance_score",
+   "fieldtype": "Float",
+   "label": "Overall Performance Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating_category",
+   "fieldtype": "Select",
+   "label": "Rating Category",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "tender_eligible",
+   "fieldtype": "Check",
+   "label": "Tender Eligible",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_ops",
+   "fieldtype": "Float",
+   "label": "Previous Ops"
+  },
+  {
+   "fieldname": "ops_trend",
+   "fieldtype": "Select",
+   "label": "Ops Trend",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_quality_flags_section",
+   "fieldtype": "Section Break",
+   "label": "Data Quality Flags"
+  },
+  {
+   "default": "0",
+   "fieldname": "missing_data_flag",
+   "fieldtype": "Check",
+   "label": "Missing Data Flag"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_mismatch_flag",
+   "fieldtype": "Check",
+   "label": "Data_mismatch_flag"
+  },
+  {
+   "fieldname": "missing_data_notes",
+   "fieldtype": "Date",
+   "label": "Missing Data Notes"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ho_remarks",
+   "fieldtype": "Small Text",
+   "label": "Ho Remarks"
+  },
+  {
+   "fieldname": "section_break_b517",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-10 17:12:40.129475",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Vendor Performance Record",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vendor_performance_id",
+ "track_changes": 1
+}

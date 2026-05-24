@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-02-05 14:25:53.744509",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Employee Update Request",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "\u201cEmployee {{doc.name}} requested profile updates.\u201d",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:31:01.142536",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "HR Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "HR Manager"
+  },
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "HR User"
+  },
+  {
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.employee }} Has Request value change"
+}

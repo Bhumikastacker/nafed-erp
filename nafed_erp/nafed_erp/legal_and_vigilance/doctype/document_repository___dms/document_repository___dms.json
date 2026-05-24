@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{document_id}",
+ "creation": "2026-01-27 12:11:54.953914",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_id",
+  "column_break_lvkk",
+  "complaint_id",
+  "section_break_sxhj",
+  "file_name",
+  "column_break_lzwo",
+  "uploaded_by",
+  "section_break_pfey",
+  "upload_date",
+  "column_break_vpbc",
+  "metadata",
+  "section_break_gzxg",
+  "access_level",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_id",
+   "fieldtype": "Data",
+   "label": "Document ID "
+  },
+  {
+   "fieldname": "column_break_lvkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sxhj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "label": "File Name"
+  },
+  {
+   "fieldname": "column_break_lzwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uploaded_by",
+   "fieldtype": "Data",
+   "label": "Uploaded By"
+  },
+  {
+   "fieldname": "section_break_pfey",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "upload_date",
+   "fieldtype": "Datetime",
+   "label": " Upload Date"
+  },
+  {
+   "fieldname": "column_break_vpbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metadata",
+   "fieldtype": "Data",
+   "label": "Metadata"
+  },
+  {
+   "fieldname": "section_break_gzxg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "access_level",
+   "fieldtype": "Select",
+   "label": "Access Level",
+   "options": "\nApproved\nDenied"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Document Repository - DMS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "complaint_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Complaint ID",
+   "options": "Complaint Receipt",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-03 14:55:58.229063",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Document Repository - DMS",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

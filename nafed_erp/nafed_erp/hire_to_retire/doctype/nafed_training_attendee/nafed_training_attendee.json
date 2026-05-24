@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "creation": "2025-12-03 15:31:50.113182",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "company_email",
+  "attendance_status",
+  "column_break_bmvw",
+  "employee_name",
+  "personal_email",
+  "join_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "attendance_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Attendance Status",
+   "options": "Draft\nPresent\nAbsent"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "join_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Join Time"
+  },
+  {
+   "fieldname": "column_break_bmvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-11 18:12:01.963976",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Nafed Training Attendee",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

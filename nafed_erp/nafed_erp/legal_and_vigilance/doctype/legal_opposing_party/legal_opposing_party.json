@@ -1,0 +1,34 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-20 11:30:20.050746",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opposing_party_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "opposing_party_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Opposing Party Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-20 11:39:30.315790",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Opposing Party",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

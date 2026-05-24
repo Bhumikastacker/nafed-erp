@@ -1,0 +1,68 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"uc20VBPbPH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Finance and Accounts</span>\",\"col\":12}},{\"id\":\"nsMf32DnMP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"PF Trust Division\",\"col\":2}},{\"id\":\"WO31F6ac-v\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Payroll Divsion\",\"col\":2}},{\"id\":\"rnXzqSJ3Fg\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"financial Audit\",\"col\":2}}]",
+ "creation": "2025-11-10 18:59:34.226924",
+ "custom_blocks": [
+  {
+   "custom_block_name": "financial Audit",
+   "label": "financial Audit"
+  },
+  {
+   "custom_block_name": "Payroll Divsion",
+   "label": "Payroll Divsion"
+  },
+  {
+   "custom_block_name": "PF Trust Division",
+   "label": "PF Trust Division"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "finance-and-accounts",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Finance and Accounts",
+ "links": [],
+ "logs": [],
+ "modified": "2026-04-16 10:31:43.337798",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Finance and Accounts",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Payroll Manager"
+  },
+  {
+   "role": "Payroll User"
+  },
+  {
+   "role": "Z Payroll Entry - Checker"
+  },
+  {
+   "role": "Z Payroll Entry - View"
+  },
+  {
+   "role": "Z Payroll Entry - Maker"
+  },
+  {
+   "role": "Z Payroll Entry - Manager"
+  },
+  {
+   "role": "Financial Audit Manager"
+  },
+  {
+   "role": "Financial Audit User"
+  }
+ ],
+ "sequence_id": 32.0,
+ "shortcuts": [],
+ "title": "Finance and Accounts"
+}

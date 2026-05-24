@@ -1,0 +1,17 @@
+{
+  "doctype": "Workflow",
+  "workflow_name": "Board Meeting Workflow",
+  "document_type": "Board Meeting",
+  "workflow_state_field": "workflow_state",
+  "is_active": 1,
+  "states": [
+    { "state": "Draft", "doc_status": 0 },
+    { "state": "Agenda Submitted", "doc_status": 0 },
+    { "state": "Agenda Approved", "doc_status": 0 },
+    { "state": "Attendance Recorded", "doc_status": 0 },
+    { "state": "MoM Draft", "doc_status": 0 },
+    { "state": "MoM Approved", "doc_status": 1 },
+    { "state": "Closed", "doc_status": 1 }
+  ]
+}
+

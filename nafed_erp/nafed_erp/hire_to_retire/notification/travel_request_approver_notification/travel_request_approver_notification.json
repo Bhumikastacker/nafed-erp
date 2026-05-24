@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-05 14:25:53.888088",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Travel Request",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p style=\"font-size: 14px;\">\n    <strong>A new Travel Request requires your approval.</strong>\n</p>\n\n<table style=\"font-size: 14px; border-collapse: collapse;\">\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Request ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.name }}</td>\n    </tr>\n    \n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Submission Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.custom_submission_date }}</td>\n    </tr>\n\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Total Travel Duration:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.custom_total_travel_duration }}</td>\n    </tr>\n\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Total Amount:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.custom_total_travel_amount }}</td>\n    </tr>\n\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Submitted By:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.employee_name }}</td>\n    </tr>\n</table>\n\n<h3 style=\"margin-top: 20px; font-size:16px; color:#1f7bd4;\">Travel Itinerary</h3>\n\n<table role=\"presentation\" cellpadding=\"8\" cellspacing=\"0\" width=\"100%\" \n       style=\"border-collapse: collapse; border:1px solid #ddd; font-size:14px;\">\n    \n    <thead>\n        <tr style=\"background:#f0f4f7; text-align:left;\">\n            <th style=\"border:1px solid #ddd;\">From</th>\n            <th style=\"border:1px solid #ddd;\">To</th>\n            <th style=\"border:1px solid #ddd;\">Departure</th>\n            <th style=\"border:1px solid #ddd;\">Arrival</th>\n            <th style=\"border:1px solid #ddd;\">Duration</th>\n        </tr>\n    </thead>\n\n    <tbody>\n        {% for row in doc.itinerary %}\n        <tr>\n            <td style=\"border:1px solid #ddd;\">{{ row.travel_from }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.travel_to }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.departure_date }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.arrival_date }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.custom_travel_duration }}</td>\n        </tr>\n        {% endfor %}\n    </tbody>\n\n</table>\n\n\n<p style=\"margin-top: 12px; font-size: 14px;\">\n    <strong>Open Document:</strong><br>\n    <a href=\"{{ frappe.utils.get_url() }}/app/travel-request/{{ doc.name }}\" target=\"_blank\">\n        Click here to view the Travel Request\n    </a>\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:30:20.218965",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Travel Request Approver Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "custom_expense_approver"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{doc.name}} Travel Request needs your Approval"
+}

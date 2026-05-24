@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-04 16:14:58.514970",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "disposal_proposal_id",
+  "tender_title",
+  "reserve_price",
+  "emd_amount",
+  "column_break_hvql",
+  "bid_terms",
+  "bid_start_date",
+  "bid_end_date",
+  "supporring_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Disposal Tender ID",
+   "options": "EST/TEND/.YY./",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disposal_proposal_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Disposal Proposal",
+   "options": "Property Disposal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tender Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reserve_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Reserve Price",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "EMD Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hvql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bid_terms",
+   "fieldtype": "Small Text",
+   "label": "Bid Terms"
+  },
+  {
+   "fieldname": "bid_start_date",
+   "fieldtype": "Date",
+   "label": "Bid Start Date"
+  },
+  {
+   "fieldname": "bid_end_date",
+   "fieldtype": "Date",
+   "label": "Bid End Date"
+  },
+  {
+   "fieldname": "supporring_documents",
+   "fieldtype": "Table",
+   "label": "Supporring Documents",
+   "options": "Property Disposal Tender Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-20 10:41:02.228691",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Disposal Tender",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

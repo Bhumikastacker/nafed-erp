@@ -1,0 +1,273 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-21 11:36:07.601873",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "cmdb_asset_id",
+  "severity",
+  "components_affected",
+  "requested_on",
+  "requested_by",
+  "approved_by",
+  "status",
+  "approved_on",
+  "deployment_task_id",
+  "deployment_status",
+  "start_time",
+  "end_time",
+  "error_message",
+  "installation_logs",
+  "rollback_performed",
+  "column_break_fwxn",
+  "proposed_maintenance_window",
+  "patch_name",
+  "patch_version",
+  "vendor_advisory_ref",
+  "impact_analysis",
+  "rollback_plan",
+  "attachments",
+  "rejection_reason",
+  "clarification_notes",
+  "rollback_details",
+  "evidence_attachments",
+  "updated_by",
+  "updated_on",
+  "patch_details_section",
+  "current_version",
+  "pending_advisories",
+  "column_break_sute",
+  "last_patch_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "cmdb_asset_id",
+   "fieldtype": "Select",
+   "label": "CMDB",
+   "options": "System\nApplication\nServer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patch_name",
+   "fieldtype": "Data",
+   "label": "Patch Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patch_version",
+   "fieldtype": "Data",
+   "label": "Patch Version",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_advisory_ref",
+   "fieldtype": "Small Text",
+   "label": "Vendor Advisory Ref"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "Critical\nHigh\nMedium\nLow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fwxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "components_affected",
+   "fieldtype": "Text Editor",
+   "label": "Components Affected"
+  },
+  {
+   "fieldname": "impact_analysis",
+   "fieldtype": "Text Editor",
+   "label": "Impact Analysis"
+  },
+  {
+   "fieldname": "proposed_maintenance_window",
+   "fieldtype": "Datetime",
+   "label": "Proposed Maintenance Window"
+  },
+  {
+   "fieldname": "rollback_plan",
+   "fieldtype": "Text Editor",
+   "label": "Rollback Plan"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "requested_on",
+   "fieldtype": "Datetime",
+   "label": "Requested On",
+   "reqd": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nIn Progress"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Long Text",
+   "label": "Rejection Reason"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Datetime",
+   "label": "Approved On"
+  },
+  {
+   "fieldname": "clarification_notes",
+   "fieldtype": "Text Editor",
+   "label": "Clarification Notes"
+  },
+  {
+   "fieldname": "deployment_task_id",
+   "fieldtype": "Data",
+   "label": "Deployment Task ID"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "deployment_status",
+   "fieldtype": "Select",
+   "label": "Deployment Status",
+   "options": "In Progress\nCompleted\nFailed"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Text",
+   "label": "Error Message"
+  },
+  {
+   "fieldname": "installation_logs",
+   "fieldtype": "Attach",
+   "label": "Installation Logs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rollback_performed",
+   "fieldtype": "Select",
+   "label": "Rollback Performed",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "rollback_details",
+   "fieldtype": "Text Editor",
+   "label": "Rollback Details"
+  },
+  {
+   "fieldname": "evidence_attachments",
+   "fieldtype": "Attach",
+   "label": "Evidence Attachments",
+   "reqd": 1
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Link",
+   "label": "Updated By",
+   "options": "User"
+  },
+  {
+   "fieldname": "updated_on",
+   "fieldtype": "Datetime",
+   "label": "Updated On"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Patch Request ID",
+   "options": "IT-PATCH-.YYYY.-",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "patch_details_section",
+   "fieldtype": "Section Break",
+   "label": "Patch Details"
+  },
+  {
+   "fieldname": "current_version",
+   "fieldtype": "Data",
+   "label": "Current Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending_advisories",
+   "fieldtype": "Data",
+   "label": "Pending Advisories",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sute",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_patch_date",
+   "fieldtype": "Date",
+   "label": "Last Patch Date",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-01 11:37:50.018535",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Patch Management",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 20:41:19.950968",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Tagging Related Case",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Tag type has been changed for related legal case.</p>\n\n<p>Primary Case:\n{{ doc.case_id }}</p>\n\n<p> Stage Changed: {{doc.stage}}</p>\n\n<p>Risk Category:{{doc.risk_category}}</p>\n\n<p>Tag Type:{{doc.tag_type}}</p>\n\n<p>Applied By:\n{{ doc.applied_by}}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:07:26.048194",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Stage changed for legal case",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "applied_by"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Stage changed for Related Legal Case Tagged \u2013 {{ doc.case_id }}",
+ "value_changed": "stage"
+}

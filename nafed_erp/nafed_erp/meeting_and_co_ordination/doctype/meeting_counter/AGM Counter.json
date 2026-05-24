@@ -1,0 +1,20 @@
+{
+  "doctype": "DocType",
+  "name": "AGM Counter",
+  "module": "Meeting and Co-ordination",
+  "custom": 1,
+  "fields": [
+    {
+      "fieldname": "counter_name",
+      "label": "Counter Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    }
+  ]
+}

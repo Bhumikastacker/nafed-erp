@@ -1,0 +1,38 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-05 15:31:32.862599",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Activity Progress Log",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p style=\"font-size: 14px;\">\n    <strong>A new Project Activity Progress log requires your approval.</strong>\n</p>\n\n<table style=\"font-size: 14px; border-collapse: collapse;\">\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project Activity Progress ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.name }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Activity ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.activity }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Milestone ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.milestone }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.project }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Approval Status:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.approval_status }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Creation Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.creation }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Division:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.division }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Activity Actual Start Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.actual_start_date }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Activity Actual End Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.actual_end_date }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Activity Progress:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.activity_progress_percent }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Created By:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.owner }}</td>\n    </tr>\n\n</table>\n\n<p style=\"margin-top: 12px; font-size: 14px;\">\n    <strong>Open Document:</strong><br>\n    <a href=\"{{ frappe.utils.get_url() }}/app/activity-progress-log/{{ doc.name }}\" target=\"_blank\">\n        Click here to view the Project Activity Progress Log\n    </a>\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-24 10:46:28.961962",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Project Activity Approver Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending for Approval\" and doc.division ==\"Climate Resilient Innovations\"",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Z Activity Progress - Manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending for Approval\" and doc.division ==\"ORGANIC FARMING\"",
+   "receiver_by_role": "Z Activity Progress - Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{doc.name}} Project Activity needs your Approval, {{doc.division}} Division",
+ "value_changed": "workflow_state"
+}

@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-13 10:40:31.378640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_members_name",
+  "auditor_rate_card",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "audit_members_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Audit Members Name"
+  },
+  {
+   "fieldname": "auditor_rate_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Auditor Rate Card",
+   "options": "Auditor Rate Card"
+  },
+  {
+   "fetch_from": "auditor_rate_card.rate",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-13 10:51:39.891594",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Auditor Empanelment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

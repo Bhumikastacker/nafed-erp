@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2026-01-12 17:54:40.649571",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-01-20 11:50:50.840383",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "counter-mapping-page",
+ "owner": "Administrator",
+ "page_name": "counter-mapping-page",
+ "roles": [
+  {
+   "role": "Board Member Maker"
+  },
+  {
+   "role": "Board Member Checker"
+  },
+  {
+   "role": "Board Member Approver"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1
+}

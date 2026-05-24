@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 15:07:31.990335",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Show Cause Notice Generation",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A Show-Cause Notice has been generated and recorded in the system.<br><br></p>\n\n<p><b>Notice ID:</b> {{ doc.name }}<br>\n<b>Linked Memo / Reply ID:</b> {{ doc.linked_memoreply_id }}<br>\n<b>Drafting Officer:</b> {{ doc.drafting_officer }}<br>\n<b>Issuance Date:</b> {{ doc.issuance_date }}<br>\n<b>Approval Workflow Level:</b> {{ doc.approval_workflow_level }}<br>\n<b>Status:</b> {{ doc.status }}<br>\n\n\n<p>The notice is subject to approval as per the defined workflow.\nPlease review and take the necessary action at your respective approval stage.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:13:51.459424",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "new show cause notice",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Show-Cause Notice Generated \u2013 {{ doc.name }}",
+ "value_changed": "submission_date"
+}

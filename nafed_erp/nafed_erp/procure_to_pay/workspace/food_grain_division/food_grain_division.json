@@ -1,0 +1,262 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"3y88C0g4Oj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Paddy Procurement</b></span>\",\"col\":12}},{\"id\":\"iZ4JX5FEQH\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}},{\"id\":\"JvqJe_yX78\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement (Paddy)\",\"col\":4}},{\"id\":\"H1FItJcIsZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Delivery\",\"col\":4}},{\"id\":\"JKeYf1h0RE\",\"type\":\"card\",\"data\":{\"card_name\":\"Fund Requisition\",\"col\":4}},{\"id\":\"n13tdLKyRF\",\"type\":\"card\",\"data\":{\"card_name\":\"Vendor Billing\",\"col\":4}},{\"id\":\"NzU1FodUz8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Update Wheat Procurement</b></span>\",\"col\":12}},{\"id\":\"8MT-TZLxCx\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement (Wheat)\",\"col\":4}},{\"id\":\"kPFCKaRHIn\",\"type\":\"paragraph\",\"data\":{\"text\":\"Management\",\"col\":12}}]",
+ "creation": "2026-03-23 16:41:07.867991",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "production",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Food Grain Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement (Paddy)",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement Target",
+   "link_count": 0,
+   "link_to": "Procurement Target",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Update Procurement Progress",
+   "link_count": 0,
+   "link_to": "Update Procurement Progress",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fund Requisition",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fund Requisition",
+   "link_count": 0,
+   "link_to": "Fund Requisition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Billing",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Incidental Charges",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor Registration",
+   "link_count": 0,
+   "link_to": "Vendor Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SLA Registration",
+   "link_count": 0,
+   "link_to": "SLA Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Claim Type",
+   "link_count": 0,
+   "link_to": "Expense Claim Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Tax Template",
+   "link_count": 0,
+   "link_to": "Item Tax Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Season",
+   "link_count": 0,
+   "link_to": "Season",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement (Wheat)",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement Target",
+   "link_count": 0,
+   "link_to": "Procurement Target",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Update Wheat Procurement Progress",
+   "link_count": 0,
+   "link_to": "Update Wheat Procurement Progress",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice To FCI",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice To Others",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-20 14:50:55.436878",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Food Grain Division",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Procure to pay",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Food Grain Division Manager"
+  },
+  {
+   "role": "Food Grain Division User"
+  }
+ ],
+ "sequence_id": 54.0,
+ "shortcuts": [],
+ "title": "Food Grain Division"
+}

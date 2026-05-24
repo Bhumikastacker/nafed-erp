@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-02-05 14:25:53.433333",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Leave Application",
+ "enabled": 1,
+ "event": "Custom",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear {{ doc.leave_approver_name }},</p>\n\n<p>A leave request has been submitted with the following details:</p>\n\n<p>\nEmployee ID: {{ doc.employee }}<br>\nEmployee Name: {{ doc.employee_name }}<br>\nFrom Date: {{ doc.from_date }}<br>\nTo Date: {{ doc.to_date }}<br>\nTotal Leave Days: {{ doc.total_leave_days }}<br>\nPosting Date: {{ doc.posting_date }}<br>\nCurrent Status: {{ doc.status }}\n</p>\n\n<p>\nPlease review the request and take the necessary action.\n</p>\n\n<p style=\"margin-top: 12px; font-size: 14px;\">\n    <strong>Open Document:</strong><br>\n    <a href=\"{{ frappe.utils.get_url() }}/app/leave-application/{{ doc.name }}\" target=\"_blank\">\n        Click here to view the Leave Application\n    </a>\n</p>\n\n\n<p>\nRegards,<br>\n{{ doc.company }}\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:29:50.142961",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Leave Application Approval Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "leave_approver"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.name}} Leave Application needs your approval"
+}

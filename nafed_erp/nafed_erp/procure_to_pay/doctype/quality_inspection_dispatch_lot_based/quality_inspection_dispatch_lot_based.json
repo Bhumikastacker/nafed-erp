@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-02 17:33:10.087281",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "surveyor_details_section",
+  "surveyor__id",
+  "surveyor_name",
+  "branch",
+  "date_of_dispatch",
+  "vehicle_number",
+  "net_weight_qtl",
+  "comments",
+  "comments_reason",
+  "column_break_lyiq",
+  "surveyor_phone_number",
+  "society_name",
+  "name_of_the_godown",
+  "gross_weight_qtl",
+  "tare_weight_qtl",
+  "no_of_bags",
+  "inspection_report",
+  "sample_creation_section",
+  "dispatch_id",
+  "item_code",
+  "item_name",
+  "column_break_nfbk",
+  "lot",
+  "qty",
+  "quality_item_details_section",
+  "result",
+  "final_result",
+  "section_break_petn",
+  "photograph",
+  "column_break_drpu",
+  "documents",
+  "signature_section",
+  "fpc_representative",
+  "column_break_rpiy",
+  "supply_valid_representative",
+  "section_break_5yji",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5yji",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quality Inspection Dispatch Lot Based",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "surveyor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Surveyor Details"
+  },
+  {
+   "fieldname": "surveyor__id",
+   "fieldtype": "Link",
+   "label": "Surveyor  ID",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "surveyor__id.supplier_name",
+   "fieldname": "surveyor_name",
+   "fieldtype": "Data",
+   "label": "Surveyor Name"
+  },
+  {
+   "fieldname": "surveyor_phone_number",
+   "fieldtype": "Data",
+   "label": "Surveyor Phone Number"
+  },
+  {
+   "fieldname": "column_break_lyiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sample_creation_section",
+   "fieldtype": "Section Break",
+   "label": "Sample creation"
+  },
+  {
+   "fieldname": "dispatch_id",
+   "fieldtype": "Link",
+   "label": "Dispatch ID",
+   "options": "Lot Dispatch"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_nfbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Table",
+   "label": "Result",
+   "options": "Parameter"
+  },
+  {
+   "fieldname": "final_result",
+   "fieldtype": "Select",
+   "label": "Final Result",
+   "options": "Pass\nFail"
+  },
+  {
+   "fieldname": "section_break_petn",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach",
+   "label": "Photograph"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "column_break_drpu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quality_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Quality Item Details "
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "lot",
+   "fieldtype": "Link",
+   "label": "Lot",
+   "options": "Lot"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "date_of_dispatch",
+   "fieldtype": "Date",
+   "label": "Date of Dispatch"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "net_weight_qtl",
+   "fieldtype": "Data",
+   "label": "Net Weight (Qtl)"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "comments_reason",
+   "fieldtype": "Small Text",
+   "label": "Comments Reason"
+  },
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name"
+  },
+  {
+   "fieldname": "name_of_the_godown",
+   "fieldtype": "Data",
+   "label": "Name of the Godown"
+  },
+  {
+   "fieldname": "gross_weight_qtl",
+   "fieldtype": "Data",
+   "label": "Gross Weight (Qtl)"
+  },
+  {
+   "fieldname": "tare_weight_qtl",
+   "fieldtype": "Data",
+   "label": "Tare Weight (Qtl)"
+  },
+  {
+   "fieldname": "no_of_bags",
+   "fieldtype": "Data",
+   "label": "No. of Bags"
+  },
+  {
+   "fieldname": "inspection_report",
+   "fieldtype": "Attach",
+   "label": "Inspection Report"
+  },
+  {
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "fpc_representative",
+   "fieldtype": "Data",
+   "label": "FPC Representative"
+  },
+  {
+   "fieldname": "column_break_rpiy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supply_valid_representative",
+   "fieldtype": "Data",
+   "label": "Supply Valid representative"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-02 22:50:11.030226",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Quality Inspection Dispatch Lot Based",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

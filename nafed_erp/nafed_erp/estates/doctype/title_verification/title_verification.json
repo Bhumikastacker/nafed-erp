@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-04 07:55:21.490791",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "property_id",
+  "title_type",
+  "encumbrance_status",
+  "legal_reviewer",
+  "verification_status",
+  "legal_verification_status",
+  "column_break_crmc",
+  "ownership_details",
+  "registry_office",
+  "verification_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Title Verification ID",
+   "options": "EST/TTL/.YY./"
+  },
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property ID",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Title Type",
+   "options": "Select",
+   "reqd": 1
+  },
+  {
+   "fieldname": "encumbrance_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Encumbrance Status",
+   "options": "Select",
+   "reqd": 1
+  },
+  {
+   "fieldname": "legal_reviewer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Legal Reviewer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "Select\nVerified\nVerified with Remarks\nDiscrepancy Found"
+  },
+  {
+   "fieldname": "legal_verification_status",
+   "fieldtype": "Select",
+   "label": "Legal Verification Status",
+   "options": "Select\nClear\nConditionally Verified\nNot Verified\nDisputed"
+  },
+  {
+   "fieldname": "column_break_crmc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership_details",
+   "fieldtype": "Small Text",
+   "label": "Ownership Details"
+  },
+  {
+   "fieldname": "registry_office",
+   "fieldtype": "Small Text",
+   "label": "Registry Office"
+  },
+  {
+   "fieldname": "verification_notes",
+   "fieldtype": "Small Text",
+   "label": "Verification Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:06:20.485810",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Title Verification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

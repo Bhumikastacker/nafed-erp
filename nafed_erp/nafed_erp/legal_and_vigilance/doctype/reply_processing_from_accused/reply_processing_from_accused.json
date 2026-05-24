@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-27 12:36:45.847479",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_t2ye",
+  "memo_id",
+  "naming_series",
+  "section_break_coyp",
+  "accused_name",
+  "section_break_amut",
+  "submission_date",
+  "column_break_lisg",
+  "reply_document",
+  "section_break_pxpd",
+  "linked_case_id",
+  "ref",
+  "column_break_krcb",
+  "review_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_t2ye",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "memo_id",
+   "fieldtype": "Link",
+   "label": "Memo ID",
+   "options": "Memo Issuance"
+  },
+  {
+   "fieldname": "section_break_coyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "memo_id.recipient_name",
+   "fieldname": "accused_name",
+   "fieldtype": "Link",
+   "label": "Accused Name ",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_amut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Datetime",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "column_break_lisg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reply_document",
+   "fieldtype": "Attach",
+   "label": "Reply Document "
+  },
+  {
+   "fieldname": "section_break_pxpd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "memo_id.complaint_receipt_id",
+   "fieldname": "linked_case_id",
+   "fieldtype": "Link",
+   "label": "Complaint Receipt ID",
+   "options": "Complaint Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_krcb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "review_status",
+   "fieldtype": "Select",
+   "label": "Review Status",
+   "options": "\nPending\nIn-Progress\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reply Processing from Accused",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Ref",
+   "options": "Memo Issuance"
+  },
+  {
+   "default": "MR-ID-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Reply ID",
+   "options": "MR-ID-.#####",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Show-Cause Notice Generation",
+   "link_fieldname": "ref"
+  }
+ ],
+ "modified": "2026-02-13 12:21:48.408866",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Reply Processing from Accused",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-25 17:55:42.276825",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oyrg",
+  "dispatch_id",
+  "dispatch_date",
+  "division",
+  "column_break_ytse",
+  "season",
+  "commodity",
+  "status",
+  "location__organization_section",
+  "state_agency",
+  "society",
+  "center",
+  "column_break_dora",
+  "state",
+  "district",
+  "warehouse",
+  "transport_details_section",
+  "vehicle_no",
+  "column_break_lksc",
+  "delivery_challan_no",
+  "farmer__lot_linking_section",
+  "lot_details",
+  "dispatch_quantity_summary_section",
+  "dispatch_quantity",
+  "column_break_miqb",
+  "dispatch_bags",
+  "section_break_bgba",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oyrg",
+   "fieldtype": "Section Break",
+   "label": "BASIC IDENTIFICATION"
+  },
+  {
+   "fieldname": "dispatch_id",
+   "fieldtype": "Read Only",
+   "label": "Dispatch ID"
+  },
+  {
+   "default": "Today",
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ytse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "label": "Commodity",
+   "options": "Item"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nDispatched\nDelivered\nCancelled"
+  },
+  {
+   "fieldname": "location__organization_section",
+   "fieldtype": "Section Break",
+   "label": "LOCATION / ORGANIZATION"
+  },
+  {
+   "fieldname": "state_agency",
+   "fieldtype": "Link",
+   "label": "State Agency",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "society",
+   "fieldtype": "Data",
+   "label": "Society"
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Data",
+   "label": "Center"
+  },
+  {
+   "fieldname": "column_break_dora",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "transport_details_section",
+   "fieldtype": "Section Break",
+   "label": "TRANSPORT DETAILS"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vehicle No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lksc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivery_challan_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Delivery Challan No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer__lot_linking_section",
+   "fieldtype": "Section Break",
+   "label": "FARMER & LOT LINKING"
+  },
+  {
+   "fieldname": "lot_details",
+   "fieldtype": "Table",
+   "label": "Lot Details",
+   "options": "Seed Dispatch Lot Detail"
+  },
+  {
+   "fieldname": "dispatch_quantity_summary_section",
+   "fieldtype": "Section Break",
+   "label": "DISPATCH QUANTITY (SUMMARY)"
+  },
+  {
+   "fieldname": "dispatch_quantity",
+   "fieldtype": "Float",
+   "label": "Dispatch Quantity"
+  },
+  {
+   "fieldname": "column_break_miqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dispatch_bags",
+   "fieldtype": "Int",
+   "label": "Dispatch Bags"
+  },
+  {
+   "fieldname": "section_break_bgba",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lot Dispatch",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lot Dispatch",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-05 10:50:44.745852",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Lot Dispatch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

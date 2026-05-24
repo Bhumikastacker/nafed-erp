@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-21 15:58:03.445157",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_approver_user_id",
+  "request_approver_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_approver_user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Leave Encashment Request Approver User Id",
+   "options": "User"
+  },
+  {
+   "fetch_from": "request_approver_user_id.full_name",
+   "fieldname": "request_approver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Leave Encashment Request Approver Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-21 17:23:59.587476",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Leave Encashment Request Approvers",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

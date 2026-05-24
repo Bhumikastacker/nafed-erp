@@ -1,0 +1,487 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-12-03 12:25:23.533704",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "division",
+  "head_office",
+  "payment_request_type",
+  "transaction_date",
+  "column_break_2",
+  "branch",
+  "parent_request",
+  "mode_of_payment",
+  "transcation_type",
+  "employee_filter_section",
+  "custom_division",
+  "designation",
+  "department",
+  "employment_type",
+  "column_break_ghlu",
+  "employee_branch",
+  "company",
+  "grade",
+  "section_break_mehf",
+  "employee_salary_details",
+  "party_details",
+  "party_type",
+  "party",
+  "party_name",
+  "column_break_4",
+  "reference_doctype",
+  "reference_name",
+  "purpose_of_request",
+  "transaction_details",
+  "grand_total",
+  "currency",
+  "is_a_subscription",
+  "column_break_18",
+  "outstanding_amount",
+  "party_account_currency",
+  "subscription_section",
+  "subscription_plans",
+  "bank_account_details",
+  "bank_account",
+  "bank",
+  "bank_account_no",
+  "account",
+  "column_break_kcze",
+  "iban",
+  "branch_code",
+  "swift_number",
+  "accounting_dimensions_section",
+  "cost_center",
+  "column_break_kzon",
+  "project",
+  "recipient_message_and_payment_details_section",
+  "payment_entry",
+  "email_to",
+  "payment_entry_id",
+  "column_break_npxy",
+  "payment_gateway_account",
+  "status",
+  "fund_recevied_entry_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ACC-PRB-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division",
+   "reqd": 1
+  },
+  {
+   "fieldname": "head_office",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Head Office",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "Inward",
+   "fieldname": "payment_request_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Request Type",
+   "options": "Outward\nInward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parent_request",
+   "fieldtype": "Link",
+   "label": "Parent Payment Request",
+   "options": "Branch Payment Request"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment",
+   "reqd": 1
+  },
+  {
+   "default": "Approval Requisition",
+   "fieldname": "transcation_type",
+   "fieldtype": "Select",
+   "label": "Transcation Type",
+   "options": "Salary Requisition\nApproval Requisition",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.transcation_type ==\"Salary Requisition\"",
+   "fieldname": "employee_filter_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Filter"
+  },
+  {
+   "fieldname": "custom_division",
+   "fieldtype": "Link",
+   "label": "Employee Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "column_break_ghlu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_branch",
+   "fieldtype": "Link",
+   "label": "Employee Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "depends_on": "eval:doc.transcation_type ==\"Salary Requisition\"",
+   "fieldname": "section_break_mehf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_salary_details",
+   "fieldtype": "Table",
+   "label": "Employee Salary Details",
+   "options": "Salary Requistation Payment"
+  },
+  {
+   "depends_on": "eval: doc.transcation_type==\"Approval Requisition\"",
+   "fieldname": "party_details",
+   "fieldtype": "Section Break",
+   "label": "Party Details"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Reference Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "hidden": 1,
+   "label": "Reference Name",
+   "options": "reference_doctype"
+  },
+  {
+   "fieldname": "purpose_of_request",
+   "fieldtype": "Link",
+   "label": "Purpose Of request",
+   "options": "Account"
+  },
+  {
+   "fieldname": "transaction_details",
+   "fieldtype": "Section Break",
+   "label": "Transaction Details"
+  },
+  {
+   "default": "0",
+   "description": "Amount in transaction currency",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Transaction Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_a_subscription",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is a Subscription"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "party_account_currency",
+   "fieldtype": "Link",
+   "label": "Party Account Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscription_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Subscription Section"
+  },
+  {
+   "fieldname": "subscription_plans",
+   "fieldtype": "Table",
+   "label": "Subscription Plans",
+   "options": "Subscription Plan Detail"
+  },
+  {
+   "fieldname": "bank_account_details",
+   "fieldtype": "Section Break",
+   "label": "Bank Account Details"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Read Only",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Read Only",
+   "label": "Account"
+  },
+  {
+   "fieldname": "column_break_kcze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Read Only",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Read Only",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "swift_number",
+   "fieldtype": "Read Only",
+   "label": "SWIFT Number"
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_kzon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "recipient_message_and_payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Recipient Message And Payment Details"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "options": "Payment Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_to",
+   "fieldtype": "Data",
+   "label": "Email To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_entry_id",
+   "fieldtype": "Data",
+   "label": "Fund Released Entry ID"
+  },
+  {
+   "fieldname": "column_break_npxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_gateway_account",
+   "fieldtype": "Link",
+   "label": "Payment Gateway Account",
+   "options": "Payment Gateway Account"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nRequested\nSend for Approval\nPaid\nCancelled\nApproved\nRejected\nFund Released",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fund_recevied_entry_id",
+   "fieldtype": "Data",
+   "label": "Fund Recevied Entry ID"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-03 13:02:44.418955",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Branch Payment Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Cyan",
+   "title": "Send for Approval"
+  },
+  {
+   "color": "Green",
+   "title": "Fund Released"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  },
+  {
+   "color": "Green",
+   "title": "Approved"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  }
+ ],
+ "track_changes": 1
+}

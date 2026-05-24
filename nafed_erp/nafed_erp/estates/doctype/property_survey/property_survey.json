@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-02 01:15:37.266610",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "property_id",
+  "survey_date",
+  "surveyor_type",
+  "surveyor_name",
+  "survey_type",
+  "structural_condition",
+  "utility_status",
+  "encroachment_status",
+  "fencing_requirement",
+  "measurement_values",
+  "encroachment_notes",
+  "column_break_mxrz",
+  "safety_hazards",
+  "maintenance_requirement",
+  "legal_boundary_compliance",
+  "survey_documents",
+  "survey_status"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Survey ID",
+   "no_copy": 1,
+   "options": "EST/SURV/.YY./",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property ID",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Survey Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.surveyor_type != 'Select'",
+   "fieldname": "surveyor_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Surveyor Name",
+   "mandatory_depends_on": "eval: doc.surveyor_type != 'Select'",
+   "options": "Property Surveyor"
+  },
+  {
+   "fieldname": "structural_condition",
+   "fieldtype": "Select",
+   "label": "Structural Condition",
+   "options": "Select"
+  },
+  {
+   "fieldname": "utility_status",
+   "fieldtype": "Select",
+   "label": "Utility Status",
+   "options": "Select"
+  },
+  {
+   "fieldname": "encroachment_status",
+   "fieldtype": "Select",
+   "label": "Encroachment Status",
+   "options": "Select"
+  },
+  {
+   "fieldname": "column_break_mxrz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "safety_hazards",
+   "fieldtype": "Small Text",
+   "label": "Safety Hazards"
+  },
+  {
+   "fieldname": "maintenance_requirement",
+   "fieldtype": "Small Text",
+   "label": "Maintenance Requirement"
+  },
+  {
+   "fieldname": "survey_documents",
+   "fieldtype": "Table",
+   "label": "Survey Documents",
+   "options": "Property Survey Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "fencing_requirement",
+   "fieldtype": "Check",
+   "label": "Fencing Requirement"
+  },
+  {
+   "fieldname": "measurement_values",
+   "fieldtype": "Small Text",
+   "label": "Measurement Values"
+  },
+  {
+   "fieldname": "encroachment_notes",
+   "fieldtype": "Small Text",
+   "label": "Encroachment Notes"
+  },
+  {
+   "fieldname": "legal_boundary_compliance",
+   "fieldtype": "Small Text",
+   "label": "Legal Boundary Compliance"
+  },
+  {
+   "fieldname": "survey_type",
+   "fieldtype": "Select",
+   "label": "Survey Type",
+   "options": "Boundary Measurement\nDemarcation\nFencing requirement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "surveyor_type",
+   "fieldtype": "Select",
+   "label": "Surveyor Type",
+   "options": "Select\nInternal\nExternal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "survey_status",
+   "fieldtype": "Select",
+   "label": "Survey Status",
+   "options": "Started\nIn-Progress\nCompleted"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-08 14:54:26.618728",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property Survey",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

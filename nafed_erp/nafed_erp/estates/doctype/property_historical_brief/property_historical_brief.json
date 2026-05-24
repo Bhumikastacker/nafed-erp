@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-02 14:51:11.266372",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "property_id",
+  "key_events",
+  "event_date",
+  "event_description",
+  "column_break_axlc",
+  "acquisition_mode",
+  "acquisition_year",
+  "ownership_chain",
+  "historical_background",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property ID",
+   "options": "Property"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Historical Record ID",
+   "options": "EST/HIS/.YY./",
+   "read_only": 1
+  },
+  {
+   "fieldname": "key_events",
+   "fieldtype": "Small Text",
+   "label": "Key Events"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event Date"
+  },
+  {
+   "fieldname": "event_description",
+   "fieldtype": "Small Text",
+   "label": "Event Description"
+  },
+  {
+   "fieldname": "column_break_axlc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acquisition_mode",
+   "fieldtype": "Select",
+   "label": "Acquisition Mode"
+  },
+  {
+   "fieldname": "acquisition_year",
+   "fieldtype": "Int",
+   "label": "Acquisition Year"
+  },
+  {
+   "fieldname": "ownership_chain",
+   "fieldtype": "Small Text",
+   "label": "Ownership Chain"
+  },
+  {
+   "fieldname": "historical_background",
+   "fieldtype": "Small Text",
+   "label": "Historical Background"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Property Historical Brief Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 12:07:27.872003",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Property Historical Brief",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

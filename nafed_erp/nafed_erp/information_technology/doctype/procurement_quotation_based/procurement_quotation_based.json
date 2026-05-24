@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-24 10:57:30.619209",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "quotation_no",
+  "quotation_date",
+  "eauction_id",
+  "bid_end_date",
+  "column_break_rchm",
+  "quotation_amount",
+  "taxes",
+  "publish_to_eauction",
+  "eauction_status",
+  "section_break_yjcn",
+  "requisitions",
+  "select_vendors_section",
+  "vendor",
+  "section_break_dsrd",
+  "warranty_period",
+  "compliance_status",
+  "selected_vendor",
+  "status",
+  "supporting_documents",
+  "column_break_dzrn",
+  "delivery_timeline",
+  "comparison_score",
+  "proposal_id__po_id",
+  "remarks",
+  "purchase_order"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Procurement ID",
+   "options": "PR-QT-.YYYY.-",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "column_break_rchm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quotation_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quotation No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quotation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Quotation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quotation_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Quotation Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Data",
+   "label": "Taxes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_dsrd",
+   "fieldtype": "Section Break",
+   "label": "Other Details "
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Data",
+   "label": "Warranty Period"
+  },
+  {
+   "fieldname": "compliance_status",
+   "fieldtype": "Data",
+   "label": "Compliance Status"
+  },
+  {
+   "fieldname": "selected_vendor",
+   "fieldtype": "Link",
+   "label": "Selected Vendor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "column_break_dzrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivery_timeline",
+   "fieldtype": "Data",
+   "label": "Delivery Timeline"
+  },
+  {
+   "fieldname": "comparison_score",
+   "fieldtype": "Float",
+   "label": "Comparison Score"
+  },
+  {
+   "fieldname": "proposal_id__po_id",
+   "fieldtype": "Link",
+   "label": "Proposal ID / PO ID",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "select_vendors_section",
+   "fieldtype": "Section Break",
+   "label": "Select Vendors"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Table",
+   "label": "Vendor",
+   "options": "Request for Quotation Supplier",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_yjcn",
+   "fieldtype": "Section Break",
+   "label": "Requisition Details"
+  },
+  {
+   "fieldname": "requisitions",
+   "fieldtype": "Table",
+   "label": "Requisitions",
+   "options": "Procurement Requisition Items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nRFQ Sent\nQuotation Received\nCompared\nL1 Selected\nProposal\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "PO",
+   "options": "Purchase Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "publish_to_eauction",
+   "fieldtype": "Select",
+   "label": "Publish to eAuction",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "eauction_id",
+   "fieldtype": "Data",
+   "label": "Auction ID"
+  },
+  {
+   "fieldname": "bid_end_date",
+   "fieldtype": "Date",
+   "label": "Bid End Date"
+  },
+  {
+   "fieldname": "eauction_status",
+   "fieldtype": "Select",
+   "label": "Auction Status",
+   "options": "Draft\nPublished\nClosed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-03 16:29:26.752902",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Procurement Quotation Based",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 13:46:49.379102",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Reply Processing from Accused",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Submission Date changed<br><br></p>\n\n<p><b>Reply ID:</b> {{ doc.name }}<br>\n<b>Memo ID:</b> {{ doc.memo_id }}<br>\n<b>Accused Name:</b> {{ doc.accused_name }}<br>\n<b>Linked Case ID:</b> {{ doc.linked_case_id }}<br>\n<b>Submission Date:</b> {{ doc.submission_date }}<br>\n<b>Review Status:</b> {{ doc.review_status }}<br><br></p>\n\n<p>The reply document has been attached for examination.<br><br></p>\n\n<p>Please review the submission and update the review status accordingly.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:13:45.536328",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Submission date for reply changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Submission date changed for reply\u2013 Memo {{ doc.memo_id }}",
+ "value_changed": "submission_date"
+}

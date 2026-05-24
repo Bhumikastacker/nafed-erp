@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-25 17:54:51.666281",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer_id",
+  "lot_id",
+  "lot_quantity",
+  "lot_bags"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Farmer ID",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "lot_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lot ID",
+   "options": "Lot"
+  },
+  {
+   "fetch_from": "lot_id.lot_qty",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lot Quantity"
+  },
+  {
+   "fetch_from": "lot_id.lot_bags",
+   "fieldname": "lot_bags",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lot Bags"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-25 17:54:51.666281",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Seed Dispatch Lot Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

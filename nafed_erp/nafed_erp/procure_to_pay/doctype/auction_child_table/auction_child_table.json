@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-07 16:00:30.010475",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state",
+  "commodity",
+  "season",
+  "scheme",
+  "qty",
+  "column_break_sudn",
+  "warehouse_code",
+  "warehouse_name",
+  "uom",
+  "quantity_to_put_on_auction"
+ ],
+ "fields": [
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Season",
+   "read_only": 1
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Scheme",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commodity",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sudn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "warehouse.warehouse_name",
+   "fieldname": "warehouse_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Warehouse Name ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity_to_put_on_auction",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Quantity To Put on Auction"
+  },
+  {
+   "fieldname": "warehouse_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Warehouse Code ",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-29 21:15:28.789827",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Auction Child table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

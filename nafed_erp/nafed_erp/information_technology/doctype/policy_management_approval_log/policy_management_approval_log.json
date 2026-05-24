@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-28 11:55:49.627799",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policy_id",
+  "action",
+  "action_taken_by",
+  "action_taken_on",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy ID",
+   "options": "Policy Management"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action"
+  },
+  {
+   "fieldname": "action_taken_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Action Taken By",
+   "options": "User"
+  },
+  {
+   "fieldname": "action_taken_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Action Taken On"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-28 11:59:13.843326",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Policy Management Approval log",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

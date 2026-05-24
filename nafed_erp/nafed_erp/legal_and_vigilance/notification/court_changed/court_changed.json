@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 17:54:50.158121",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Court Order",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>A assigned person has been changed for the following legal case.</p>\n\n<p>Case ID: {{ doc.case_id }}<br>\n\nCourt: {{ doc.court_name }}<br>\nOrder Date: {{ doc.order_date }}<br>\nOrder Type: {{ doc.order_type}}<br>\nAssigned to: {{ doc.assigned_to}}<br>\nCompliance Task ID: {{ doc.compliance_task_id }}<br></p>\n\n<p>Order Summary:{{ doc.remarks }}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 17:03:26.027472",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Court changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "assigned_to"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Venue changed for Court Order {{ doc.name }} \u2013 Legal Case - {{ doc.case_id}}",
+ "value_changed": "court_name"
+}

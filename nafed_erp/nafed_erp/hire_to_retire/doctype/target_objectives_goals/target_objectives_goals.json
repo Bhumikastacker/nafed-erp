@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-14 11:36:06.374673",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "targetobjectivegoals",
+  "acheivements",
+  "remove_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "targetobjectivegoals",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Target/Objective/Goals"
+  },
+  {
+   "fieldname": "acheivements",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acheivements"
+  },
+  {
+   "fieldname": "remove_data",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remove"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-18 11:26:24.121278",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Target objectives goals",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

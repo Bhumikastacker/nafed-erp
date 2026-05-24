@@ -1,0 +1,34 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state==\"Approved\"\n",
+ "creation": "2026-02-02 12:07:46.035082",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Board Members",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.sociaty_name_1 }},\n\nWe are pleased to inform you that your Member Registration has been successfully completed.\n\nRegistration Member Reference: {{ doc.membership_no }}\nStatus: Completed\n\nIf you have any questions or require further assistance, please feel free to contact us.\n\nRegards,\n\nNafed ",
+ "message_type": "Markdown",
+ "modified": "2026-02-03 15:37:28.778391",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Member Approved Noftification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "set_property_after_alert": "",
+ "subject": "You Membership registration confirmed",
+ "value_changed": "workflow_state"
+}

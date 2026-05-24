@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:investment_category_code",
+ "creation": "2026-01-30 16:43:02.214330",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "investment_category_code",
+  "investment_category_name",
+  "investment_",
+  "column_break_niip",
+  "company",
+  "investment_threshold_limit",
+  "day_base_calculation",
+  "accounting_section",
+  "investment_account",
+  "return_on_investment_account",
+  "column_break_wkpu",
+  "accrued_interest_paid_account",
+  "interest_recievable_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "investment_category_name",
+   "fieldtype": "Data",
+   "label": "Investment Category Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "investment_account",
+   "fieldtype": "Link",
+   "label": "Investment Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"in\",[\"Current Asset\",\"Fixed Asset\",null]]]",
+   "options": "Account"
+  },
+  {
+   "fieldname": "investment_",
+   "fieldtype": "Percent",
+   "label": "Investment %"
+  },
+  {
+   "fieldname": "investment_category_code",
+   "fieldtype": "Data",
+   "label": "Investment Category Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "investment_threshold_limit",
+   "fieldtype": "Float",
+   "label": "Investment Threshold Limit"
+  },
+  {
+   "fieldname": "column_break_niip",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "link_filters": "[[\"Company\",\"custom_is_pf_trust\",\"=\",1]]",
+   "options": "Company"
+  },
+  {
+   "fieldname": "day_base_calculation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Day Base Calculation",
+   "options": "365 Days\n360 Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "accrued_interest_paid_account",
+   "fieldtype": "Link",
+   "label": "Accrued Interest Paid Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"in\",[\"Direct Expense\",\"Indirect Expense\"]]]",
+   "options": "Account"
+  },
+  {
+   "fieldname": "return_on_investment_account",
+   "fieldtype": "Link",
+   "label": "Return On Investment Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"in\",[\"Direct Income\",\"Indirect Income\"]]]",
+   "options": "Account"
+  },
+  {
+   "fieldname": "interest_recievable_account",
+   "fieldtype": "Link",
+   "label": "Interest Recievable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_wkpu",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-16 17:38:54.470953",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "Investment Category",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

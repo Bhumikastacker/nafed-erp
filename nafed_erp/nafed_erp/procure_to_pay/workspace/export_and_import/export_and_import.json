@@ -1,0 +1,93 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"J8Fc6hdb5Q\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Procure to pay</span>\",\"col\":12}},{\"id\":\"DBfMFxqMSV\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Extension and Business Development Division\",\"col\":2}},{\"id\":\"bnm3nWNVWL\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"International Trade Division\",\"col\":2}}]",
+ "creation": "2026-04-30 11:08:19.404672",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Extension and Business Development Division",
+   "label": "Extension and Business Development Division"
+  },
+  {
+   "custom_block_name": "International Trade Division",
+   "label": "International Trade Division"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Export and Import",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier Group",
+   "link_count": 0,
+   "link_to": "Supplier Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Warehouse",
+   "link_count": 0,
+   "link_to": "Warehouse",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-05-01 21:52:42.442630",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Export and Import",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "EBD Division User"
+  },
+  {
+   "role": "EBD Division Manager"
+  },
+  {
+   "role": "ITD DIvision User"
+  },
+  {
+   "role": "ITD DIvision Manager"
+  }
+ ],
+ "sequence_id": 10.1,
+ "shortcuts": [],
+ "title": "Export and Import"
+}

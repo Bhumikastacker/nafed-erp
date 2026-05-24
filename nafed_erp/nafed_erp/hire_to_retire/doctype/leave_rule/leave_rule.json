@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{company}-{rule_type}",
+ "creation": "2025-11-19 13:07:17.815240",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_izcl",
+  "enable",
+  "company",
+  "rule_name",
+  "rule_type",
+  "deduction_unit",
+  "amended_from",
+  "column_break_fusp",
+  "violations",
+  "shift_type",
+  "leave_type",
+  "section_break_nddi",
+  "rules_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_izcl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Leave Rule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rule_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rule Type",
+   "options": "\nUncompensated Late Entry Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deduction_unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Deduction Unit",
+   "options": "\n1\n0.5",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "label": "Leave Type",
+   "options": "Leave Type"
+  },
+  {
+   "fieldname": "violations",
+   "fieldtype": "Int",
+   "label": "Violations"
+  },
+  {
+   "depends_on": "eval:doc.rule_type==\"Uncompensated Late Entry Count\"",
+   "fieldname": "shift_type",
+   "fieldtype": "Link",
+   "label": "Shift Type",
+   "options": "Shift Type"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fusp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rules_description",
+   "fieldtype": "HTML",
+   "label": "Rules Description"
+  },
+  {
+   "fieldname": "section_break_nddi",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-23 13:29:21.302875",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Leave Rule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

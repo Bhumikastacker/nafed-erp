@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-05-06 17:51:25.547627",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sqp9",
+  "amended_from",
+  "naming_series",
+  "warehouse",
+  "storage_areasqft",
+  "treatment_type",
+  "scheduled_date",
+  "frequency",
+  "column_break_utct",
+  "expected_duration",
+  "assigned_agency",
+  "schedule_status",
+  "next_due_date",
+  "created_by",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sqp9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fumigation Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Schedule ID",
+   "options": "RBD-SCH-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "treatment_type",
+   "fieldtype": "Select",
+   "label": "Treatment Type",
+   "options": "Fumigation\nRodent Control\nBoth"
+  },
+  {
+   "fieldname": "column_break_utct",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheduled_date",
+   "fieldtype": "Date",
+   "label": "Scheduled Date"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "One-time\nWeekly\nMonthly\nQuarterly"
+  },
+  {
+   "fieldname": "expected_duration",
+   "fieldtype": "Duration",
+   "label": "Expected Duration"
+  },
+  {
+   "fieldname": "assigned_agency",
+   "fieldtype": "Link",
+   "label": "Assigned Agency",
+   "options": "Agency"
+  },
+  {
+   "fieldname": "schedule_status",
+   "fieldtype": "Select",
+   "label": "Schedule Status",
+   "options": "Scheduled\nCompleted\nCancelled\nDeferred"
+  },
+  {
+   "fieldname": "next_due_date",
+   "fieldtype": "Date",
+   "label": "Next Due Date"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On"
+  },
+  {
+   "fieldname": "storage_areasqft",
+   "fieldtype": "Float",
+   "label": "Storage Area(sqft)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-12 15:59:04.908904",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Fumigation Schedule",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

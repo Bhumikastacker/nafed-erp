@@ -1,0 +1,38 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-02-24 15:17:11.361960",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Assignment",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Lawyer type has been changed for the following case</p>\n\n<p>Case ID: {{ doc.case_id }}<br>\nLawyer:{{doc.lawyer}}<br>\nLawyer Type:{{doc.lawyer_type}}<br>\nAssigned On: {{ doc.assigned_on }}</p>\n\n<p>Please review and take necessary action.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-03-16 15:58:58.725459",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Lawyer type changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "closed_by"
+  },
+  {
+   "receiver_by_document_field": "assigned_by"
+  },
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Lawyer Changed Legal Case: {{ doc.name }}",
+ "value_changed": "lawyer_type"
+}

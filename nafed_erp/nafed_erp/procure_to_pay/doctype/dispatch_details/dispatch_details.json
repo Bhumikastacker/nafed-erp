@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-06 16:15:46.505054",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jbix",
+  "naming_series",
+  "work_order_ref_no",
+  "sla_id",
+  "sla_name",
+  "column_break_fbpj",
+  "jute_miller",
+  "date_of_issue",
+  "date_of_dispatch",
+  "quantity",
+  "amended_from",
+  "ref",
+  "section_break_pefm",
+  "item_details",
+  "delivery_details",
+  "section_break_honm",
+  "total_quantity_delivered",
+  "column_break_nexo",
+  "total_amount",
+  "section_break_vocn",
+  "upload_documents",
+  "inspection_report",
+  "bill",
+  "transport_challan",
+  "loading_supervision_report",
+  "tax_invoice",
+  "insurance_copy",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jbix",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Dispatch Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "sla_id.society_name",
+   "fieldname": "sla_name",
+   "fieldtype": "Data",
+   "label": "SLA Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "work_order_ref_no.date_of_issue",
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Issue",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "work_order_ref_no.dispatch_by",
+   "fieldname": "date_of_dispatch",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Dispatch",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "work_order_ref_no.total_quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "work_order_ref_no",
+   "fieldtype": "Link",
+   "label": "Work Order Ref No.",
+   "options": "Jute Work Order"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Dispatch ID",
+   "options": "DI/.YYYY./.####"
+  },
+  {
+   "fetch_from": "work_order_ref_no.sla_id",
+   "fieldname": "sla_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SLA ID",
+   "options": "SLA Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Table",
+   "label": "Item details",
+   "options": "Gunny Items Child"
+  },
+  {
+   "fieldname": "section_break_pefm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_vocn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fbpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "work_order_ref_no.jute_miller",
+   "fieldname": "jute_miller",
+   "fieldtype": "Link",
+   "label": "Jute Miller",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_quantity_delivered",
+   "fieldtype": "Data",
+   "label": "Total Quantity Delivered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_honm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nexo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_global_search": 1,
+   "label": "Ref",
+   "options": "Sales Invoice",
+   "search_index": 1
+  },
+  {
+   "fieldname": "delivery_details",
+   "fieldtype": "Table",
+   "label": "Delivery Details",
+   "options": "Delivery Location Details"
+  },
+  {
+   "fieldname": "upload_documents",
+   "fieldtype": "Attach",
+   "label": "Upload Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "inspection_report",
+   "fieldtype": "Check",
+   "label": "Inspection Report"
+  },
+  {
+   "default": "0",
+   "fieldname": "bill",
+   "fieldtype": "Check",
+   "label": "E-way Bill"
+  },
+  {
+   "default": "0",
+   "fieldname": "transport_challan",
+   "fieldtype": "Check",
+   "label": "Transport Challan"
+  },
+  {
+   "default": "0",
+   "fieldname": "loading_supervision_report",
+   "fieldtype": "Check",
+   "label": "Loading Supervision Report"
+  },
+  {
+   "default": "0",
+   "fieldname": "tax_invoice",
+   "fieldtype": "Check",
+   "label": "Tax Invoice"
+  },
+  {
+   "default": "0",
+   "fieldname": "insurance_copy",
+   "fieldtype": "Check",
+   "label": "Insurance Copy"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-22 16:14:45.705390",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Dispatch Details",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

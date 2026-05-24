@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-30 12:28:55.339292",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_z8qi",
+  "case_id",
+  "outcome_type",
+  "other_outcome_type",
+  "outcome_date",
+  "column_break_glho",
+  "settlement_amount",
+  "approval_status",
+  "section_break_oufm",
+  "case_hearing_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_z8qi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case ID",
+   "options": "Legal Case Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "outcome_type",
+   "fieldtype": "Select",
+   "label": "Outcome Type",
+   "options": "\nJudgment\nSettlement\nWithdrawal\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_glho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outcome_date",
+   "fieldtype": "Date",
+   "label": "Outcome Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "settlement_amount",
+   "fieldtype": "Currency",
+   "label": "Reward Amount"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "\nPending\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "case_hearing_details",
+   "fieldtype": "Table",
+   "label": "Case Hearing Details",
+   "options": "Case Hearing outcome child"
+  },
+  {
+   "fieldname": "section_break_oufm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.outcome_type==\"Other\"\n",
+   "fieldname": "other_outcome_type",
+   "fieldtype": "Data",
+   "label": "Specify Outcome Type"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-27 14:45:48.069674",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Case Outcome Recording And  Closure Processing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

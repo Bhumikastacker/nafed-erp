@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Approved\"\n",
+ "creation": "2026-02-16 13:17:57.792581",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Board Members",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear </p>,\n\n<p>I hope this message finds you well.</p>\n\nWe are pleased to inform you that the nomination of {{ doc.society_name_1 }} for the position of Board Member has been reviewed and Approved.\n",
+ "message_type": "HTML",
+ "modified": "2026-02-16 13:21:21.491515",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Board Member Approval",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "assigned_to"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Board Member Approver {{ doc.serial_no }}",
+ "value_changed": "email"
+}

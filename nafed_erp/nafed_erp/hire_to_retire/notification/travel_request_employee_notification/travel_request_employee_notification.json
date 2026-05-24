@@ -1,0 +1,41 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-05 14:25:53.913124",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Travel Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p style=\"font-size: 14px;\">\n    Dear {{ doc.employee_name }},\n</p>\n\n<p style=\"font-size: 14px;\">\n    Your Travel Request <strong>{{ doc.name }}</strong> has been updated.\n</p>\n\n<table role=\"presentation\" cellpadding=\"6\" cellspacing=\"0\" width=\"100%\" \n       style=\"border-collapse: collapse; font-size:14px; margin-bottom: 16px;\">\n    <tr>\n        <td style=\"color:#555;\">Status:</td>\n        <td><strong>{{ doc.custom_status }}</strong></td>\n    </tr>\n    <tr>\n        <td style=\"color:#555;\">Submitted On:</td>\n        <td><strong>{{ doc.custom_submission_date }}</strong></td>\n    </tr>\n    <tr>\n        <td style=\"color:#555; vertical-align: top;\">Comments:</td>\n        <td>\n            {% if doc.custom_comments %}\n                {{ doc.custom_comments }}\n            {% else %}\n                <em>No comments added.</em>\n            {% endif %}\n        </td>\n    </tr>\n</table>\n\n<!-- Itinerary Table -->\n<h3 style=\"margin-top:20px; color:#1f7bd4; font-size:16px;\">Travel Itinerary</h3>\n\n<table role=\"presentation\" cellpadding=\"8\" cellspacing=\"0\" width=\"100%\"\n       style=\"border-collapse: collapse; border:1px solid #ddd; font-size:14px;\">\n    <thead>\n        <tr style=\"background:#f0f4f7;\">\n            <th style=\"border:1px solid #ddd;\">From</th>\n            <th style=\"border:1px solid #ddd;\">To</th>\n            <th style=\"border:1px solid #ddd;\">Departure</th>\n            <th style=\"border:1px solid #ddd;\">Arrival</th>\n            <th style=\"border:1px solid #ddd;\">Duration</th>\n        </tr>\n    </thead>\n    <tbody>\n        {% for row in doc.itinerary %}\n        <tr>\n            <td style=\"border:1px solid #ddd;\">{{ row.travel_from }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.travel_to }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.departure_date }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.arrival_date }}</td>\n            <td style=\"border:1px solid #ddd;\">{{ row.custom_travel_duration }}</td>\n        </tr>\n        {% endfor %}\n    </tbody>\n</table>\n\n<p style=\"margin-top: 20px;\">\n    <a href=\"{{ frappe.utils.get_url() }}/app/travel-request/{{ doc.name }}\" \n       target=\"_blank\"\n       style=\"display:inline-block;padding:10px 16px;border-radius:6px;\n              text-decoration:none;background:#1f7bd4;color:#ffffff;font-weight:600;\">\n        Open Travel Request\n    </a>\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:30:08.353094",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Travel Request Employee Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending\"",
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "condition": "doc.workflow_state==\"Rejected\"",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{doc.name}} Travel Request has been Updated",
+ "value_changed": "workflow_state"
+}

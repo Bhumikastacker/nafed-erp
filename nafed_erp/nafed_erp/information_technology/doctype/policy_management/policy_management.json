@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-20 23:20:42.121891",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "policy_management_section",
+  "naming_series",
+  "title",
+  "version",
+  "effective_date",
+  "review_date",
+  "retire_date",
+  "scope",
+  "created_on",
+  "created_by",
+  "column_break_sqrm",
+  "status",
+  "owner_user_id",
+  "author_user_id",
+  "approver_user_id",
+  "classification",
+  "content_ref",
+  "read_ack_count",
+  "last_modified_on",
+  "last_modified_by",
+  "applicability_roles_section",
+  "roles",
+  "approval_history_log_section",
+  "approval_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sqrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Policy ID",
+   "options": "IT-Policy-.YYYY.-",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Version"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review Date"
+  },
+  {
+   "fieldname": "retire_date",
+   "fieldtype": "Date",
+   "label": "Retire Date"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Small Text",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nReviewed\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "owner_user_id",
+   "fieldtype": "Link",
+   "label": "Owner User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "author_user_id",
+   "fieldtype": "Link",
+   "label": "Author User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "approver_user_id",
+   "fieldtype": "Link",
+   "label": "Approver User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Select",
+   "label": "Classification",
+   "options": "Public\nInternal\nConfidential"
+  },
+  {
+   "fieldname": "content_ref",
+   "fieldtype": "Attach",
+   "label": "Content Ref"
+  },
+  {
+   "fieldname": "read_ack_count",
+   "fieldtype": "Int",
+   "label": "Read Ack Count"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_modified_on",
+   "fieldtype": "Datetime",
+   "label": "Last Modified On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_modified_by",
+   "fieldtype": "Link",
+   "label": "Last Modified By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "policy_management_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Management"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "applicability_roles_section",
+   "fieldtype": "Section Break",
+   "label": "Applicability Roles"
+  },
+  {
+   "fieldname": "roles",
+   "fieldtype": "Link",
+   "label": "Roles",
+   "options": "User"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "approval_history_log_section",
+   "fieldtype": "Section Break",
+   "label": "Approval History Log"
+  },
+  {
+   "fieldname": "approval_history",
+   "fieldtype": "Table",
+   "label": "Approval History",
+   "options": "Policy Management Approval log",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-05 12:17:15.482934",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Policy Management",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

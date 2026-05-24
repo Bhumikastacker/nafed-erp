@@ -1,0 +1,44 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-12-04 14:58:40.353085",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Nafed",
+ "letterhead": null,
+ "modified": "2025-12-04 14:58:40.353085",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Nafed Position Fulfillment Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Job Requisition",
+ "report_name": "Nafed Position Fulfillment Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Z HR - Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Z HR - Maker"
+  },
+  {
+   "role": "MD"
+  }
+ ],
+ "timeout": 0
+}

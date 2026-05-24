@@ -1,0 +1,46 @@
+<p>
+A legal case has been registered on {{ doc.creation }}.<br><br>
+
+<b>Case Details:</b><br>
+Case ID: {{ doc.name }}<br>
+Case Number: {{ doc.case_number }}<br>
+Status: {{ doc.status }}<br>
+Workflow State: {{ doc.workflow_state }}<br>
+Case Status: {{ doc.case_status }}<br>
+Case Category: {{ doc.case_category }}<br>
+Matter Value: {{ doc.matter_value }}<br><br>
+
+<b>Party Details:</b><br>
+Party Name: {{ doc.party_name }}<br>
+Opposing Party: {{ doc.opposing_party[0].opposing_party_name if doc.opposing_party else "" }}<br><br>
+
+<b>Advocate Details:</b><br>
+Assigned Advocate: {{ doc.assigned_advocate }}<br><br>
+
+<b>Location Details:</b><br>
+Jurisdiction: {{ doc.jurisdiction }}<br>
+Branch: {{ doc.branch_name }}<br>
+Court: {{ doc.court[0].court if doc.court else "" }}<br><br>
+
+<b>Additional Info:</b><br>
+Agreement Type: {{ doc.agreement_type }}<br>
+Reference: {{ doc.related_po__contract_ref }}<br>
+View Mode: {{ doc.view_mode }}<br><br>
+
+
+<p><b>Remarks:</b></p>
+
+{% if doc.remarks %}
+    {% for row in doc.remarks %}
+        <p>
+            {{ row.remarks | safe }} <br>
+            <small>
+                By: {{ row.action_taken_by }} on {{ row.action_taken_on }}
+            </small>
+        </p>
+    {% endfor %}
+{% else %}
+    <p>No remarks available.</p>
+{% endif %}
+
+</p>

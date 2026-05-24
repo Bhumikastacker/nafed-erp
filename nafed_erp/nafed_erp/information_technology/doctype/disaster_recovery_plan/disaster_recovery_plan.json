@@ -1,0 +1,401 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-11-21 11:48:10.047712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "naming_series",
+  "cmdb_asset_ids",
+  "plan_name",
+  "business_owner_id",
+  "business_owner",
+  "application_owner_id",
+  "application_owner",
+  "plan_version",
+  "column_break_fokk",
+  "environment",
+  "criticality",
+  "contacts",
+  "review_cycle",
+  "recovery_objective_section",
+  "rto",
+  "rpo",
+  "column_break_pyst",
+  "priority",
+  "backup_strategy_section",
+  "backup_type",
+  "backup_frequency",
+  "retention_policy",
+  "column_break_ufbw",
+  "storage_target",
+  "backup_windows",
+  "retention_period",
+  "encryption",
+  "recovery_strategy_section",
+  "failover_type",
+  "replication_method",
+  "dr_site_id",
+  "dnsrouting_changes",
+  "column_break_fcug",
+  "failback_procedure",
+  "data_integrity",
+  "order_of_recovery",
+  "runbooks_and_tools",
+  "runbook_refs",
+  "pre_approved_toolkits",
+  "column_break_qree",
+  "automation_runbooks",
+  "escalation_matrix",
+  "role_responsible_section",
+  "role_responsible",
+  "section_break_scab",
+  "supporting_artifacts",
+  "approval_and_review",
+  "approval_status",
+  "created_by",
+  "created_on",
+  "column_break_qrum",
+  "last_modified_by",
+  "last_modified_on",
+  "compliance_reference",
+  "vault_credential_references"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "plan_version",
+   "fieldtype": "Int",
+   "label": "Plan Version"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "business_owner_id",
+   "fieldtype": "Link",
+   "label": "Business Owner ID",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "application_owner_id",
+   "fieldtype": "Link",
+   "label": "Application Owner ID",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_fokk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "Prod\nDR\nTest"
+  },
+  {
+   "fieldname": "criticality",
+   "fieldtype": "Select",
+   "label": "Criticality",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "cmdb_asset_ids",
+   "fieldtype": "Link",
+   "label": "CMDB Asset IDs",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "label": "Contact List",
+   "options": "DR and Backup Contact List"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "recovery_objective_section",
+   "fieldtype": "Section Break",
+   "label": "Recovery Objective"
+  },
+  {
+   "fieldname": "rto",
+   "fieldtype": "Duration",
+   "label": "Recovery Time Objective"
+  },
+  {
+   "fieldname": "rpo",
+   "fieldtype": "Duration",
+   "label": "Recovery Point Objective"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "backup_strategy_section",
+   "fieldtype": "Section Break",
+   "label": "Backup Strategy"
+  },
+  {
+   "fieldname": "backup_type",
+   "fieldtype": "Select",
+   "label": "Backup Type",
+   "options": "Full\nIncremental\nDifferential"
+  },
+  {
+   "fieldname": "backup_frequency",
+   "fieldtype": "Select",
+   "label": "Backup Frequency",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "retention_policy",
+   "fieldtype": "Small Text",
+   "label": "Retention Policy"
+  },
+  {
+   "default": "0",
+   "fieldname": "encryption",
+   "fieldtype": "Check",
+   "label": "Encryption"
+  },
+  {
+   "fieldname": "column_break_ufbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "storage_target",
+   "fieldtype": "Select",
+   "label": "Storage Target",
+   "options": "On-Prem\nOffsite\nCloud"
+  },
+  {
+   "fieldname": "backup_windows",
+   "fieldtype": "Duration",
+   "label": "Backup Windows"
+  },
+  {
+   "fieldname": "retention_period",
+   "fieldtype": "Duration",
+   "label": "Retention Period"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "recovery_strategy_section",
+   "fieldtype": "Section Break",
+   "label": "Recovery Strategy"
+  },
+  {
+   "fieldname": "failover_type",
+   "fieldtype": "Select",
+   "label": "Failover Type",
+   "options": "Automatic\nManual"
+  },
+  {
+   "fieldname": "replication_method",
+   "fieldtype": "Select",
+   "label": "Replication Method",
+   "options": "Synchronous\nAsynchronous"
+  },
+  {
+   "fieldname": "dr_site_id",
+   "fieldtype": "Data",
+   "label": "DR Site Details",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "dnsrouting_changes",
+   "fieldtype": "Small Text",
+   "label": "DNS/Routing Changes"
+  },
+  {
+   "fieldname": "column_break_fcug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "failback_procedure",
+   "fieldtype": "Small Text",
+   "label": "Failback Procedure"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_integrity",
+   "fieldtype": "Check",
+   "label": "Data Integrity"
+  },
+  {
+   "fieldname": "order_of_recovery",
+   "fieldtype": "Small Text",
+   "label": "Order of Recovery"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "runbooks_and_tools",
+   "fieldtype": "Section Break",
+   "label": "Runbooks & Tools"
+  },
+  {
+   "fieldname": "runbook_refs",
+   "fieldtype": "Data",
+   "label": "Runbook Refs"
+  },
+  {
+   "fieldname": "pre_approved_toolkits",
+   "fieldtype": "Data",
+   "label": "Pre-approved Toolkits"
+  },
+  {
+   "fieldname": "column_break_qree",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "automation_runbooks",
+   "fieldtype": "Data",
+   "label": "Automation Runbooks"
+  },
+  {
+   "fieldname": "escalation_matrix",
+   "fieldtype": "Data",
+   "label": "Escalation Matrix"
+  },
+  {
+   "fieldname": "approval_and_review",
+   "fieldtype": "Section Break",
+   "label": "Approval & Review"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "Draft\nIn Review\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On"
+  },
+  {
+   "fieldname": "column_break_qrum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_modified_by",
+   "fieldtype": "Link",
+   "label": "Last Modified By",
+   "options": "User"
+  },
+  {
+   "fieldname": "last_modified_on",
+   "fieldtype": "Date",
+   "label": "Last Modified On"
+  },
+  {
+   "fieldname": "compliance_reference",
+   "fieldtype": "Attach",
+   "label": "Compliance Reference"
+  },
+  {
+   "fieldname": "vault_credential_references",
+   "fieldtype": "Data",
+   "label": "Vault Credential References"
+  },
+  {
+   "fieldname": "column_break_pyst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Plan ID",
+   "options": "IT/DR/.YY./"
+  },
+  {
+   "fetch_from": "business_owner_id.employee_name",
+   "fieldname": "business_owner",
+   "fieldtype": "Data",
+   "label": "Business Owner",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "application_owner_id.employee_name",
+   "fieldname": "application_owner",
+   "fieldtype": "Data",
+   "label": "Application Owner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_cycle",
+   "fieldtype": "Select",
+   "label": "Review Cycle",
+   "options": "Weekly\nMonthly\nQuarterly\nYearly"
+  },
+  {
+   "fieldname": "role_responsible_section",
+   "fieldtype": "Section Break",
+   "label": "Role Responsible"
+  },
+  {
+   "fieldname": "role_responsible",
+   "fieldtype": "Table",
+   "label": "Role Responsible",
+   "options": "DR Backup Role Responsible"
+  },
+  {
+   "fieldname": "section_break_scab",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supporting_artifacts",
+   "fieldtype": "Table",
+   "label": "Supporting Artifacts",
+   "options": "DR Backup Supporting Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-08 15:32:07.991463",
+ "modified_by": "Administrator",
+ "module": "Information Technology",
+ "name": "Disaster Recovery Plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

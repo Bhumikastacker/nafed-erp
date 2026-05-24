@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ACT-{MM}-{####}",
+ "creation": "2025-12-31 16:03:53.094128",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "estimated_budget_form_id",
+  "branch",
+  "commodity_group",
+  "scheme",
+  "budget_year",
+  "budget_purchase_qty",
+  "budget_sale_qty",
+  "export_qty",
+  "status",
+  "remarks",
+  "column_break_xv2h",
+  "export_type",
+  "iot_branch",
+  "commodity",
+  "region",
+  "unit_of_measure",
+  "budget_purchase_value",
+  "budget_sale_value",
+  "budget_export_value",
+  "profit",
+  "amended_from",
+  "section_break_zpta",
+  "act_logs"
+ ],
+ "fields": [
+  {
+   "fetch_from": "estimated_budget_form_id.branch",
+   "fetch_if_empty": 1,
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.commodity_group",
+   "fieldname": "commodity_group",
+   "fieldtype": "Link",
+   "label": "Commodity Group",
+   "options": "Commodity Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.scheme",
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Scheme",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_year",
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "label": "Budget Year",
+   "options": "budgetary year",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_purchase_qty",
+   "fieldname": "budget_purchase_qty",
+   "fieldtype": "Float",
+   "label": "Budget Purchase Qty"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_sale_qty",
+   "fieldname": "budget_sale_qty",
+   "fieldtype": "Float",
+   "label": "Budget Sale Qty"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.export_qty",
+   "fieldname": "export_qty",
+   "fieldtype": "Float",
+   "label": "Export Qty"
+  },
+  {
+   "fieldname": "column_break_xv2h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.export_type",
+   "fieldname": "export_type",
+   "fieldtype": "Data",
+   "label": "Export Type"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.iot_branch",
+   "fieldname": "iot_branch",
+   "fieldtype": "Link",
+   "label": "IOT Branch",
+   "options": "Iot Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.commodity",
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "label": "Commodity",
+   "options": "Commodity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.unit_of_measure",
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_purchase_value",
+   "fieldname": "budget_purchase_value",
+   "fieldtype": "Float",
+   "label": "Budget Purchase Value"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_sale_value",
+   "fieldname": "budget_sale_value",
+   "fieldtype": "Float",
+   "label": "Budget Sale Value"
+  },
+  {
+   "fetch_from": "estimated_budget_form_id.budget_export_value",
+   "fieldname": "budget_export_value",
+   "fieldtype": "Float",
+   "label": "Budget Export Value"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Float",
+   "label": "Profit"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSend To Division Head\nCoordination Division\nSent To MD\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "estimated_budget_form_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Estimated Budget Form ID",
+   "link_filters": "[[\"Estimated Budget Entry Form\",\"status\",\"=\",\"Approved\"]]",
+   "options": "Estimated Budget Entry Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Budget Entry Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "section_break_zpta",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "act_logs",
+   "fieldtype": "Table",
+   "label": "Logs",
+   "no_copy": 1,
+   "options": "Hire To Retire Logs",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-17 17:40:13.066086",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Budget Entry Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

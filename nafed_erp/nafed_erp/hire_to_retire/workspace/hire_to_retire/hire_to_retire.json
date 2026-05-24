@@ -1,0 +1,72 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"uc20VBPbPH\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Hire to Retire</b></span>\",\"col\":12}},{\"id\":\"nsMf32DnMP\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Personnel Division\",\"col\":2}},{\"id\":\"WO31F6ac-v\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Training Division\",\"col\":2}}]",
+ "creation": "2026-04-04 17:19:14.600724",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Personnel Division",
+   "label": "Personnel Division"
+  },
+  {
+   "custom_block_name": "Training Division",
+   "label": "Training Division"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "hire-to-retire",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Hire To Retire",
+ "links": [],
+ "modified": "2026-04-07 13:18:31.767562",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Hire To Retire",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Z HR - Maker"
+  },
+  {
+   "role": "Z HR - Manager"
+  },
+  {
+   "role": "Z HR - View"
+  },
+  {
+   "role": "Z HR Report"
+  },
+  {
+   "role": "Training Admin"
+  },
+  {
+   "role": "Division Head"
+  },
+  {
+   "role": "Managing Director"
+  },
+  {
+   "role": "Z Employee - Checker"
+  },
+  {
+   "role": "Z Employee - Maker"
+  },
+  {
+   "role": "Z Employee - Manager"
+  },
+  {
+   "role": "Z Employee - View"
+  }
+ ],
+ "sequence_id": 39.0,
+ "shortcuts": [],
+ "title": "Hire To Retire"
+}

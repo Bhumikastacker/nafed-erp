@@ -1,0 +1,12 @@
+A Show-Cause Notice has been generated and recorded in the system.<br><br>
+
+<b>Notice ID:</b> {{ doc.name }}<br>
+<b>Linked Memo / Reply ID:</b> {{ doc.linked_memoreply_id }}<br>
+<b>Drafting Officer:</b> {{ doc.drafting_officer }}<br>
+<b>Issuance Date:</b> {{ doc.issuance_date }}<br>
+<b>Approval Workflow Level:</b> {{ doc.approval_workflow_level }}<br>
+<b>Status:</b> {{ doc.status }}<br>
+<b>Reference:</b> {{ doc.ref }}<br><br>
+
+The notice is subject to approval as per the defined workflow.
+Please review and take the necessary action at your respective approval stage.

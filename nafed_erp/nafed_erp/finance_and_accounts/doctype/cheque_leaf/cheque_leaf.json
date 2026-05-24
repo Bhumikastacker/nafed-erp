@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-12 17:12:03.027630",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cheque_no",
+  "cheque_date",
+  "status",
+  "voucher_type",
+  "voucher_no",
+  "amount",
+  "issue_date",
+  "clear_date",
+  "column_break_xsvi",
+  "type",
+  "party_type",
+  "party",
+  "narration"
+ ],
+ "fields": [
+  {
+   "fieldname": "cheque_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cheque No"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Cheque Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nBearer\nA/C Payee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nAvailable\nIssued\nCleared\nCancelled"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Party Type",
+   "options": "\nSupplier\nEmployee\nOther"
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Data",
+   "label": "Voucher Type"
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher No"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "clear_date",
+   "fieldtype": "Date",
+   "label": "Clear Date"
+  },
+  {
+   "fieldname": "narration",
+   "fieldtype": "Small Text",
+   "label": "Narration"
+  },
+  {
+   "fieldname": "column_break_xsvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-17 11:22:59.148276",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Cheque Leaf",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

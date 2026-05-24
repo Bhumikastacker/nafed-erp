@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-29 15:33:33.663401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district",
+  "centre",
+  "opening_qty",
+  "value__rs_in_lacs",
+  "procurement",
+  "procurement_value",
+  "closing",
+  "closing_value",
+  "target_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Centre"
+  },
+  {
+   "fieldname": "opening_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Opening Qty (MT)"
+  },
+  {
+   "fieldname": "procurement",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Procurement Progress as on (MT)"
+  },
+  {
+   "fieldname": "closing",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Progressive Procurement (MT)"
+  },
+  {
+   "fieldname": "value__rs_in_lacs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Value ( Rs in Lacs)"
+  },
+  {
+   "fieldname": "procurement_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Value (Rs in Lacs)"
+  },
+  {
+   "fieldname": "closing_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Value (Rs in Lacs)"
+  },
+  {
+   "fieldname": "target_quantity",
+   "fieldtype": "Float",
+   "label": "Target Quantity"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-19 18:20:54.437191",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Update Procurement Progress Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

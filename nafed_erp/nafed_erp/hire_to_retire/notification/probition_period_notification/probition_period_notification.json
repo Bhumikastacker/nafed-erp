@@ -1,0 +1,35 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-05 14:25:53.818962",
+ "date_changed": "custom_ppedate",
+ "days_in_advance": 30,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Employee",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Employee {{ doc.employee_name or doc.name }} will complete probation after 30 days.\nFinal Confirmation Date: {{ doc.final_confirmation_date }}",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:30:52.208718",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Probition period Notification",
+ "owner": "Administrator",
+ "property_value": "",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "set_property_after_alert": "",
+ "subject": "Remainder to Create Confirmation letter"
+}

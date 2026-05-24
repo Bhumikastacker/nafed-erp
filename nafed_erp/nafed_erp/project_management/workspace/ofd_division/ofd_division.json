@@ -1,0 +1,165 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"HsEfbSnsNA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Project Management</b></span>\",\"col\":12}},{\"id\":\"1yIUg7ve3H\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Projects\",\"col\":4}},{\"id\":\"-qtnKm8i44\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Completed Projects\",\"col\":4}},{\"id\":\"LVJMwsDBFB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Projects\",\"col\":4}},{\"id\":\"MHuhtfWo7J\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Projects Budget\",\"col\":4}},{\"id\":\"9lFDUXGl7R\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"4pj2wtNBxn\",\"type\":\"card\",\"data\":{\"card_name\":\"Project Masters\",\"col\":4}},{\"id\":\"Sg6sStUQvC\",\"type\":\"card\",\"data\":{\"card_name\":\"Project Transactions\",\"col\":4}},{\"id\":\"34cXT7kKSa\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "creation": "2026-04-01 17:13:05.521960",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "project-management",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 1,
+ "label": "OFD Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Projects Settings",
+   "link_count": 0,
+   "link_to": "Projects Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Transactions",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Milestone",
+   "link_count": 0,
+   "link_to": "Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity",
+   "link_count": 0,
+   "link_to": "Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity Progress Log",
+   "link_count": 0,
+   "link_to": "Activity Progress Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Extension Request",
+   "link_count": 0,
+   "link_to": "Project Extension Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Masters",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Technical Partner",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Party Link",
+   "link_count": 0,
+   "link_to": "Party Link",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-04-13 14:50:07.152695",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "OFD Division",
+ "number_cards": [
+  {
+   "label": "Total Completed Projects",
+   "number_card_name": "Total Completed Projects"
+  },
+  {
+   "label": "Total Active Projects",
+   "number_card_name": "Total Active Projects"
+  },
+  {
+   "label": "Total Projects",
+   "number_card_name": "Total Projects"
+  },
+  {
+   "label": "Total Projects Budget",
+   "number_card_name": "Total Project Budget"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Project Management",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "OFD Division Head"
+  },
+  {
+   "role": "OFD Division User"
+  },
+  {
+   "role": "OFD HO Project Manager"
+  }
+ ],
+ "sequence_id": 67.0,
+ "shortcuts": [],
+ "title": "OFD Division"
+}

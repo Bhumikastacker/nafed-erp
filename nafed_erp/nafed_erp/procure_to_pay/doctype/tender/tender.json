@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-02 17:19:45.944341",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xknr",
+  "naming_series",
+  "eauction",
+  "tender_no",
+  "tender_title",
+  "column_break_lxxt",
+  "publish_date",
+  "upload_document",
+  "amended_from",
+  "jute_mill",
+  "section_break_qjyl",
+  "last_datetime_of_tender_fee",
+  "section_break_poss",
+  "opening_datetime_of_technical_bid",
+  "opening_datetime_of_financial_bid",
+  "column_break_wcdk",
+  "last_datetime_of_technical_bid",
+  "last_datetime_of_financial_bid",
+  "section_break_surm",
+  "destination"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xknr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tender",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "eauction",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Whether published on E-auction Portal",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tender No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_title",
+   "fieldtype": "Data",
+   "label": "Tender Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "upload_document",
+   "fieldtype": "Attach",
+   "label": "Upload Document"
+  },
+  {
+   "fieldname": "section_break_poss",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_datetime_of_tender_fee",
+   "fieldtype": "Datetime",
+   "label": "Last Date time of Tender Fee"
+  },
+  {
+   "fieldname": "last_datetime_of_technical_bid",
+   "fieldtype": "Datetime",
+   "label": "Last Date time of Technical Bid"
+  },
+  {
+   "fieldname": "last_datetime_of_financial_bid",
+   "fieldtype": "Datetime",
+   "label": "Last Date time of Financial Bid"
+  },
+  {
+   "fieldname": "opening_datetime_of_technical_bid",
+   "fieldtype": "Datetime",
+   "label": "Opening Date time of Technical Bid"
+  },
+  {
+   "fieldname": "opening_datetime_of_financial_bid",
+   "fieldtype": "Datetime",
+   "label": "Opening Date time of Financial Bid"
+  },
+  {
+   "fieldname": "column_break_lxxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jute_mill",
+   "fieldtype": "Link",
+   "label": "Jute Mill",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_surm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Table",
+   "label": "Bidder Details",
+   "options": "Tender Child Table"
+  },
+  {
+   "fieldname": "section_break_qjyl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wcdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "TENDER/.YYYY./.#####."
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-14 17:42:05.414123",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Tender",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

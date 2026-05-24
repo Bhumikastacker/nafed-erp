@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-30 13:23:35.555666",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district",
+  "centre",
+  "no_of_farmers_benefited",
+  "commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_of_farmers_benefited",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No. Of Farmers Benefited"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tentative Nafed's Administrative Charges earned @ 1%"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Centre"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-30 13:33:59.138484",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Farmers Benfited Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

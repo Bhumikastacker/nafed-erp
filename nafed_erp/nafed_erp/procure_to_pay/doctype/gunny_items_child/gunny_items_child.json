@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-01 15:18:22.625101",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gunny_bag_name",
+  "gunny_bag_weight",
+  "gunny_bag_uom",
+  "gunny_bag_capacity",
+  "gunny_bag_capacity_uom",
+  "unit_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "gunny_bag_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bag Name",
+   "options": "Jute Bag Item Master"
+  },
+  {
+   "fetch_from": "gunny_bag_name.wt",
+   "fieldname": "gunny_bag_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag Wt."
+  },
+  {
+   "fetch_from": "gunny_bag_name.wt_uom",
+   "fieldname": "gunny_bag_uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Wt UOM"
+  },
+  {
+   "fetch_from": "gunny_bag_name.capacity",
+   "fieldname": "gunny_bag_capacity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Capacity"
+  },
+  {
+   "fetch_from": "gunny_bag_name.capacity_uom",
+   "fieldname": "gunny_bag_capacity_uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Capacity UOM",
+   "options": "UOM"
+  },
+  {
+   "fetch_from": "gunny_bag_name.rate",
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-08 15:40:38.393873",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Gunny Items Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 22:19:52.459596",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "commodity",
+  "commodity_name",
+  "quantity",
+  "grade",
+  "moisture",
+  "weight",
+  "observation",
+  "purchase_order_reference",
+  "survey_photograph"
+ ],
+ "fields": [
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Commodity",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grade"
+  },
+  {
+   "fieldname": "moisture",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Moisture"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Long Text",
+   "label": "Observation"
+  },
+  {
+   "fetch_from": "commodity.item_name",
+   "fieldname": "commodity_name",
+   "fieldtype": "Data",
+   "label": "Commodity Name"
+  },
+  {
+   "fieldname": "purchase_order_reference",
+   "fieldtype": "Data",
+   "label": "Purchase Order Reference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "survey_photograph",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Survey Photograph"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-18 22:26:23.200733",
+ "modified_by": "Administrator",
+ "module": "Extension and BD",
+ "name": "Survey Commodity Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

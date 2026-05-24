@@ -1,0 +1,9 @@
+<p>An investigation and fact-finding status has been changed as per directive.<br><br></p>
+
+<b>Committee ID:</b> {{ doc.committee_id }}<br>
+<b>Status:</b> {{ doc.status }}<br>
+<b>Assigned By:</b> {{ doc.assigned_by }}<br>
+<b>Directive Issue Date:</b> {{ doc.directive_issue_date }}<br>
+<b>Deadline:</b> {{ doc.deadline }}<br>
+
+<p>The committee members are required to commence the investigation and submit findings within the stipulated timeline.</p>

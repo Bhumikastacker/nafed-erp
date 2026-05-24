@@ -1,0 +1,29 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 1,
+ "columns": [],
+ "creation": "2025-12-12 00:44:22.137889",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-12-12 00:45:05.064674",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Training Effectiveness",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "# simple query report returning meeting and aggregated score\nimport frappe\n\ndef execute(filters=None):\n    columns = [\n        {\"label\":\"Meeting\",\"fieldname\":\"meeting\",\"fieldtype\":\"Link\",\"options\":\"Nafed Training Meeting\",\"width\":200},\n        {\"label\":\"Trainer\",\"fieldname\":\"trainer\",\"width\":150},\n        {\"label\":\"Date\",\"fieldname\":\"meeting_date\",\"fieldtype\":\"Date\",\"width\":120},\n        {\"label\":\"Aggregated Score\",\"fieldname\":\"aggregated_score\",\"fieldtype\":\"Float\",\"width\":150},\n    ]\n\n    data = frappe.db.sql(\"\"\"\n        SELECT\n            name AS meeting,\n            trainer_name AS trainer,\n            meeting_date,\n            aggregated_score\n        FROM `tabNafed Training Meeting`\n        WHERE docstatus = 0\n        ORDER BY meeting_date DESC\n    \"\"\", as_dict=1)\n\n    return columns, data\n",
+ "ref_doctype": "Nafed Training Meeting",
+ "report_name": "Training Effectiveness",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

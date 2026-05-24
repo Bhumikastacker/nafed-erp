@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-17 16:37:47.041137",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "component",
+  "employee",
+  "previous_amount",
+  "column_break_orrq",
+  "revised_amount",
+  "final_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "component",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component",
+   "options": "Salary Component",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_orrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revised_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Revised Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Previous Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Final Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-25 16:16:14.178289",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Component Sheet",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

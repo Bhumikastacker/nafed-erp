@@ -1,0 +1,45 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"L9JPg619E5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Retail Store and Central Store</b></span>\",\"col\":12}},{\"id\":\"H2lUrR9Q1E\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Reatil Store\",\"col\":12}},{\"id\":\"csItsWBZPg\",\"type\":\"paragraph\",\"data\":{\"text\":\"5&nbsp;\",\"col\":12}}]",
+ "creation": "2026-05-19 10:26:40.174059",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Retail Store",
+   "label": "Reatil Store"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "production",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Retail Business Division (RBD)",
+ "links": [],
+ "logs": [],
+ "modified": "2026-05-19 15:17:16.619639",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Retail Business Division (RBD)",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Procure to pay",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "RBD Division Manager"
+  },
+  {
+   "role": "RBD Division User"
+  },
+  {
+   "role": "POS division User"
+  }
+ ],
+ "sequence_id": 47.4,
+ "shortcuts": [],
+ "title": "Retail Business Division (RBD)"
+}

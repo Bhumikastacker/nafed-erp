@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PREXT-{#####}",
+ "creation": "2026-01-31 11:31:37.240924",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_korb",
+  "project",
+  "project_name",
+  "status",
+  "division",
+  "approver_remarks",
+  "amended_from",
+  "column_break_ctep",
+  "project_old_end_date",
+  "project_new_end_date",
+  "additional_cost",
+  "justification"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_korb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Extension Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "link_filters": "[[\"Project\",\"status\",\"=\",\"Open\"],[\"Project\",\"is_active\",\"=\",\"Yes\"],[\"Project\",\"custom_approval_status\",\"=\",\"Approved\"],[\"Project\",\"percent_complete\",\"!=\",0]]",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ctep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "project_old_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Project Old End Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_new_end_date",
+   "fieldtype": "Date",
+   "label": "Project New End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Small Text",
+   "label": "Justification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_cost",
+   "fieldtype": "Currency",
+   "label": "Additional Cost"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending for Approval\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approver_remarks",
+   "fieldtype": "Small Text",
+   "label": "Approver Remarks"
+  },
+  {
+   "fetch_from": "project.custom_division",
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "link_filters": "[[\"Division\",\"allow_project_creation\",\"=\",1]]",
+   "options": "Division",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-10 16:21:01.792798",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Project Extension Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

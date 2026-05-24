@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-26 12:28:37.019570",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_geiq",
+  "members_type_declaration_column",
+  "name1",
+  "short_code",
+  "description",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_geiq",
+   "fieldtype": "Section Break",
+   "width": "12px"
+  },
+  {
+   "fieldname": "members_type_declaration_column",
+   "fieldtype": "Column Break",
+   "label": "Members Type Declaration"
+  },
+  {
+   "default": "True",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "print_width": "12"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "short_code",
+   "fieldtype": "Data",
+   "label": "Short Code",
+   "no_copy": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-02-17 13:33:33.228107",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Member Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1,
+ "translated_doctype": 1
+}

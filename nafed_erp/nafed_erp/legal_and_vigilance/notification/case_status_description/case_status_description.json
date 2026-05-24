@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-24 14:16:40.715337",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Status Update",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>The status of the following legal case has been updated:</p>\n\n<p>Case ID: {{ doc.case_id }}<br>\nDescription: {{ doc.description}}<br>\nNew Status: {{ doc.case_status }}<br>\nUpdated On: {{ doc.update_timestamp }}</p>\n\n<p>Please review the case for further action.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-25 15:37:33.169440",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Case status description",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "updated_by"
+  },
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Legal Case {{ doc.name }} \u2013 Description Changed",
+ "value_changed": "description"
+}

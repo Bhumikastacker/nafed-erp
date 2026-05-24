@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-13 16:20:00.765790",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lot_id",
+  "dispatch_quantity",
+  "source_location",
+  "column_break_ltcf",
+  "item_code",
+  "uom",
+  "destination_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "lot_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lot ID",
+   "options": "Lot"
+  },
+  {
+   "fetch_from": "lot_id.lot_qty",
+   "fieldname": "dispatch_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dispatch Quantity"
+  },
+  {
+   "fieldname": "source_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Location",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_ltcf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "lot_id.commodity",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fetch_if_empty": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "destination_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Destination Location",
+   "options": "Warehouse"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-17 15:00:25.863331",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Transportation Lot Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

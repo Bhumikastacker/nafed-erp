@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-26 12:47:46.452024",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agenda_no",
+  "from_user",
+  "division",
+  "draft_agenda",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "draft_agenda",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Draft Agenda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda_no",
+   "fieldtype": "Link",
+   "label": "Agenda No",
+   "link_filters": "[[\"Meeting Agenda\",\"status\",\"=\",\"Draft\"]]",
+   "options": "Meeting Agenda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Agenda From Division",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Division",
+   "options": "Division",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-02 14:47:45.844935",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Agenda From Division",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-07 15:51:12.132236",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pf_trust_company",
+  "accounts_section",
+  "employee_pf_account_for_pf_trust",
+  "employer_pf_account_for_pf_trust",
+  "voluntary_pf_account_for_pf_trust",
+  "section_break_hzzi",
+  "default_account_mapping"
+ ],
+ "fields": [
+  {
+   "fieldname": "pf_trust_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PF Trust Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "employee_pf_account_for_pf_trust",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee PF Account for PF Trust",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employer_pf_account_for_pf_trust",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employer PF Account for PF Trust",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_pf_account_for_pf_trust",
+   "fieldtype": "Link",
+   "label": "Voluntary PF Account for PF Trust",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hzzi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "default_account_mapping",
+   "fieldtype": "Table",
+   "label": "Default Account Mapping",
+   "options": "PF Default Account Mapping",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-02-07 19:57:22.004339",
+ "modified_by": "Administrator",
+ "module": "PF Trust",
+ "name": "PF Trust Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

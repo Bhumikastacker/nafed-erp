@@ -1,0 +1,233 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"dYqwiJzjAe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"8PVXY3i5qQ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Co-ordination</span>\",\"col\":12}},{\"id\":\"8OYBwAh2sa\",\"type\":\"card\",\"data\":{\"card_name\":\"Budget Form\",\"col\":4}},{\"id\":\"PYdaU103W1\",\"type\":\"card\",\"data\":{\"card_name\":\"Budget Reports\",\"col\":4}}]",
+ "creation": "2026-04-06 15:44:34.383851",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "meeting-and-coordination",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Coordination Division",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget Commodity Branch Wise",
+   "link_count": 0,
+   "link_to": "Budget Commodity Branch Wise",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Budget Entry Form",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budgetary Year",
+   "link_count": 0,
+   "link_to": "budgetary year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget Form",
+   "link_count": 10,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Actual Budget Entry Form",
+   "link_count": 0,
+   "link_to": "Budget Entry Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Estimated Budget Form",
+   "link_count": 0,
+   "link_to": "Estimated Budget Entry Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Scheme",
+   "link_count": 0,
+   "link_to": "Scheme",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Commodity Group",
+   "link_count": 0,
+   "link_to": "Commodity Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Commodity",
+   "link_count": 0,
+   "link_to": "Commodity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "IOT Branch",
+   "link_count": 0,
+   "link_to": "Iot Branch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budgetary year",
+   "link_count": 0,
+   "link_to": "budgetary year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Coodinate Communication",
+   "link_count": 0,
+   "link_to": "Coordination Communication",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "FIEO Letter",
+   "link_count": 0,
+   "link_to": "FIEO",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Annual Report",
+   "link_count": 0,
+   "link_to": "Annual Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget Reports",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Commodity Wise",
+   "link_count": 0,
+   "link_to": "Budget Report Commodity Wise",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Branch/Commodity Wise",
+   "link_count": 0,
+   "link_to": "Branch Commodity wise",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Budget Region",
+   "link_count": 0,
+   "link_to": "Budget Region",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Scheme Wise Report",
+   "link_count": 0,
+   "link_to": "Scheme Wise Budget Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Budget Report Commodity Group Wise",
+   "link_count": 0,
+   "link_to": "Budget Report Commudity Group Wise",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "logs": [],
+ "modified": "2026-04-17 15:53:23.357897",
+ "modified_by": "Administrator",
+ "module": "Meeting and Co-ordination",
+ "name": "Coordination Division",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Meeting and Co-ordination",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Budget Branch"
+  },
+  {
+   "role": "Budget MD"
+  },
+  {
+   "role": "Budget DH"
+  },
+  {
+   "role": "Budget GM"
+  }
+ ],
+ "sequence_id": 60.1,
+ "shortcuts": [],
+ "title": "Coordination Division"
+}

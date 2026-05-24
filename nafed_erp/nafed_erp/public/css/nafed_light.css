@@ -1,0 +1,197 @@
+[data-theme='light'] {
+
+    --nafed-icon-fill: #f5fe78;
+    --light-right-arrow-svg: url("data: image/svg+xml;utf8, <svg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.25 7.5L4.75 4L1.25 0.5' stroke='white' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+
+    html,
+    body {
+        /* background: rgba(228, 244, 230, 1) !important; */
+        /* background-image: url(/assets/nafed_erp/images/Group34004.svg) !important; */
+        position: relative;
+    }
+
+    [data-page-route=Workspaces] .layout-main .layout-main-section::after {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        background-image: url(/assets/nafed_erp/images/layout-background.svg) !important;
+        /* Replace with your SVG file */
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+    }
+
+    #navbar-breadcrumbs a:before {
+        content: var(--light-right-arrow-svg) !important;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .navbar.navbar-expand {
+        background: linear-gradient(90deg, #2E7017 0%, #889C31 100%);
+        border-radius: 10px;
+        height: 100px;
+    }
+
+    .navbar-home img {
+        max-height: 80px !important;
+    }
+
+    input#navbar-search {
+        height: 50px !important;
+        color: white;
+        background-color: rgb(255 255 255 / 30%);
+    }
+
+    input#navbar-search::placeholder {
+        color: white !important;
+        font-size: 14px !important;
+    }
+
+    .search-bar svg {
+        stroke-width: 2px !important;
+        stroke: white !important;
+    }
+
+    .dropdown-help button span {
+        font-weight: 600 !important;
+        color: #FFF !important;
+        font-size: 16px !important;
+    }
+
+    .dropdown-help button span .es-icon.icon-xs {
+        fill: #FFF !important;
+        stroke-width: 1px !important;
+        stroke: #FFF !important;
+    }
+
+    [data-page-route=Workspaces] .container.page-body {
+        padding-left: 0 !important;
+    }
+
+    .layout-side-section {
+        background: #518121;
+        border-radius: 15px;
+        padding: 10px 10px 10px 20px !important
+    }
+
+    .layout-side-section .sidebar-item-label {
+        font-size: 16px !important;
+        color: #fff !important;
+        font-weight: 500 !important;
+    }
+
+    .sidebar-item-icon .icon.icon-md {
+        width: 35px !important;
+        height: 25px !important;
+        stroke: #e2e2e200 !important;
+    }
+
+    .btn-reset.standard-sidebar-label {
+        display: none !important;
+    }
+
+    .desk-sidebar-item.standard-sidebar-item {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    [data-route]:not([data-route="Workspaces/NAFED ERP"])  .col-lg-2{
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+    .desk-sidebar-item.standard-sidebar-item.selected,
+    .desk-sidebar .standard-sidebar-item:hover,
+    .desk-sidebar .standard-sidebar-item:focus-within {
+        padding: 5px;
+        background: rgba(21, 94, 42, 0.6) !important;
+    }
+
+    .desk-sidebar-item.standard-sidebar-item.selected .sidebar-item-label,
+    .desk-sidebar .standard-sidebar-item:hover .sidebar-item-label {
+        font-weight: 600 !important;
+        /* letter-spacing: 0.05em !important; */
+        color: #FFF !important;
+    }
+
+    .desk-sidebar-item svg.icon.icon-sm,
+    .desk-sidebar-item .es-icon.es-line.icon-sm {
+        stroke: var(--nafed-icon-fill) !important;
+    }
+
+    .nav.navbar-nav li a {
+        color: #fff !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+    .btn-primary {
+        background-color: rgba(45, 109, 38, 0.9) !important;
+    }
+
+    .form-tabs-list .form-tabs .nav-item .nav-link.active {
+        color: #fff;
+        padding: 10px 20px;
+        background: rgba(45, 109, 38, 1);
+        border-radius: 5px;
+        border-bottom: none !important;
+    }
+
+    .nav-link.notifications-icon .es-icon.icon-sm {
+        width: 20px !important;
+        height: 20px !important;
+        stroke: #fff !important;
+
+    }
+
+    .custom-actions .btn-default,
+    .btn-secondary {
+        color: rgba(45, 109, 38, 1);
+        background-color: transparent;
+        border: 1px solid rgba(45, 109, 38, 1);
+    }
+
+    .btn-default:hover,
+    .btn-secondary:hover {
+        color: #fff !important;
+        background-color: rgba(45, 109, 38, 1) !important;
+        border: 1px solid rgba(45, 109, 38, 1);
+    }
+
+    .form-sidebar-items .ellipsis,
+    .list-unstyled .sidebar-label,
+    .add-group-by,
+    .list-tag-preview,
+    .form-follow.text-sm,
+    .modified-by,
+    .created-by, .like-count, .comments-count {
+        color: #fff !important;
+    }
+
+    .form-sidebar-items .es-icon.icon-sm,
+    .form-stats .es-icon.icon-sm,
+    .like-action .es-icon.icon-sm {
+        stroke: #fff !important;
+    }
+
+    .list-unstyled.sidebar-menu .btn-defuault {
+        color: #171717;
+        background-color: #f3f3f3;
+        border-color: #f3f3f3;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+
+    [data-route]:not([data-route="Workspaces/NAFED ERP"]) .widget.dashboard-widget-box, .widget.links-widget-box {
+        background-color: rgba(228, 244, 230, 1) !important;   
+        padding: 15px !important;     
+    }
+
+    .es-icon.es-line.ml-2.icon-xs{
+        stroke: green !important
+    }
+
+
+}

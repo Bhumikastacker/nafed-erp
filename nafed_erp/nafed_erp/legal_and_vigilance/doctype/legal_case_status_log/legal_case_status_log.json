@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_id}-{##}",
+ "creation": "2026-01-14 17:54:21.637886",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_id",
+  "case_status",
+  "other_case_status",
+  "column_break_gojl",
+  "description",
+  "updated_by",
+  "updated_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Legal Case Registration"
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Select",
+   "label": "Case Status",
+   "options": "Awaiting Order\nIn Progress\nHearing Completed\nCompliance Pending\nOther"
+  },
+  {
+   "fieldname": "column_break_gojl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Link",
+   "label": "Updated By",
+   "options": "User"
+  },
+  {
+   "fieldname": "updated_on",
+   "fieldtype": "Date",
+   "label": "Updated On"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "depends_on": "eval:doc.case_status == \"Other\"",
+   "fieldname": "other_case_status",
+   "fieldtype": "Data",
+   "label": "Specify Case Status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-27 16:24:30.438951",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Legal Case Status Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

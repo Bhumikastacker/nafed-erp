@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-12-09 09:55:16.425235",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "tender_type",
+  "tender_title",
+  "description",
+  "column_break_umec",
+  "publish_date",
+  "closing_date",
+  "bidopening_date",
+  "bid_amount",
+  "evaluation_score",
+  "evaluation_remarks",
+  "tender_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Tender ID",
+   "options": "EST/VTEND/.YY./"
+  },
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Select",
+   "label": "Tender Type",
+   "options": "Select\nRequests for Proposal (RFP)\nExpression of Interest (EOI)\nRequest for Information (RFI)\nRequest for Quotation (RFQ)\nPrivate Public Partnership(PPP)\nPrequalification (PQ)"
+  },
+  {
+   "fieldname": "tender_title",
+   "fieldtype": "Data",
+   "label": "Tender Title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_umec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date"
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Date",
+   "label": "Closing Date"
+  },
+  {
+   "fieldname": "bidopening_date",
+   "fieldtype": "Date",
+   "label": "BidOpening Date"
+  },
+  {
+   "fieldname": "bid_amount",
+   "fieldtype": "Currency",
+   "label": "Bid Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "evaluation_score",
+   "fieldtype": "Float",
+   "label": "Evaluation Score"
+  },
+  {
+   "fieldname": "evaluation_remarks",
+   "fieldtype": "Small Text",
+   "label": "Evaluation Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 10:00:33.939049",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Vendor Tendering",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

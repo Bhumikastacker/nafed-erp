@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:milestone_title",
+ "creation": "2025-12-16 11:35:18.097151",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "milestone_title",
+  "expected_average_rating",
+  "column_break_nqpa",
+  "overall_progress",
+  "section_break_onzq",
+  "table_nxqn",
+  "section_break_wbmm",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wbmm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Nafed Milestones",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "table_nxqn",
+   "fieldtype": "Table",
+   "options": "Nafed Milestones Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "milestone_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Milestone Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_onzq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expected_average_rating",
+   "fieldtype": "Rating",
+   "label": "Expected Average Rating"
+  },
+  {
+   "fieldname": "column_break_nqpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overall_progress",
+   "fieldtype": "Percent",
+   "label": "Overall Progress in %",
+   "precision": "1",
+   "default": "0"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2025-12-16 12:22:19.593157",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Nafed Milestones",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

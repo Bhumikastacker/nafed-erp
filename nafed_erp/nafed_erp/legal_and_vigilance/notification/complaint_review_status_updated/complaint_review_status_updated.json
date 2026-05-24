@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 12:25:10.006986",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Complaint Review by MD",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>The status of the vigilance complaint reviewed by the Managing Director has been updated.<br><br></p>\n\n<p><b>Complaint ID:</b> {{ doc.complaint_id }}<br>\n<b>Updated Status:</b> {{ doc.status }}<br>\n<b>Review Decision:</b> {{ doc.review_decision }}<br>\n<b>Review Decision:</b> {{ doc.assigned_officer__department }}<br>\n<b>Remarks:</b> {{ doc.remarks }}<br><br></p>\n\n<p>Please review the complaint for further action as required.</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-13 12:14:52.192977",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Complaint Review status updated",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Csm Account",
+ "sender_email": "raj.sender@csmpl.com",
+ "subject": "Complaint Status Updated \u2013 {{ doc.name }}",
+ "value_changed": "status"
+}

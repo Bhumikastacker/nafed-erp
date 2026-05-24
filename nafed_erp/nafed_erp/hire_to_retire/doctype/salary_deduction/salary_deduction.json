@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-19 17:45:45.394199",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "deduction",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "deduction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Deduction ",
+   "link_filters": "[[\"Salary Component\",\"type\",\"=\",\"Deduction\"],[\"Salary Component\",\"custom_is_additional_deduction_component\",\"=\",1]]",
+   "options": "Salary Component",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-23 17:51:07.972985",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Salary Deduction",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,38 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-04 17:49:47.180750",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project Extension Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p style=\"font-size: 14px;\">\n    <strong>A new Project Extension Request requires your approval.</strong>\n</p>\n\n<table style=\"font-size: 14px; border-collapse: collapse;\">\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project Extension Request ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.name }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.project }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project Name:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.project_name }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Approval Status:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.status }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Creation Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.creation }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Division:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.division }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project Old End Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.project_old_end_date }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Project New End Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.project_new_end_date }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Additional_cost:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.additional_cost }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Justification:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.justification }}</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Created By:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.owner }}</td>\n    </tr>\n\n</table>\n\n<p style=\"margin-top: 12px; font-size: 14px;\">\n    <strong>Open Document:</strong><br>\n    <a href=\"{{ frappe.utils.get_url() }}/app/project-extension-request/{{ doc.name }}\" target=\"_blank\">\n        Click here to view the Project Extension Request\n    </a>\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-24 10:46:22.606793",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Project Extension Approver Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending for Approval\" and doc.division ==\"Climate Resilient Innovations\"",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Z Project Extension - Manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending for Approval\" and doc.division ==\"ORGANIC FARMING\"",
+   "receiver_by_role": "Z Project Extension - Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{doc.name}} Project Extension needs your Approval, {{doc.division}} Division",
+ "value_changed": "workflow_state"
+}

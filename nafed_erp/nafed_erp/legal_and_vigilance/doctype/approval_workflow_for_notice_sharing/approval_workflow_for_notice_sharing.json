@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-27 12:58:17.660907",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notice_id",
+  "section_break_kpyh",
+  "approver_name",
+  "column_break_fosq",
+  "approval_stage",
+  "section_break_zxsx",
+  "approval_date",
+  "column_break_vcie",
+  "decision",
+  "section_break_yhny",
+  "comments",
+  "published_flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "notice_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notice ID",
+   "options": "Show Cause Notice Generation"
+  },
+  {
+   "fieldname": "section_break_kpyh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approver_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Approver Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_fosq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_stage",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Approval Stage"
+  },
+  {
+   "fieldname": "section_break_zxsx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "column_break_vcie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "decision",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Decision",
+   "options": "\nApprove\nReject\nEdit"
+  },
+  {
+   "fieldname": "section_break_yhny",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comments"
+  },
+  {
+   "default": "0",
+   "fieldname": "published_flag",
+   "fieldtype": "Check",
+   "label": "Published Flag"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-04 22:52:03.009622",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Approval Workflow for Notice Sharing",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

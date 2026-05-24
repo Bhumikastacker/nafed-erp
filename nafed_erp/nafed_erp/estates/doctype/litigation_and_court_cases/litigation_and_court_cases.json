@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-18 15:40:08.074540",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "property",
+  "column_break_hrjo",
+  "naming_series",
+  "case_details_section",
+  "title",
+  "court",
+  "type",
+  "filing_date",
+  "case_no",
+  "opposing_party",
+  "advocate",
+  "column_break_fypf",
+  "hearing_date",
+  "next_action",
+  "description",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property",
+   "options": "Property"
+  },
+  {
+   "fieldname": "column_break_hrjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Case ID",
+   "options": "EST/CASE/.YY./",
+   "read_only": 1
+  },
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "court",
+   "fieldtype": "Data",
+   "label": "Court"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "filing_date",
+   "fieldtype": "Date",
+   "label": "Filing Date"
+  },
+  {
+   "fieldname": "case_no",
+   "fieldtype": "Data",
+   "label": "Case No"
+  },
+  {
+   "fieldname": "opposing_party",
+   "fieldtype": "Data",
+   "label": "Opposing Party"
+  },
+  {
+   "fieldname": "advocate",
+   "fieldtype": "Data",
+   "label": "Advocate"
+  },
+  {
+   "fieldname": "column_break_fypf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "label": "Hearing Date"
+  },
+  {
+   "fieldname": "next_action",
+   "fieldtype": "Data",
+   "label": "Next Action"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "Litigation and Court Case Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 15:54:49.293705",
+ "modified_by": "Administrator",
+ "module": "Estates",
+ "name": "Litigation and Court Cases",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

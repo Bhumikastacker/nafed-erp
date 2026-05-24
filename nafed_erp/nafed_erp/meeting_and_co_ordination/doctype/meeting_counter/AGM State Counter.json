@@ -1,0 +1,27 @@
+{
+  "doctype": "DocType",
+  "name": "AGM State Counter",
+  "module": "Meeting and Co-ordination",
+  "custom": 1,
+  "fields": [
+    {
+      "fieldname": "state",
+      "label": "State",
+      "fieldtype": "Link",
+      "options": "State",
+      "reqd": 1
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "counter_details",
+      "label": "Counter Details",
+      "fieldtype": "Table",
+      "options": "AGM State Counter Detail"
+    }
+  ]
+}

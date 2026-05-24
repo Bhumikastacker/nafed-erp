@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{agreement_abbr}/CR-{division_abbr}/{branch_abbr}/{YYYY}/{##}",
+ "creation": "2026-01-31 16:10:35.637241",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agreement_type",
+  "performed_by",
+  "agreement_title",
+  "date_of_execution",
+  "place_of_execution",
+  "validity",
+  "addendum",
+  "column_break_zuaf",
+  "expiry_date",
+  "linked_contract_id",
+  "creation_date",
+  "amended_from",
+  "purpose",
+  "division__branch",
+  "branch",
+  "authorities",
+  "crn_issued_on",
+  "remarks",
+  "for_crn_number_generation_section",
+  "agreement_abbr",
+  "division_abbr",
+  "branch_abbr"
+ ],
+ "fields": [
+  {
+   "fieldname": "agreement_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agreement Type",
+   "options": "Agreement Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zuaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "performed_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "linked_contract_id",
+   "fieldtype": "Data",
+   "label": "Linked Contract ID"
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "label": "Creation Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contract CRN Generation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "agreement_title",
+   "fieldtype": "Data",
+   "label": "Agreement Title"
+  },
+  {
+   "fieldname": "date_of_execution",
+   "fieldtype": "Date",
+   "label": "Date of Execution"
+  },
+  {
+   "fieldname": "place_of_execution",
+   "fieldtype": "Data",
+   "label": "Place of Execution"
+  },
+  {
+   "fieldname": "validity",
+   "fieldtype": "Date",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "addendum",
+   "fieldtype": "Data",
+   "label": "Addendum"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "division__branch",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "authorities",
+   "fieldtype": "Data",
+   "label": "Authorities"
+  },
+  {
+   "fieldname": "crn_issued_on",
+   "fieldtype": "Date",
+   "label": "CRN issued on"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Company"
+  },
+  {
+   "fieldname": "agreement_abbr",
+   "fieldtype": "Data",
+   "label": "Agreement Abbr"
+  },
+  {
+   "fieldname": "division_abbr",
+   "fieldtype": "Data",
+   "label": "Division Abbr",
+   "options": "Division"
+  },
+  {
+   "fieldname": "branch_abbr",
+   "fieldtype": "Data",
+   "label": "Branch Abbr",
+   "options": "Company"
+  },
+  {
+   "fieldname": "for_crn_number_generation_section",
+   "fieldtype": "Section Break",
+   "label": "For CRN Number Generation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-18 13:24:09.683479",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Contract CRN Generation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

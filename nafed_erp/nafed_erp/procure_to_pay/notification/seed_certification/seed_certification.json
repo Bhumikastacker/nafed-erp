@@ -1,0 +1,39 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.certification_status == \"QA Verified\"",
+ "creation": "2026-04-09 15:47:21.910831",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Seed Certification",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Seed Certification Approved</p>\n\n<p>\nCertification No: {{ doc.certification_number }}<br>\nLot: {{ doc.lot_id }}<br>\nCrop: {{ doc.crop }}\n</p>\n\n<p>Status: QA Verified</p>",
+ "message_type": "HTML",
+ "modified": "2026-04-10 16:47:23.327770",
+ "modified_by": "Administrator",
+ "module": "Procure to Pay",
+ "name": "Seed Certification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "State Seed Certification Agencies Officer"
+  },
+  {
+   "receiver_by_role": "Quality Assurance Officer"
+  },
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Support",
+ "sender_email": "prakashtds250122@gmail.com",
+ "subject": "Seed Certification Approved: {{ doc.certification_number }}",
+ "value_changed": "certification_status"
+}

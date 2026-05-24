@@ -1,0 +1,1 @@
+{{doc.transcation_type}} has created against {{doc.branch}}

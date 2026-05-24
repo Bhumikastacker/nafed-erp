@@ -1,0 +1,36 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-03 18:18:46.603006",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Legal Case Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Status has been changed for : <br>\nLegal Case Number: {{ doc.name }}<br>\nJurisdiction: {{ doc.jurisdiction}}<br>\nStatus: {{ doc.status }}</p>\n",
+ "message_type": "HTML",
+ "modified": "2026-02-23 12:11:34.376676",
+ "modified_by": "Administrator",
+ "module": "Legal and Vigilance",
+ "name": "Status changed for legal case registration",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "receiver_by_document_field": "advocate_mail"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Status changed for Legal Case : {{ doc.name}}",
+ "value_changed": "status"
+}

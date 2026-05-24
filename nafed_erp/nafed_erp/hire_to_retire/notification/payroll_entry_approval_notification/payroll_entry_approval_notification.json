@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-02-05 14:25:53.957473",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Payroll Entry",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p style=\"font-size: 14px;\">\n    <strong>A new Payroll Entry requires your approval.</strong>\n</p>\n\n<table style=\"font-size: 14px; border-collapse: collapse;\">\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Payroll Entry ID:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.name }}</td>\n    </tr>\n    \n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Posting Date:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.posting_date }}</td>\n    </tr>\n\n    <tr>\n        <td style=\"padding: 4px 8px;\"><strong>Submitted By:</strong></td>\n        <td style=\"padding: 4px 8px;\">{{ doc.owner }}</td>\n    </tr>\n</table>\n\n\n<p style=\"margin-top: 12px; font-size: 14px;\">\n    <strong>Open Document:</strong><br>\n    <a href=\"{{ frappe.utils.get_url() }}/app/payroll-entry/{{ doc.name }}\" target=\"_blank\">\n        Click here to view the Payroll Entry\n    </a>\n</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-02-05 14:29:59.293223",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Payroll Entry Approval Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state ==\"Pending\"",
+   "receiver_by_role": "Payroll Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{doc.name}} Payroll Entry needs your Approval",
+ "value_changed": "workflow_state"
+}

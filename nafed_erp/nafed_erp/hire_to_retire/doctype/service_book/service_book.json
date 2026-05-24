@@ -1,0 +1,256 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-13 10:42:07.678559",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_details_section",
+  "employee",
+  "full_name",
+  "caste_category",
+  "permanent_address",
+  "column_break_dakd",
+  "fathershusbands_name",
+  "caste_name",
+  "nationality",
+  "birth_and_identity_section",
+  "date_of_birth",
+  "dob_in_words",
+  "column_break_ouki",
+  "personal_mark_of_identification",
+  "column_break_ymvv",
+  "education_and_qualification_section",
+  "educational_qualification",
+  "column_break_dzic",
+  "addl_edu_qualification",
+  "first_appointment_in_nafed_section",
+  "first_designation",
+  "initial_pay",
+  "column_break_gwyh",
+  "first_scale_of_pay",
+  "accounts_and_authentication_section",
+  "pf_account_no",
+  "employee_signaturethumb",
+  "attesting_officer",
+  "column_break_fwkw",
+  "nomination_details",
+  "termination_of_service_section",
+  "date_of_termination",
+  "book_closing_officer",
+  "column_break_eejc",
+  "reason_of_termination"
+ ],
+ "fields": [
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "caste_name",
+   "fieldtype": "Data",
+   "label": "Caste Name"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Permanent Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dakd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fathershusbands_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father's/Husband's Name",
+   "reqd": 1
+  },
+  {
+   "default": "Indian",
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "fieldname": "caste_category",
+   "fieldtype": "Select",
+   "label": "Caste Category",
+   "options": "General\nSC\nST\nOBC"
+  },
+  {
+   "fieldname": "general_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "birth_and_identity_section",
+   "fieldtype": "Section Break",
+   "label": "Birth and Identity"
+  },
+  {
+   "fetch_from": "employee.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "dob_in_words",
+   "fieldtype": "Data",
+   "label": "DOB in Words"
+  },
+  {
+   "fieldname": "personal_mark_of_identification",
+   "fieldtype": "Small Text",
+   "label": "Mark of Identification"
+  },
+  {
+   "fieldname": "education_and_qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Education and Qualification"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Data",
+   "label": "Educational Qualification"
+  },
+  {
+   "fieldname": "addl_edu_qualification",
+   "fieldtype": "Data",
+   "label": "Addl. Edu. Qualification"
+  },
+  {
+   "fieldname": "first_appointment_in_nafed_section",
+   "fieldtype": "Section Break",
+   "label": "First Appointment in NAFED"
+  },
+  {
+   "fieldname": "first_designation",
+   "fieldtype": "Link",
+   "label": "First Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "first_scale_of_pay",
+   "fieldtype": "Data",
+   "label": "First Scale of Pay"
+  },
+  {
+   "fieldname": "initial_pay",
+   "fieldtype": "Currency",
+   "label": "\tInitial Pay"
+  },
+  {
+   "fieldname": "accounts_and_authentication_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts and Authentication"
+  },
+  {
+   "fieldname": "pf_account_no",
+   "fieldtype": "Data",
+   "label": "PF Account No"
+  },
+  {
+   "fieldname": "nomination_details",
+   "fieldtype": "Small Text",
+   "label": "Nomination Details"
+  },
+  {
+   "fieldname": "employee_signaturethumb",
+   "fieldtype": "Attach Image",
+   "label": "Employee Signature/Thumb"
+  },
+  {
+   "fieldname": "attesting_officer",
+   "fieldtype": "Link",
+   "label": "Attesting Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "termination_of_service_section",
+   "fieldtype": "Section Break",
+   "label": "Termination of Service"
+  },
+  {
+   "fieldname": "date_of_termination",
+   "fieldtype": "Date",
+   "label": "Date of Termination"
+  },
+  {
+   "fieldname": "reason_of_termination",
+   "fieldtype": "Small Text",
+   "label": "Reason of Termination"
+  },
+  {
+   "fieldname": "book_closing_officer",
+   "fieldtype": "Link",
+   "label": "Book Closing Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_ouki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dzic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gwyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fwkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eejc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ymvv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-13 13:11:12.212329",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Service Book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

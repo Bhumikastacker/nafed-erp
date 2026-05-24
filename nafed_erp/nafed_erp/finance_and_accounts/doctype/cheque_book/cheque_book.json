@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-03-12 16:58:35.751289",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "bank_name",
+  "branch",
+  "company",
+  "column_break_xpmt",
+  "total_cheques",
+  "bank_account",
+  "cheque_start_no",
+  "cheque_end_no",
+  "column_break_gxav",
+  "issue_date",
+  "used_cheques",
+  "column_break_bstz",
+  "pending_cheques",
+  "status",
+  "section_break_mtob",
+  "cheque_leaves",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Cheque Book ID",
+   "options": "CHE-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xpmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cheque_start_no",
+   "fieldtype": "Int",
+   "label": "Cheque Start No"
+  },
+  {
+   "fieldname": "cheque_end_no",
+   "fieldtype": "Int",
+   "label": "Cheque End No"
+  },
+  {
+   "fieldname": "total_cheques",
+   "fieldtype": "Int",
+   "label": "Total Cheques",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nUsed\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_mtob",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cheque_leaves",
+   "fieldtype": "Table",
+   "label": "Cheque Leaves",
+   "options": "Cheque Leaf"
+  },
+  {
+   "fieldname": "column_break_gxav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "used_cheques",
+   "fieldtype": "Int",
+   "label": "Used Cheques",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bstz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pending_cheques",
+   "fieldtype": "Int",
+   "label": "Pending Cheques",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-19 12:48:02.996246",
+ "modified_by": "Administrator",
+ "module": "Finance and Accounts",
+ "name": "Cheque Book",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-23 15:08:40.487015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "basic",
+  "da",
+  "column_break_bfyb",
+  "hra",
+  "total",
+  "ex_gratia_final_amount",
+  "ex_gratia_manual_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_bfyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "da",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "DA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Currency",
+   "label": "HRA"
+  },
+  {
+   "fieldname": "ex_gratia_final_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Final Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ex_gratia_manual_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Ex-Gratia to Pay"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-25 15:18:08.095933",
+ "modified_by": "Administrator",
+ "module": "Hire to Retire",
+ "name": "Ex Gratia Summary",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
